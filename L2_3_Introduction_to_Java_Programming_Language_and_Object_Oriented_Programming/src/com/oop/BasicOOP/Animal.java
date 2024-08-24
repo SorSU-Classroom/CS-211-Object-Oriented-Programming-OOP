@@ -92,7 +92,7 @@ public class Animal {
      * This method makes the animal produce a sound.
      */
     void makeSound() {
-        System.out.println("The animal makes a sound.");
+        System.out.println(this.name + " makes a sound.");
     }
 
     /**

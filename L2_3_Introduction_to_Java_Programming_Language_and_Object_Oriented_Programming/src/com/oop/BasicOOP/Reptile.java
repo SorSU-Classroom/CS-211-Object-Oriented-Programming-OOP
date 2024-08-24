@@ -75,7 +75,7 @@ public abstract class Reptile extends Animal {
 	 * @see https://docs.oracle.com/javase/tutorial/java/IandI/abstract.html
 	 * @see https://www.javatpoint.com/abstract-class-in-java
 	 */
-	public abstract void move(int x, int y);
+	public abstract void biteHuman();
 
 	/**
 	 * Getter and setter methods for the member variables of the `Reptile` class.

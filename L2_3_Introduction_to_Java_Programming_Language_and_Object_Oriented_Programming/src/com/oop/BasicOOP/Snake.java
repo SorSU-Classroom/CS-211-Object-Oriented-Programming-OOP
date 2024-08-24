@@ -1,3 +1,12 @@
+/**
+ * Inheriting an Abstract Class with Abstract Method
+ * 
+ * The `Reptile` class is an abstract class that has an abstract method called
+ * `biteHuman`. The `Snake` class is a child class of the `Reptile` class. It
+ * inherits the properties and methods of the `Reptile` class.
+ * 
+ * @see com.oop.BasicOOP.Reptile
+ */
 package com.oop.BasicOOP;
 
 /**
@@ -42,18 +51,25 @@ public class Snake extends Reptile {
 	}
 
 	/**
-	 * The `move` method of the `Snake` class.
+	 * Method that simulates the snake biting a human.
 	 * 
-	 * This method overrides the `move` method of the `Reptile` class.
+	 * This method is the method implementation of the abstract method `biteHuman`
+	 * declared in the `Reptile` class.
 	 * 
-	 * @param x the x-coordinate of the snake
-	 * @param y the y-coordinate of the snake
+	 * References:
+	 * 
+	 * @see https://www.w3schools.com/java/java_abstract.asp
+	 * @see https://www.geeksforgeeks.org/abstract-classes-in-java/
+	 * @see https://docs.oracle.com/javase/tutorial/java/IandI/abstract.html
+	 * @see https://www.javatpoint.com/abstract-class-in-java
 	 */
-	@Override
-	public void move(int x, int y) {
-		System.out.println("The snake is slithering to (" + x + ", " + y + ")");
-		this.x = x;
-		this.y = y;
+	public void biteHuman() {
+		System.out.println("The snake bites the human...");
+		if (isVenomous) {
+			System.out.println("The human is poisoned!");
+		} else {
+			System.out.println("The human is not poisoned.");
+		}
 	}
 
 	/**
