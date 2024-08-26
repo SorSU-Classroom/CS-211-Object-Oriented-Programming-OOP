@@ -2,8 +2,8 @@
 
 ## A. BOOKS
 
-- Loy, M., Niemeyer, P., & Leuck, D. (2023). Learning Java: An Introduction to Real-World Programming with Java. O’Reilly Media. ISBN: 9781098145538
-- Horstmann, C. S. (2022). Core Java, Volume I: Fundamentals. Pearson Education. ISBN: 978-0137673629
+- [Loy, M., Niemeyer, P., & Leuck, D. (2023). Learning Java: An Introduction to Real-World Programming with Java. O’Reilly Media. ISBN: 9781098145538](./Books/Learning%20Java%20-%20An%20Introduction%20to%20Real-World%20Programming%20with%20Java.pdf)
+- [Horstmann, C. S. (2022). Core Java, Volume I: Fundamentals. Pearson Education. ISBN: 978-0137673629](./Books/Core%20Java,%20Volume%20I%20-%20Fundamentals.pdf)
 - Schildt, H. (2022). Java: The Complete Reference, Twelfth Edition. McGraw Hill Professional. ISBN: 978-1-260-46341-5
 - Schildt, H. (2022). Java: A Beginner’s Guide, Ninth Edition. McGraw Hill Professional. ISBN: 978-1-260-46355-2
 - Paul Deitel & Harvey Deitel (July 14th 2021). Java: How To Program, Early Objects, 11th edition, Deitel & Associates, Inc. ISBN: 13:9780137505166
