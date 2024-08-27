@@ -138,7 +138,7 @@ public class DataTypes {
 		 * @see https://www.javatpoint.com/java-data-types
 		 */
 		System.out.println("\n--- long ---");
-		long longVariable = 100000000L;
+		long longVariable = 10000000000L;
 		System.out.println("longVariable: " + longVariable);
 
 		/**
@@ -218,8 +218,7 @@ public class DataTypes {
 		 * Non-Primitive Data Types
 		 * 
 		 * Non-primitive data types are not predefined by the language and are created
-		 * by
-		 * the programmer. They are also known as reference types because they refer to
+		 * by the programmer. They are also known as reference types because they refer to
 		 * objects.
 		 * 
 		 * There are two types of non-primitive data types:
@@ -239,8 +238,7 @@ public class DataTypes {
 		 * Reference Data Types
 		 * 
 		 * Reference variables are created using defined classes. They are used to
-		 * access
-		 * objects.
+		 * access objects.
 		 * 
 		 * Syntax:
 		 * - class_name variable_name = new class_name();
@@ -307,6 +305,9 @@ public class DataTypes {
 		 * Array Data Types
 		 * 
 		 * Array data types are used to store multiple values in a single variable.
+		 * To create an array, you must specify the data type of the elements and
+		 * the size of the array. To access an element in an array, you must use the
+		 * index of the element.
 		 * 
 		 * Syntax:
 		 * - data_type[] array_name = new data_type[size];

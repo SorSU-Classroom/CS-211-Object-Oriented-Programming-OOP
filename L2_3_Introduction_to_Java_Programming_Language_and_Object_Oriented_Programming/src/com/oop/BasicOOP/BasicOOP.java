@@ -31,10 +31,10 @@
  * details and showing only the functionality to the user. It helps to reduce programming complexity
  * and effort.
  * 
- * In Java, everything is an object. Java is an object-oriented programming language. Java is
- * platform-independent. Java is simple and easy to learn. Java is secure. Java is robust.
- * Java is a high performance. Java is multithreaded. Java is interpreted. Java is distributed.
- * Java is dynamic.
+ * In Java, everything is an object aside from the primitive data types (e.g., int, float, char, etc.). 
+ * Java is an object-oriented programming language. Java is platform-independent. Java is simple and
+ * easy to learn. Java is secure. Java is robust. Java is a high performance. Java is multithreaded.
+ * Java is interpreted. Java is distributed. Java is dynamic.
  * 
  * Reference:
  * @see https://www.tutorialspoint.com/java/java_oops_concepts.htm

@@ -79,8 +79,7 @@ package com.oop.BasicSyntax;
  * fields, methods, constructors, and blocks.
  * 
  * The class body is enclosed in curly braces `{}` and contains the class
- * members, such as fields, methods,
- * constructors, and blocks.
+ * members, such as fields, methods, constructors, and blocks.
  * 
  * References:
  * 

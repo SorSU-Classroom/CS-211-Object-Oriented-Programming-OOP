@@ -300,7 +300,7 @@ public class LexicalStructure {
 		int z = x + y;
 		System.out.println("Sum: " + z);
 
-		// Using Comma to Separate Elements
+		// Using Comma to Separate Variables
 		int a = 1, b = 2, c = 3;
 		System.out.println("Values: " + a + ", " + b + ", " + c);
 
