@@ -53,9 +53,10 @@
 \newcommand{\BookTitleFootnote}{A course in the Bachelor of Science in Computer
 Science}
 
-\newcommand{\BookSubtitle}{Introduction to Java Programming Language and
-Object-Oriented Programming}
-\newcommand{\BookSubtitleFootnote}{A topic in the course "Object-Oriented Programming"}
+\newcommand{\BookSubtitle}{A Study Guide for Students of Sorsogon State University - Bulan Campus}
+\newcommand{\BookSubtitleFootnote}{This book is a study guide for students of
+Sorsogon State University - Bulan Campus taking up the course Object-Oriented
+Programming.}
 
 \newcommand{\BookAuthorFirstName}{Jarrian Vince}
 \newcommand{\BookAuthorLastName}{Gojar}
@@ -84,7 +85,7 @@ Sorsogon State University - Bulan Campus
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Auto-generated table of contents, list of figures and list of tables %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \tableofcontents
+\tableofcontents
 % \listoffigures
 % \listoftables
 
@@ -101,21 +102,21 @@ Sorsogon State University - Bulan Campus
 \noindent \BookAuthorName \\
 \noindent \url{\BookAuthorURL}
 
-\chapter*{Introduction to Java Programming Language and Object-Oriented Programming}
+\chapter{Introduction to Java Programming Language and Object-Oriented Programming}
 
 % \begin{chapquote}{James Gosling}
 % ``Java is a general-purpose, concurrent, class-based, object-oriented programming
 % language that was designed and developed by Sun Microsystems in the early 1990s.''
 % \end{chapquote}
 
-\section*{Introduction}
+\section{Introduction}
 
 Java is a general-purpose, concurrent, class-based, object-oriented programming
 language that was designed and developed by Sun Microsystems in the early 1990s.
 It is currently owned by Oracle Corporation. Java is one of the most popular
 programming languages in use, particularly for client-server web applications.
 
-\subsection*{History of Java}
+\subsection{History of Java}
 
 Before Java, its primary programming language was C++. C++ is a powerful
 programming language, but it is complex and difficult to learn. It is also
@@ -177,7 +178,7 @@ developers.
 As of today, Java is one of the most popular programming languages in use,
 particularly for client-server web applications.
 
-\subsection*{Java Virtual Machine(JVM)}
+\subsection{Java Virtual Machine(JVM)}
 
 The Java Virtual Machine (JVM) is an abstract computing machine that enables a
 computer to run a Java program. There are three notions of the JVM: specification,
@@ -188,7 +189,7 @@ program that meets the requirements of the JVM specification. An instance of a
 JVM is an implementation running in a process that executes a computer program
 compiled into Java bytecode.
 
-\subsection*{Java Development Kit(JDK)}
+\subsection{Java Development Kit(JDK)}
 
 The Java Development Kit (JDK) is a software development kit used to develop Java
 applications and applets. It is one of the most widely used Java software
@@ -199,7 +200,7 @@ and other tools needed in Java development.
 To install the JDK, you need to download the JDK from the Oracle website. You
 can download the JDK from the following URL: \url{https://www.oracle.com/ph/java/technologies/downloads/}
 
-\subsection*{Java IDE (Integrated Development Environment)}
+\subsection{Java IDE (Integrated Development Environment)}
 
 An Integrated Development Environment (IDE) is a software application that
 provides comprehensive facilities to computer programmers for software development.
@@ -240,7 +241,14 @@ To install Eclipse, you need to download the Eclipse IDE from the Eclipse websit
 You can download Eclipse from the following URL:
 \url{https://www.eclipse.org/downloads/}
 
-\section*{Basic Syntax}
+\subsection{Summary}
+
+Java is a general-purpose, concurrent, class-based, object-oriented programming
+language that was designed and developed by Sun Microsystems in the early 1990s.
+It is currently owned by Oracle Corporation. Java is one of the most popular
+programming languages in use, particularly for client-server web applications.
+
+\section{Basic Syntax}
 
 Java is a case-sensitive language. This means that the language keywords,
 variables, function names, and any other identifiers must always be typed
@@ -303,7 +311,7 @@ and cannot be used for other purposes:
   \end{itemize}
 \end{multicols}
 
-\subsection*{Java Program Structure}
+\subsection{Java Program Structure}
 
 A Java program is a collection of classes. A class is a blueprint from which
 objects are created. A class can contain fields (variables) and methods (functions).
@@ -349,6 +357,8 @@ following components:
 The code above shows the basic syntax of a Java program. The program prints the
 message ``This is the basic syntax of Java programming language.''
 
+\subsubsection{package}
+
 \begin{lstlisting}
   package com.oop.BasicSyntax;
 \end{lstlisting}
@@ -379,6 +389,8 @@ The package declaration includes the following components:
   \item \textnormal{package: The keyword that indicates the start of the package declaration.}
   \item \textnormal{[package\_name]: The name of the package to which the Java file belongs.}
 \end{itemize}
+
+\subsubsection{class}
 
 \begin{lstlisting}
   public class BasicSyntax {
@@ -431,6 +443,8 @@ format, starting with an uppercase letter.
 
 The class body is enclosed in curly braces \{\}. The class body contains the
 fields, methods, constructors, and other components of the class.
+
+\subsubsection{main method}
 
 \begin{lstlisting}
   public static void main(String[] args) {
@@ -497,7 +511,15 @@ It has the following components:
   number, or any other value that can be converted to a string.}
 \end{itemize}
 
-\section*{Lexical Structure}
+\subsection{Summary}
+
+The basic syntax of a Java program includes the package declaration, class
+declaration, and main method. The package declaration is used to declare the
+package to which the Java file belongs. The class declaration
+is used to declare a class in Java. The main method is the entry point of a Java
+program and is called by the Java Virtual Machine (JVM) to start the program.
+
+\section{Lexical Structure}
 
 The lexical structure of a programming language defines the set of valid tokens
 that can be used to write programs in the language. The lexical structure of Java
@@ -531,7 +553,7 @@ includes the following elements:
   a Java program, such as addition, subtraction, and comparison.}
 \end{itemize}
 
-\subsection*{Unicode}
+\subsection{Unicode}
 
 Unicode is a character encoding standard that supports a wide range of
 characters from different languages and scripts. Java programs are written
@@ -656,7 +678,7 @@ Read more about Unicode at \url{https://unicode.org/}
 %   \end{itemize}
 % \end{multicols*}
 
-\subsection*{Lexical Translations}
+\subsection{Lexical Translations}
 
 Line terminators are used to mark the end of a line in a Java program. The
 line terminator can be a carriage return (CR), a line feed (LF), or a
@@ -689,7 +711,7 @@ improve the readability of the code.
 The code above demonstrates the use of line terminators in Java. The code prints
 the message ``Hello, World!'' to the console using different line terminators.
 
-\subsection*{White Space}
+\subsection{White Space}
 
 White space characters are used to separate tokens in a Java program and improve
 the readability of the code. White space characters include spaces, tabs, and
@@ -721,7 +743,7 @@ int number=10;int result=number*2;System.out.println("Result: "+result);if(resul
 The code above is the same as the previous code but without white space characters.
 The code is difficult to read and understand because it lacks proper formatting.
 
-\subsection*{Comments}
+\subsection{Comments}
 
 Comments are used to document Java programs and improve their readability. Comments
 are ignored by the Java compiler and are not executed as part of the program.
@@ -740,7 +762,7 @@ There are three types of comments in Java:
 Comments are an essential part of writing maintainable code, as they help other
 developers understand the purpose and functionality of the code.
 
-\subsection*{Identifiers}
+\subsection{Identifiers}
 
 Identifiers are used to name classes, methods, variables, and other elements in
 a Java program. Identifiers must follow certain rules and conventions:
@@ -778,7 +800,7 @@ The code above demonstrates valid and invalid identifiers in Java. Valid identif
 follow the rules and conventions of the Java programming language, while invalid
 identifiers violate these rules.
 
-\subsection*{Keywords}
+\subsection{Keywords}
 
 Keywords are reserved words in Java that have special meanings and cannot be used
 as identifiers. Keywords are an essential part of the Java programming language
@@ -845,7 +867,7 @@ Keywords are an essential part of the Java programming language and are used to
 define the syntax and structure of Java programs. They have special meanings and
 cannot be used as identifiers.
 
-\subsection*{Literals}
+\subsection{Literals}
 
 Literals are fixed values that are used in Java programs. There are several types
 of literals in Java:
@@ -895,7 +917,7 @@ The code above demonstrates the use of literals in Java. The code declares varia
 of different types and assigns them literal values. The code then prints the
 variables to the console.
 
-\subsection*{Separators}
+\subsection{Separators}
 
 Separators are used to separate tokens in a Java program. The following are the
 separators in Java:
@@ -978,7 +1000,15 @@ are used to terminate statements. Commas are used to separate variables. Periods
 are used to access members of classes and objects. Ellipses are used to indicate
 variable arguments in methods or by spreading an array into individual elements.
 
-\section*{Data Types}
+\subsection{Summary}
+
+The lexical structure of Java defines the set of valid tokens that can be used to
+write programs in the language. The lexical structure includes elements such as
+Unicode, lexical translations, Unicode escapes, line terminators, input elements
+and tokens, white space, comments, identifiers, keywords, literals, separators,
+and operators.
+
+\section{Data Types}
 
 Data types specify the different sizes and values that can be stored in a variable.
 There are two types of data types in Java:
@@ -991,7 +1021,7 @@ There are two types of data types in Java:
   because they refer to objects.}
 \end{itemize}
 
-\subsection*{Primitive Data Types}
+\subsection{Primitive Data Types}
 
 Primitive data types are predefined by the language and are named by a reserved
 keyword. They are used to store simple values. There are eight primitive data
@@ -999,7 +1029,7 @@ types in Java:
 
 \begin{table}[h!]
   \centering
-  \caption{Overall evaluation of the system}
+  \caption{Primitive Data Types in Java}
   \begin{tabular*}{\hsize}{@{\extracolsep{\fill}}l l p{12cm} @{}}
       \toprule
       Data Type & Bytes & Description \\
@@ -1020,7 +1050,7 @@ types in Java:
 The table above shows the eight primitive data types in Java, along with their
 sizes in bytes and descriptions.
 
-\subsubsection*{byte}
+\subsubsection{byte}
 
 The ``byte'' data type is an 8-bit signed integer. It has a minimum value of -128
 and a maximum value of 127 (inclusive). The ``byte'' data type is used to save
@@ -1031,7 +1061,7 @@ smaller than an int.
   byte byteVariable = 100;
 \end{lstlisting}
 
-\subsubsection*{short}
+\subsubsection{short}
 
 The ``short'' data type is a 16-bit signed integer. It has a minimum value of
 -32,768 and a maximum value of 32,767 (inclusive). The ``short'' data type is
@@ -1042,7 +1072,7 @@ is two times smaller than an int.
   short shortVariable = 1000;
 \end{lstlisting}
 
-\subsubsection*{int}
+\subsubsection{int}
 
 The ``int'' data type is a 32-bit signed integer. It has a minimum value of
 -2,147,483,648 and a maximum value of 2,147,483,647 (inclusive). The ``int''
@@ -1053,7 +1083,7 @@ there is a concern about memory.
   int intVariable = 100000;
 \end{lstlisting}
 
-\subsubsection*{long}
+\subsubsection{long}
 
 The ``long'' data type is a 64-bit signed integer. It has a minimum value of
 -9,223,372,036,854,775,808 and a maximum value of 9,223,372,036,854,775,807
@@ -1070,7 +1100,7 @@ you do not append an ``L'' to the value, the compiler will treat it as an int
 literal. This can lead to a compilation error if the value is too large to be
 represented as an int.
 
-\subsubsection*{float}
+\subsubsection{float}
 
 The ``float'' data type is a single-precision 32-bit IEEE 754 floating-point. It
 should never be used for precise values, such as currency. This is because it
@@ -1086,7 +1116,7 @@ to the value. The ``f'' tells the compiler that the value is a float literal. If
 you do not append an ``f'' to the value, the compiler will treat it as a double
 literal.
 
-\subsubsection*{double}
+\subsubsection{double}
 
 The ``double'' data type is a double-precision 64-bit IEEE 754 floating-point. It
 can store fractional values with a large range. The ``double'' data type is used
@@ -1100,7 +1130,7 @@ Unlike the ``float'' data type, the ``double'' data type does not require any
 appending characters to indicate that a value is of the ``double'' data type. The
 compiler will treat any value with a decimal point as a double literal.
 
-\subsubsection*{char}
+\subsubsection{char}
 
 The ``char'' data type is a single 16-bit Unicode character. It has a minimum
 value of \textnormal{\textbackslash{u0000}} (or 0) and a maximum value of
@@ -1130,7 +1160,7 @@ because the ASCII value of 'A' is 65, and the ASCII value of 'a' is 97.
 You can also use Unicode escape sequences to represent characters. For example,
 '\u0041' represents the character 'A' in the Latin alphabet.
 
-\subsubsection*{boolean}
+\subsubsection{boolean}
 
 The ``boolean'' data type represents one bit of information, but its ``size'' isn't
 precisely defined. It can only take the values true or false.
@@ -1142,7 +1172,7 @@ precisely defined. It can only take the values true or false.
 Aside from representing true or false, a boolean can also represent values
 with two states, such as on or off, yes or no, or 0 or 1.
 
-\subsection*{Non-Primitive Data Types}
+\subsection{Non-Primitive Data Types}
 
 Non-primitive data types are not predefined by the language and are created by
 the programmer. They are also known as reference types because they refer to
@@ -1155,12 +1185,12 @@ objects. There are two types of non-primitive data types:
   a single variable.}
 \end{itemize}
 
-\subsubsection*{Reference Data Types}
+\subsubsection{Reference Data Types}
 
 Reference variables are created using defined classes. They are used to access
 objects.
 
-\paragraph*{String}
+\paragraph{String}
 
 The ``String'' class represents a sequence of characters. Strings are immutable,
 which means they cannot be changed after they are created.
@@ -1169,7 +1199,7 @@ which means they cannot be changed after they are created.
   String stringVariable = new String("Hello, World!");
 \end{lstlisting}
 
-\paragraph*{ArrayList}
+\paragraph{ArrayList}
 
 The ``ArrayList'' class is a resizable array that implements the List interface.
 It allows you to add, remove, and access elements based on their index.
@@ -1180,7 +1210,7 @@ It allows you to add, remove, and access elements based on their index.
   arrayListVariable.add("Banana");
 \end{lstlisting}
 
-\paragraph*{HashMap}
+\paragraph{HashMap}
 
 The ``HashMap'' class is a hash table-based implementation of the Map interface.
 It allows you to store key-value pairs and access the values based on their keys.
@@ -1191,7 +1221,7 @@ It allows you to store key-value pairs and access the values based on their keys
   hashMapVariable.put("Key2", "Value2");
 \end{lstlisting}
 
-\paragraph*{HashSet}
+\paragraph{HashSet}
 
 The ``HashSet'' class is an implementation of the Set interface. It stores unique
 elements and does not allow duplicates.
@@ -1202,7 +1232,7 @@ elements and does not allow duplicates.
   hashSetVariable.add("Banana");
 \end{lstlisting}
 
-\paragraph*{LinkedList}
+\paragraph{LinkedList}
 
 The ``LinkedList'' class is a doubly-linked list implementation of the List and
 Deque interfaces. It allows you to add, remove, and access elements based on their
@@ -1214,7 +1244,7 @@ index.
   linkedListVariable.add("Banana");
 \end{lstlisting}
 
-\paragraph*{Queue}
+\paragraph{Queue}
 
 The ``Queue'' interface represents a collection of elements that can be added or
 removed in a specific order. The ``LinkedList'' class implements the Queue interface.
@@ -1225,7 +1255,7 @@ removed in a specific order. The ``LinkedList'' class implements the Queue inter
   queueVariable.add("Banana");
 \end{lstlisting}
 
-\paragraph*{Stack}
+\paragraph{Stack}
 
 The ``Stack'' class represents a last-in, first-out (LIFO) stack of elements. It
 extends the Vector class with five operations that allow a vector to be treated
@@ -1237,7 +1267,7 @@ as a stack.
   stackVariable.push("Banana");
 \end{lstlisting}
 
-\paragraph*{TreeMap}
+\paragraph{TreeMap}
 
 The ``TreeMap'' class is a Red-Black tree-based implementation of the Map interface.
 It provides an efficient means of storing key-value pairs in sorted order.
@@ -1248,7 +1278,7 @@ It provides an efficient means of storing key-value pairs in sorted order.
   treeMapVariable.put("Key2", "Value2");
 \end{lstlisting}
 
-\paragraph*{TreeSet}
+\paragraph{TreeSet}
 
 The ``TreeSet'' class is an implementation of the Set interface. It stores unique
 elements in sorted order.
@@ -1259,7 +1289,7 @@ elements in sorted order.
   treeSetVariable.add("Banana");
 \end{lstlisting}
 
-\subsection*{Array Data Types}
+\subsubsection{Array Data Types}
 
 Array data types are used to store multiple values in a single variable. To
 create an array, you must specify the data type of the elements and the size of
@@ -1289,16 +1319,31 @@ the array. To access an element in an array, you must use the index of the eleme
   }
   System.out.println();
 
-  \\ Output
-  \\ Int Array: 10 20 30 40 50 
-  \\ String Array: Hello World 
+  // Output
+  // Int Array: 10 20 30 40 50 
+  // String Array: Hello World 
 \end{lstlisting}
 
 The code above demonstrates the use of array data types in Java. The code creates
 two arrays, one for integers and one for strings. It assigns values to the elements
 of the arrays and then prints the arrays to the console.
 
-\section*{Basic Object-Oriented Programming Concepts}
+\subsection{Summary}
+
+Data types specify the different sizes and values that can be stored in a variable.
+There are two types of data types in Java: primitive data types and non-primitive
+data types.
+
+Primitive data types are predefined by the language and are used to store simple
+values. There are eight primitive data types in Java: byte, short, int, long,
+float, double, char, and boolean.
+
+Non-primitive data types are not predefined by the language and are created by
+the programmer. They are used to access objects and store multiple values in a
+single variable. Non-primitive data types include reference data types and array
+data types.
+
+\section{Basic Object-Oriented Programming Concepts}
 
 Object-Oriented Programming (OOP) is a programming paradigm that relies on the
 concept of classes and objects. It is used to structure a software program into
@@ -1327,7 +1372,7 @@ data type that can be used in a program and works as an object constructor or a
 blueprint for creating objects.
 
 \begin{lstlisting}
-  \\ Animal.java
+  // Animal.java
 
   public class Animal {
       String name;
@@ -1460,7 +1505,36 @@ The ``Animal'' class has member functions or methods that represent the behavior
 of an animal, such as making a sound, moving to a new position, eating food, and
 sleeping. These methods represent the actions that an animal can perform.
 
-\subsection*{Inheritance}
+\subsection{Why use Object-Oriented Programming?}
+
+Object-oriented programming (OOP) has several advantages over procedural programming.
+Some of the key benefits of OOP are:
+
+\begin{itemize}
+  \item \textbf{Modularity:} OOP programs are divided into objects, which can be
+  developed independently. This makes the code more modular, reusable, and easier
+  to maintain.
+  \item \textbf{Code Reusability:} OOP promotes code reusability through inheritance
+  and polymorphism. Classes can be reused in different parts of the program without
+  modification.
+  \item \textbf{Encapsulation:} OOP encapsulates the data and methods within a class,
+  which protects the data from being accessed or modified by unauthorized code.
+  \item \textbf{Abstraction:} OOP provides abstraction by hiding the implementation
+  details and showing only the functionality to the user. This simplifies the
+  complexity of the program.
+  \item \textbf{Inheritance:} OOP allows classes to inherit the properties and methods
+  of other classes, which promotes code reusability and reduces the complexity of
+  the program.
+  \item \textbf{Polymorphism:} OOP allows methods to do different things based on
+  the object that they are acting upon. This provides flexibility and code reusability.
+\end{itemize}
+
+OOP is widely used in software development because of its ability to model real-world
+entities, promote code reusability, and simplify the complexity of the program.
+It is a powerful paradigm that helps in developing scalable, maintainable, and
+flexible software applications.
+
+\subsection{Inheritance}
 
 Inheritance is a mechanism in which one object acquires all the properties and
 behaviors of a parent object. It allows a class to inherit the properties and
@@ -1470,7 +1544,7 @@ is known as the parent class. Inheritance is an important feature of OOP that
 allows code reusability and reduces the complexity of a program.
 
 \begin{lstlisting}
-  \\ Mammal.java
+  // Mammal.java
 
   public class Mammal extends Animal {
       String fur;
@@ -1597,7 +1671,7 @@ The ``Mammal'' class has a method called ``giveBirth()'' that makes the mammal
 give birth. This method is specific to the ``Mammal'' class and is not present
 in the ``Animal'' class.
 
-\subsection*{Encapsulation}
+\subsection{Encapsulation}
 
 Encapsulation is the mechanism that binds together code and the data it manipulates,
 and keeps both safe from outside interference and misuse. One way to think about
@@ -1617,7 +1691,7 @@ Encapsulation is an important concept in OOP that helps in maintaining the integ
 of the data and the code that manipulates it.
 
 \begin{lstlisting}
-  \\ Dog.java
+  // Dog.java
 
   public class Dog extends Mammal {
       private String breed;
@@ -1815,7 +1889,7 @@ member variable. For example, in a website where users have different roles, the
 setter method can be used to check if the user has the necessary permissions to
 set the value of a private member variable.
 
-\subsection*{Polymorphism}
+\subsection{Polymorphism}
 
 Polymorphism is the ability of an object to take on many forms. The most common
 use of polymorphism in OOP occurs when a parent class reference is used to refer
@@ -1824,7 +1898,7 @@ on the object that they are acting upon. It is a powerful feature of OOP that
 allows code reusability and flexibility.
 
 \begin{lstlisting}
-  \\ Bird.java
+  // Bird.java
 
   public class Bird extends Animal {
       private int wings;
@@ -1916,7 +1990,7 @@ The ``makeSound()'' method makes the bird chirp. This method is specific to the
 % makeSound() Method in Animal Class
 
 \begin{lstlisting}
-  \\ Animal.java (makeSound() method)
+  // Animal.java (makeSound() method)
   void makeSound() {
       System.out.println(this.name + " makes a sound.");
   }
@@ -1928,7 +2002,7 @@ an example of polymorphism in action, where the same method name is used in both
 the parent and child classes, but the behavior of the method is different based
 on the object that it is acting upon.
 
-\subsection*{Abstraction}
+\subsection{Abstraction}
 
 Abstraction is a concept of object-oriented programming that allows hiding the
 implementation details and showing only the functionality to the user. It helps
@@ -1940,7 +2014,7 @@ have abstract methods that are declared but not implemented. These methods must
 be implemented by the child classes that inherit from the abstract class.
 
 \begin{lstlisting}
-  \\ Reptile.java
+  // Reptile.java
 
   public abstract class Reptile extends Animal {
       private boolean hasScales;
@@ -2049,12 +2123,12 @@ class and implements the abstract method ``biteHuman()''.
 % Implementing Abstract Method
 
 \begin{lstlisting}
-  \\ Snake.java
+  // Snake.java
 
   public class Snake extends Reptile {
-      \\ Member variables or attributes...
+      // Member variables or attributes...
 
-      \\ Constructor...
+      // Constructor...
       
       public void biteHuman() {
           System.out.println("The snake bites the human...");
@@ -2065,9 +2139,9 @@ class and implements the abstract method ``biteHuman()''.
           }
       }
 
-      \\ Getter and setter methods...
+      // Getter and setter methods...
 
-      \\ Methods...
+      // Methods...
   }
 \end{lstlisting}
 
@@ -2075,13 +2149,13 @@ The ``Snake'' class implements the abstract method ``biteHuman()'' declared in
 the ``Reptile'' class. The ``biteHuman()'' method simulates the snake biting a
 human and poisoning the human if the snake is venomous.
 
-\subsection*{Using Classes and Objects}
+\subsection{Using Classes and Objects}
 
 Using the classes and objects defined in the previous sections, we can create
 instances of the classes and interact with them.
 
 \begin{lstlisting}
-  \\ BasicOOP.java
+  // BasicOOP.java
 
   public class BasicOOP {
 
@@ -2135,7 +2209,7 @@ abstraction. It creates instances of the ``Animal'', ``Mammal'', ``Bird'',
 ``Dog'', and ``Snake'' classes and interacts with them by calling their methods
 and accessing their properties.
 
-\subsubsection*{Object Creation and Initialization}
+\subsubsection{Object Creation and Initialization}
 
 \begin{lstlisting}
   Animal animal = new Animal("Dog", "Canis lupus familiaris", 5, 20, "Brown", "Domestic", 0, 0);
@@ -2162,7 +2236,7 @@ The syntax for creating an object in Java is:
   ClassName objectName = new ClassName();
 \end{lstlisting}
 
-\subsection*{Inheritance}
+\subsubsection{Inheritance}
 
 \begin{lstlisting}
   Mammal mammal = new Mammal("Cat", "Felis catus", 3, 10, "White", "Domestic", 0, 0, "Short", true, true, true);
@@ -2183,7 +2257,7 @@ classes inherit the properties and methods of the ``Animal'' class. We create
 instances of the ``Mammal'' and ``Bird'' classes and access their properties such
 as ``name'', ``species'', and ``age''.
 
-\subsubsection*{Polymorphism}
+\subsubsection{Polymorphism}
 
 \begin{lstlisting}
   mammal.makeSound();
@@ -2198,7 +2272,7 @@ implementation of the method in the respective classes is executed. This allows
 the same method name to do different things based on the object that it is acting
 upon.
 
-\subsubsection*{Encapsulation}
+\subsubsection{Encapsulation}
 
 \begin{lstlisting}
   Dog dog = new Dog("Buddy", "Golden Retriever", 2, 30, "Golden", "Domestic", 0, 0, "Golden", true, true, true, "Golden Retriever", "Woof!", true, true);
@@ -2220,7 +2294,7 @@ and setter methods to access and modify these private member variables. This
 protects the data from being arbitrarily accessed or modified by other code defined
 outside the class.
 
-\subsubsection*{Abstraction}
+\subsubsection{Abstraction}
 
 \begin{lstlisting}
   /**
@@ -2249,7 +2323,7 @@ from it. The ``Snake'' class extends the ``Reptile'' class and implements the
 class. The ``Snake'' class provides an implementation for the ``biteHuman()'' method,
 which simulates the snake biting a human.
 
-\subsection*{Summary}
+\subsection{Summary}
 
 Object-oriented programming (OOP) is a programming paradigm that relies on the
 concept of classes and objects. It is used to structure a software program into
@@ -2277,10 +2351,134 @@ float, char, etc.). Java is an object-oriented programming language that is simp
 easy to learn, secure, robust, high performance, multithreaded, interpreted,
 distributed, and dynamic.
 
-\subsection*{References}
+\chapter{Control Statements}
+
+\section{Conditional Statements and Decision Making}
+
+\subsection{If Statement}
+
+\subsection{If-Else Statement}
+
+\subsection{If-Else-If Ladder}
+
+\subsection{Nested If-Else Statements}
+
+\subsection{Switch Statement}
+
+\section{Iteration Statements}
+
+\subsection{While Loop}
+
+\subsection{Do-While Loop}
+
+\subsection{For Loop}
+
+\subsection{For Each Loop}
+
+\subsection{Nested Loops}
+
+\section{Jump Statements}
+
+\subsection{Break Statement}
+
+\subsection{Continue Statement}
+
+\subsection{Return Statement}
+
+\section{Summary}
+
+\chapter{Methods}
+
+\section{Basic of Methods}
+
+\section{Parameters and Arguments}
+
+\section{Types of Methods}
+
+\subsection{Predefined Methods}
+
+\subsection{User-Defined Methods}
+
+\section{Static Methods}
+
+\section{Method Overloading}
+
+\section{Recursion}
+
+\section{Summary}
+
+\chapter{Classes and Objects}
+
+\section{Basics of Classes and Objects}
+
+\section{Declaration, Intialization, and Instantiation}
+
+\section{Constructors}
+
+\subsection{Default Constructor}
+
+\subsection{Parameterized Constructor}
+
+\subsection{Constructor Overloading}
+
+\section{Summary}
+
+\chapter{Four Pillars of Object-Oriented Programming}
+
+\section{Inheritance}
+
+\section{Polymorphism}
+
+\section{Encapsulation}
+
+\section{Abstraction}
+
+\section{Typecasting}
+
+\subsection{Downcasting}
+
+\subsection{Upcasting}
+
+\section{Summary}
+
+\chapter{Composition and Enumeration}
+
+\section{Relationships Between Classes}
+
+\section{Composition}
+
+\section{Enumeration}
+
+\section{Summary}
+
+\chapter{Exception Handling and Unit Testing}
+
+\section{Types of Exceptions}
+
+\section{Try-Catch Block}
+
+\section{Exception Throwing and Propagation}
+
+\section{Unit Testing}
+
+\section{Summary}
+
+\chapter{Coding Guidelines and Best Practices}
+
+\section{Naming Conventions}
+
+\section{Code Formatting}
+
+\section{Documentation}
+
+\section{Code Maintainability}
+
+\section{Summary}
+
+\chapter{References}
 
 \begin{enumerate}[label={\Alph*.}]
-  \item Books
+  \item \textbf{Books}
     \begin{itemize}
       \item Loy, M., Niemeyer, P., \& Leuck, D. (2023). \textit{Learning Java: An Introduction to Real-World Programming with Java}. O’Reilly Media. ISBN: 9781098145538
       \item Horstmann, C. S. (2022). \textit{Core Java, Volume I: Fundamentals}. Pearson Education. ISBN: 978-0137673629
@@ -2291,7 +2489,7 @@ distributed, and dynamic.
       \item Chemuturi, M. (2019). \textit{Computer Programming for Beginners: A Step-By-Step Guide}. Chapman and Hall/CRC. ISBN: 978-1138320482
       \item Chua (2019). \textit{Intermediate Programming Using C}. ISBN: 13 987-1498711630
     \end{itemize}
-  \item Other Sources
+  \item \textbf{Other Sources}
     \begin{itemize}
       \item \textnormal{GeeksforGeeks (2022). \textit{Object Oriented Programming (OOPs) Concept in Java}. GeeksforGeeks. https://www.geeksforgeeks.org/object-oriented-programming-oops-concept-in-java/}
       \item \textnormal{JavaTpoint (2022). \textit{Java OOPs Concepts}. JavaTpoint. https://www.javatpoint.com/java-oops-concepts}
