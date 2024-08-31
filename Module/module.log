@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.26)  31 AUG 2024 17:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.26)  31 AUG 2024 21:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -762,7 +762,9 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 215.
  (c:/texlive/2024/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [4{c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}] [5] [6]
+) [4{c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}] [5]
+
+[6]
 
 [7]
 
@@ -779,20 +781,20 @@ File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 [13]
 
 [14]
-
-[15]
 Underfull \hbox (badness 10000) in paragraph at lines 1040--1041
 []\T1/lmr/m/n/10.95 (+20) Stores whole num-bers from -9,223,372,036,854,775,808 to
  []
 
 
 
-[16]
+[15]
 Overfull \hbox (20.74243pt too wide) in paragraph at lines 1088--1092
 []\T1/lmr/m/n/10.95 (-20) The ``long'' data type is a 64-bit signed in-te-ger. It has a min-i-mum value of -9,223,372,036,854,775,808
  []
 
 
+
+[16]
 
 [17]
 
@@ -839,48 +841,46 @@ Overfull \hbox (20.74243pt too wide) in paragraph at lines 1088--1092
 [38]
 
 [39]
-
-[40]
  2.
 
 
-[41
+[40
 
 ]
  3.
 
 
-[42
+[41
 
 ]
  4.
 
 
-[43
+[42
 
 ]
  5.
 
 
-[44
+[43
 
 ]
  6.
 
 
-[45
+[44
 
 ]
  7.
 
 
-[46
+[45
 
 ]
  8.
 
 
-[47
+[46
 
 ]
  9.
@@ -896,7 +896,7 @@ Overfull \hbox (74.52774pt too wide) in paragraph at lines 2496--2497
 
 
 
-[48
+[47
 
 ] (./module.aux)
  ***********
@@ -907,18 +907,18 @@ Package rerunfilecheck Info: File `module.out' has not changed.
 (rerunfilecheck)             Checksum: F5E385DFBF3EE0B9E99ED62F210961FC;17229.
  ) 
 Here is how much of TeX's memory you used:
- 21361 strings out of 475496
- 342397 string characters out of 5776763
- 2055960 words of memory out of 5000000
+ 21360 strings out of 475496
+ 342390 string characters out of 5776763
+ 2049960 words of memory out of 5000000
  42464 multiletter control sequences out of 15000+600000
  669175 words of font info for 222 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  94i,11n,107p,1319b,1974s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmro10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on module.pdf (53 pages, 468742 bytes).
+Output written on module.pdf (52 pages, 468367 bytes).
 PDF statistics:
- 1985 PDF objects out of 2073 (max. 8388607)
- 1886 compressed objects within 19 object streams
- 1020 named destinations out of 1200 (max. 500000)
+ 1981 PDF objects out of 2073 (max. 8388607)
+ 1883 compressed objects within 19 object streams
+ 1019 named destinations out of 1200 (max. 500000)
  63449 words of extra memory for PDF output out of 74296 (max. 10000000)
 
