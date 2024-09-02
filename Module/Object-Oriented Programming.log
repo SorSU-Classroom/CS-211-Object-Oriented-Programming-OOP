@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.26)  1 SEP 2024 08:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.26)  2 SEP 2024 17:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/glori/OneDrive - thevailacademy.org/Documents/SorSU/__Repository__/CS-211-Object-Oriented-Programming-OOP/Module/module.tex"
-(c:/Users/glori/OneDrive - thevailacademy.org/Documents/SorSU/__Repository__/CS-211-Object-Oriented-Programming-OOP/Module/module.tex
+**"c:/Users/glori/OneDrive - thevailacademy.org/Documents/SorSU/__Repository__/CS-211-Object-Oriented-Programming-OOP/Module/Object-Oriented Programming.tex"
+(c:/Users/glori/OneDrive - thevailacademy.org/Documents/SorSU/__Repository__/CS-211-Object-Oriented-Programming-OOP/Module/Object-Oriented Programming.tex
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-07-20>
 (c:/texlive/2024/texmf-dist/tex/latex/base/book.cls
@@ -551,8 +551,8 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 129.
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 73.
  (c:/texlive/2024/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) (./module.aux)
-\openout1 = `module.aux'.
+) (./Object-Oriented Programming.aux)
+\openout1 = `"Object-Oriented Programming.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 73.
 LaTeX Font Info:    ... okay on input line 73.
@@ -627,9 +627,9 @@ Package microtype Info: No adjustment of character kerning.
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
 )
 Package hyperref Info: Link coloring ON on input line 73.
- (./module.out) (./module.out)
+ (./Object-Oriented Programming.out) (./Object-Oriented Programming.out)
 \@outlinefile=\write3
-\openout3 = `module.out'.
+\openout3 = `"Object-Oriented Programming.out"'.
 
  (c:/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -729,7 +729,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has b
 l.83 \end{dedication}
                       [1
 
-] (./module.toc
+] (./Object-Oriented Programming.toc
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 4.
 
@@ -741,7 +741,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 [3])
 \tf@toc=\write4
-\openout4 = `module.toc'.
+\openout4 = `"Object-Oriented Programming.toc"'.
 
 
 
@@ -898,24 +898,24 @@ Overfull \hbox (74.52774pt too wide) in paragraph at lines 2496--2497
 
 [47
 
-] (./module.aux)
+] (./Object-Oriented Programming.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-07-20>
  ***********
-Package rerunfilecheck Info: File `module.out' has not changed.
+Package rerunfilecheck Info: File `"Object-Oriented Programming".out' has not changed.
 (rerunfilecheck)             Checksum: E659E37C0110E774F7B96DCA5DE61326;17299.
  ) 
 Here is how much of TeX's memory you used:
- 21360 strings out of 475496
- 342390 string characters out of 5776763
+ 21363 strings out of 475496
+ 343031 string characters out of 5776763
  2049960 words of memory out of 5000000
- 42464 multiletter control sequences out of 15000+600000
+ 42467 multiletter control sequences out of 15000+600000
  669175 words of font info for 222 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 94i,11n,107p,1319b,1974s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 94i,11n,107p,1340b,1974s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmro10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on module.pdf (52 pages, 468506 bytes).
+Output written on "Object-Oriented Programming.pdf" (52 pages, 468372 bytes).
 PDF statistics:
  1981 PDF objects out of 2073 (max. 8388607)
  1883 compressed objects within 19 object streams

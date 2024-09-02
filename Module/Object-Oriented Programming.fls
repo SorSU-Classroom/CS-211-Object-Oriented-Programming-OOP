@@ -2,8 +2,8 @@ PWD c:/Users/glori/OneDrive - thevailacademy.org/Documents/SorSU/__Repository__/
 INPUT c:/texlive/2024/texmf.cnf
 INPUT c:/texlive/2024/texmf-dist/web2c/texmf.cnf
 INPUT c:/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT c:/Users/glori/OneDrive - thevailacademy.org/Documents/SorSU/__Repository__/CS-211-Object-Oriented-Programming-OOP/Module/module.tex
-OUTPUT module.log
+INPUT c:/Users/glori/OneDrive - thevailacademy.org/Documents/SorSU/__Repository__/CS-211-Object-Oriented-Programming-OOP/Module/Object-Oriented Programming.tex
+OUTPUT Object-Oriented Programming.log
 INPUT c:/texlive/2024/texmf-dist/tex/latex/base/book.cls
 INPUT c:/texlive/2024/texmf-dist/tex/latex/base/book.cls
 INPUT c:/texlive/2024/texmf-dist/tex/latex/base/bk11.clo
@@ -202,21 +202,21 @@ INPUT c:/texlive/2024/texmf-dist/tex/latex/lm/t1lmr.fd
 INPUT c:/texlive/2024/texmf-dist/tex/latex/lm/t1lmr.fd
 INPUT c:/texlive/2024/texmf-dist/tex/latex/lm/t1lmr.fd
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmr10.tfm
-INPUT ./module.aux
-INPUT ./module.aux
-INPUT module.aux
-OUTPUT module.aux
+INPUT ./Object-Oriented Programming.aux
+INPUT ./Object-Oriented Programming.aux
+INPUT Object-Oriented Programming.aux
+OUTPUT Object-Oriented Programming.aux
 INPUT c:/texlive/2024/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 INPUT c:/texlive/2024/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 INPUT c:/texlive/2024/texmf-dist/tex/latex/microtype/mt-cmr.cfg
-INPUT ./module.out
-INPUT ./module.out
-INPUT module.out
-INPUT module.out
-OUTPUT module.pdf
-INPUT ./module.out
-INPUT ./module.out
-OUTPUT module.out
+INPUT ./Object-Oriented Programming.out
+INPUT ./Object-Oriented Programming.out
+INPUT Object-Oriented Programming.out
+INPUT Object-Oriented Programming.out
+OUTPUT Object-Oriented Programming.pdf
+INPUT ./Object-Oriented Programming.out
+INPUT ./Object-Oriented Programming.out
+OUTPUT Object-Oriented Programming.out
 INPUT c:/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT c:/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT c:/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -316,9 +316,9 @@ INPUT c:/texlive/2024/texmf-dist/tex/latex/lm/t1lmtt.fd
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmtt10.tfm
 INPUT c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc
-INPUT ./module.toc
-INPUT ./module.toc
-INPUT module.toc
+INPUT ./Object-Oriented Programming.toc
+INPUT ./Object-Oriented Programming.toc
+INPUT Object-Oriented Programming.toc
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmbx10.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/lm/rm-lmr10.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/lm/lmmi10.tfm
@@ -326,7 +326,7 @@ INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/lm/lmsy10.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmro10.tfm
-OUTPUT module.toc
+OUTPUT Object-Oriented Programming.toc
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmri10.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmtt10.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmbx12.tfm
@@ -338,9 +338,9 @@ INPUT c:/texlive/2024/texmf-dist/tex/latex/lm/ts1lmr.fd
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/lm/ts1-lmr10.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmr6.tfm
-INPUT module.aux
-INPUT ./module.out
-INPUT ./module.out
+INPUT Object-Oriented Programming.aux
+INPUT ./Object-Oriented Programming.out
+INPUT ./Object-Oriented Programming.out
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx10.pfb
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb
