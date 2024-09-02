@@ -86,8 +86,9 @@ Sorsogon State University - Bulan Campus
 % Auto-generated table of contents, list of figures and list of tables %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \tableofcontents
-% \listoffigures
-% \listoftables
+\listoffigures
+\listoftables
+\lstlistoflistings
 
 \mainmatter
 
@@ -343,7 +344,7 @@ following components:
   \end{itemize}
 \end{multicols*}
 
-\begin{lstlisting}
+\begin{lstlisting}[language=Java, caption={Basic Syntax of a Java Program}]
   // BasicSyntax.java
   package com.oop.BasicSyntax;
   
@@ -359,7 +360,7 @@ message ``This is the basic syntax of Java programming language.''
 
 \subsubsection{package}
 
-\begin{lstlisting}
+\begin{lstlisting}[language=Java, caption={Package Declaration}]
   package com.oop.BasicSyntax;
 \end{lstlisting}
 
@@ -392,7 +393,7 @@ The package declaration includes the following components:
 
 \subsubsection{class}
 
-\begin{lstlisting}
+\begin{lstlisting}[language=Java, caption={Class Declaration}]
   public class BasicSyntax {
     // Class body
   }
@@ -446,7 +447,7 @@ fields, methods, constructors, and other components of the class.
 
 \subsubsection{main method}
 
-\begin{lstlisting}
+\begin{lstlisting}[language=Java, caption={Main Method or Driver Method}]
   public static void main(String[] args) {
     // Method body
   }
@@ -483,7 +484,7 @@ The main method is a special method in Java that has the following components:
 The main method is the entry point of a Java program. When a Java program is executed,
 the Java Virtual Machine (JVM) calls the main method to start the program.
 
-\begin{lstlisting}
+\begin{lstlisting}[language=Java, caption={Print Message to Console}]
   System.out.println("This is the basic syntax of Java programming language.");
 \end{lstlisting}
 
@@ -564,7 +565,7 @@ Unicode escape sequences are used to represent Unicode characters in Java
 programs. For example, the Unicode escape sequence \textnormal{\textbackslash{u0041}} represents
 the character 'A' in the Latin alphabet.
 
-\begin{lstlisting}
+\begin{lstlisting}[language=Java, caption={Unicode Character}]
   char unicodeCharacter = '\u0041';
 	System.out.println("Unicode Character: " + unicodeCharacter);
 \end{lstlisting}
@@ -694,7 +695,7 @@ improve the readability of the code.
   of the next line.}
 \end{itemize}
 
-\begin{lstlisting}
+\begin{lstlisting}[language=Java, caption={Line Terminators}]
   // Carriage Return (CR)
   System.out.print("Hello, World!\r");
 
@@ -720,7 +721,7 @@ line terminators.
 White space is ignored by the Java compiler, so developers can use it liberally
 to format their code and make it more readable.
 
-\begin{lstlisting}
+\begin{lstlisting}[language=Java, caption={Using White Space to Improve Readability}]
   // Using White Space to Improve Readability
   int number = 10;
   int result = number * 2;
@@ -736,7 +737,7 @@ to format their code and make it more readable.
 The code above demonstrates the use of white space characters in Java. The code
 uses spaces and line breaks to format the code and make it more readable.
 
-\begin{lstlisting}
+\begin{lstlisting}[language=Java, caption={Code Without White Space}]
 int number=10;int result=number*2;System.out.println("Result: "+result);if(result>10){System.out.println("Result is greater than 10");}else{System.out.println("Result is less than or equal to 10");}
 \end{lstlisting}
 
@@ -780,7 +781,7 @@ a Java program. Identifiers must follow certain rules and conventions:
 Good identifiers help make the code more readable and maintainable by providing
 meaningful names for the elements in the program.
 
-\begin{lstlisting}
+\begin{lstlisting}[language=Java, caption={Valid and Invalid Identifiers}]
   // Valid Identifiers
   int number;
   String firstName;
@@ -887,7 +888,7 @@ of literals in Java:
 Literals are used to represent fixed values in Java programs and are an essential
 part of writing code.
 
-\begin{lstlisting}
+\begin{lstlisting}[language=Java, caption={Literals in Java}]
   // Integer Literal
   int integerLiteral = 10;
   System.out.println("Integer Literal: " + integerLiteral);
@@ -935,7 +936,7 @@ separators in Java:
 Separators are an essential part of the Java syntax and are used to define the
 structure of Java programs.
 
-\begin{lstlisting}
+\begin{lstlisting}[language=Java, caption={Separators in Java}]
   public class Separators {
     public static void main(String[] args) {
       // Using Parentheses to Group Expressions
@@ -1057,7 +1058,7 @@ and a maximum value of 127 (inclusive). The ``byte'' data type is used to save
 space in large arrays, mainly in place of integers, since a byte is four times
 smaller than an int. 
 
-\begin{lstlisting}
+\begin{lstlisting}[language=Java, caption={Byte Data Type}]
   byte byteVariable = 100;
 \end{lstlisting}
 
@@ -1068,7 +1069,7 @@ The ``short'' data type is a 16-bit signed integer. It has a minimum value of
 used to save memory in large arrays, mainly in place of integers, since a short
 is two times smaller than an int.
 
-\begin{lstlisting}
+\begin{lstlisting}[language=Java, caption={Short Data Type}]
   short shortVariable = 1000;
 \end{lstlisting}
 
@@ -1079,7 +1080,7 @@ The ``int'' data type is a 32-bit signed integer. It has a minimum value of
 data type is generally used as the default data type for integral values unless
 there is a concern about memory.
 
-\begin{lstlisting}
+\begin{lstlisting}[language=Java, caption={Int Data Type}]
   int intVariable = 100000;
 \end{lstlisting}
 
@@ -1090,7 +1091,7 @@ The ``long'' data type is a 64-bit signed integer. It has a minimum value of
 (inclusive). The ``long'' data type is used when you need a range of values more
 than those provided by int.
 
-\begin{lstlisting}
+\begin{lstlisting}[language=Java, caption={Long Data Type}]
   long longVariable = 100000000L;
 \end{lstlisting}
 
@@ -1107,7 +1108,7 @@ should never be used for precise values, such as currency. This is because it
 will result in a loss of precision. The ``float'' data type is used when you need
 a fractional value with a large range.
 
-\begin{lstlisting}
+\begin{lstlisting}[language=Java, caption={Float Data Type}]
   float floatVariable = 234.5f;
 \end{lstlisting}
 
@@ -1122,7 +1123,7 @@ The ``double'' data type is a double-precision 64-bit IEEE 754 floating-point. I
 can store fractional values with a large range. The ``double'' data type is used
 when you need a fractional value with a large range.
 
-\begin{lstlisting}
+\begin{lstlisting}[language=Java, caption={Double Data Type}]
   double doubleVariable = 123.4;
 \end{lstlisting}
 
@@ -1136,7 +1137,7 @@ The ``char'' data type is a single 16-bit Unicode character. It has a minimum
 value of \textnormal{\textbackslash{u0000}} (or 0) and a maximum value of
 \textnormal{\textbackslash{u0041}} (or 65,535 inclusive).
 
-\begin{lstlisting}
+\begin{lstlisting}[language=Java, caption={Char Data Type}]
   char charVariable = 'A';
 \end{lstlisting}
 
@@ -1145,7 +1146,7 @@ character in single quotes. Character literals are enclosed in single quotes,
 such as 'A' or '7'. If you enclose a character in double quotes, it will be
 treated as a string literal.
 
-\begin{lstlisting}
+\begin{lstlisting}[language=Java, caption={Char Data Type using ASCII Value}]
   char charVariable = 65;
 \end{lstlisting}
 
@@ -1153,7 +1154,7 @@ A number from 0 to 65535 can also be used to represent a character. For example,
 65 represents the character 'A', and 97 represents the character 'a'. This is
 because the ASCII value of 'A' is 65, and the ASCII value of 'a' is 97.
 
-\begin{lstlisting}
+\begin{lstlisting}[language=Java, caption={Char Data Type using Unicode Escape}]
   char charVariable = '\u0041';
 \end{lstlisting}
 
@@ -1165,7 +1166,7 @@ You can also use Unicode escape sequences to represent characters. For example,
 The ``boolean'' data type represents one bit of information, but its ``size'' isn't
 precisely defined. It can only take the values true or false.
 
-\begin{lstlisting}
+\begin{lstlisting}[language=Java, caption={Boolean Data Type}]
   boolean booleanVariable = true;
 \end{lstlisting}
 
@@ -1195,7 +1196,7 @@ objects.
 The ``String'' class represents a sequence of characters. Strings are immutable,
 which means they cannot be changed after they are created.
 
-\begin{lstlisting}
+\begin{lstlisting}[language=Java, caption={String Data Type}]
   String stringVariable = new String("Hello, World!");
 \end{lstlisting}
 
@@ -1204,7 +1205,7 @@ which means they cannot be changed after they are created.
 The ``ArrayList'' class is a resizable array that implements the List interface.
 It allows you to add, remove, and access elements based on their index.
 
-\begin{lstlisting}
+\begin{lstlisting}[language=Java, caption={ArrayList Data Type}]
   List<String> arrayListVariable = new ArrayList<String>();
   arrayListVariable.add("Apple");
   arrayListVariable.add("Banana");
@@ -1215,7 +1216,7 @@ It allows you to add, remove, and access elements based on their index.
 The ``HashMap'' class is a hash table-based implementation of the Map interface.
 It allows you to store key-value pairs and access the values based on their keys.
 
-\begin{lstlisting}
+\begin{lstlisting}[language=Java, caption={HashMap Data Type}]
   Map<String, String> hashMapVariable = new HashMap<String, String>();
   hashMapVariable.put("Key1", "Value1");
   hashMapVariable.put("Key2", "Value2");
@@ -1226,7 +1227,7 @@ It allows you to store key-value pairs and access the values based on their keys
 The ``HashSet'' class is an implementation of the Set interface. It stores unique
 elements and does not allow duplicates.
 
-\begin{lstlisting}
+\begin{lstlisting}[language=Java, caption={HashSet Data Type}]
   Set<String> hashSetVariable = new HashSet<String>();
   hashSetVariable.add("Apple");
   hashSetVariable.add("Banana");
@@ -1238,7 +1239,7 @@ The ``LinkedList'' class is a doubly-linked list implementation of the List and
 Deque interfaces. It allows you to add, remove, and access elements based on their
 index.
 
-\begin{lstlisting}
+\begin{lstlisting}[language=Java, caption={LinkedList Data Type}]
   List<String> linkedListVariable = new LinkedList<String>();
   linkedListVariable.add("Apple");
   linkedListVariable.add("Banana");
@@ -1249,7 +1250,7 @@ index.
 The ``Queue'' interface represents a collection of elements that can be added or
 removed in a specific order. The ``LinkedList'' class implements the Queue interface.
 
-\begin{lstlisting}
+\begin{lstlisting}[language=Java, caption={Queue Data Type}]
   Queue<String> queueVariable = new LinkedList<String>();
   queueVariable.add("Apple");
   queueVariable.add("Banana");
@@ -1261,7 +1262,7 @@ The ``Stack'' class represents a last-in, first-out (LIFO) stack of elements. It
 extends the Vector class with five operations that allow a vector to be treated
 as a stack.
 
-\begin{lstlisting}
+\begin{lstlisting}[language=Java, caption={Stack Data Type}]
   Stack<String> stackVariable = new Stack<String>();
   stackVariable.push("Apple");
   stackVariable.push("Banana");
@@ -1272,7 +1273,7 @@ as a stack.
 The ``TreeMap'' class is a Red-Black tree-based implementation of the Map interface.
 It provides an efficient means of storing key-value pairs in sorted order.
 
-\begin{lstlisting}
+\begin{lstlisting}[language=Java, caption={TreeMap Data Type}]
   Map<String, String> treeMapVariable = new TreeMap<String, String>();
   treeMapVariable.put("Key1", "Value1");
   treeMapVariable.put("Key2", "Value2");
@@ -1283,7 +1284,7 @@ It provides an efficient means of storing key-value pairs in sorted order.
 The ``TreeSet'' class is an implementation of the Set interface. It stores unique
 elements in sorted order.
 
-\begin{lstlisting}
+\begin{lstlisting}[language=Java, caption={TreeSet Data Type}]
   Set<String> treeSetVariable = new TreeSet<String>();
   treeSetVariable.add("Apple");
   treeSetVariable.add("Banana");
@@ -1295,7 +1296,7 @@ Array data types are used to store multiple values in a single variable. To
 create an array, you must specify the data type of the elements and the size of
 the array. To access an element in an array, you must use the index of the element.
 
-\begin{lstlisting}
+\begin{lstlisting}[language=Java, caption={Array Data Types}]
   int[] intArrayVariable = new int[5];
   intArrayVariable[0] = 10;
   intArrayVariable[1] = 20;
@@ -1371,7 +1372,7 @@ implementations of behavior (member functions or methods). A class is a user-def
 data type that can be used in a program and works as an object constructor or a
 blueprint for creating objects.
 
-\begin{lstlisting}
+\begin{lstlisting}[language=Java, caption={Animal Class}]
   // Animal.java
 
   public class Animal {
@@ -1422,14 +1423,14 @@ of behavior (member functions or methods).
 
 The syntax for creating a class in Java is:
 
-\begin{lstlisting}
+\begin{lstlisting}[language=Java, caption={Class Syntax}]
   public class ClassName {
       // member variables or attributes
       // member functions or methods
   }
 \end{lstlisting}
 
-\begin{lstlisting}
+\begin{lstlisting}[language=Java, caption={Class Attributes}]
   public class Animal {
       String name;
       String species;
@@ -1449,7 +1450,7 @@ of an animal, such as its name, species, age, weight, color, habitat, and positi
 (x, y). These attributes represents the real-world properties of an animal.
 
 % Constructor
-\begin{lstlisting}
+\begin{lstlisting}[language=Java, caption={Class Constructor}]
   public class Animal {
       // Member variables or attributes...
 
@@ -1475,7 +1476,7 @@ variables of an object.
 
 % Methods
 
-\begin{lstlisting}
+\begin{lstlisting}[language=Java, caption={Class Methods}]
   public class Animal {
       // Member variables or attributes...
       
@@ -1543,7 +1544,7 @@ known as the child class, and the class whose properties and methods are inherit
 is known as the parent class. Inheritance is an important feature of OOP that
 allows code reusability and reduces the complexity of a program.
 
-\begin{lstlisting}
+\begin{lstlisting}[language=Java, caption={Mammal Class (Inheritance)}]
   // Mammal.java
 
   public class Mammal extends Animal {
@@ -1579,7 +1580,7 @@ properties and methods of the ``Animal'' class.
 
 % Member Variables
 
-\begin{lstlisting}
+\begin{lstlisting}[language=Java, caption={Mammal Class (Member Variables)}]
   public class Mammal extends Animal {
       String fur;
       boolean milk;
@@ -1596,7 +1597,7 @@ to give birth. These attributes represent the real-world properties of a mammal.
 
 % Constructors
 
-\begin{lstlisting}
+\begin{lstlisting}[language=Java, caption={Mammal Class (Constructors)}]
   public class Mammal extends Animal {
       // Member variables or attributes...
 
@@ -1622,7 +1623,7 @@ in a class is called method overloading.
 
 % First Constructor
 
-\begin{lstlisting}
+\begin{lstlisting}[language=Java, caption={Mammal Class (First Constructor)}]
   Mammal(String name, String species, int age, int weight, String color, String habitat, int x, int y) {
       super(name, species, age, weight, color, habitat, x, y);
   }
@@ -1634,7 +1635,7 @@ This constructor calls the constructor of the parent class (``Animal'') using th
 
 % Second Constructor
 
-\begin{lstlisting}
+\begin{lstlisting}[language=Java, caption={Mammal Class (Second Constructor)}]
   Mammal(String name, String species, int age, int weight, String color, String habitat, int x, int y, String fur, boolean milk, boolean isWarmBlooded, boolean canGiveBirth) {
       super(name, species, age, weight, color, habitat, x, y);
       this.fur = fur;
@@ -1651,7 +1652,7 @@ to give birth.
 
 % Methods
 
-\begin{lstlisting}
+\begin{lstlisting}[language=Java, caption={Mammal Class (Methods)}]
   public class Mammal extends Animal {
       // Member variables or attributes...
       
@@ -1690,7 +1691,7 @@ Encapsulation is used to:
 Encapsulation is an important concept in OOP that helps in maintaining the integrity
 of the data and the code that manipulates it.
 
-\begin{lstlisting}
+\begin{lstlisting}[language=Java, caption={Dog Class(Encapsulation)}]
   // Dog.java
 
   public class Dog extends Mammal {
@@ -1777,7 +1778,7 @@ setter methods to access and modify the private member variables.
 
 % Getter and Setter Methods
 
-\begin{lstlisting}
+\begin{lstlisting}[language=Java, caption={Dog Class (Getter and Setter Methods)}]
   public class Dog extends Mammal {
       // Member variables or attributes...
       
@@ -1827,7 +1828,7 @@ variables, the ``Dog'' class provides public getter and setter methods.
 
 % Getter Methods
 
-\begin{lstlisting}
+\begin{lstlisting}[language=Java, caption={Dog Class (Getter Methods)}]
   public String getBreed() {
       return breed;
   }
@@ -1858,7 +1859,7 @@ data and provide a consistent interface to the caller.
 
 % Setter Methods
 
-\begin{lstlisting}
+\begin{lstlisting}[language=Java, caption={Dog Class (Setter Methods)}]
   public void setBreed(String breed) {
       this.breed = breed;
   }
@@ -1897,7 +1898,7 @@ to a child class object. Polymorphism allows methods to do different things base
 on the object that they are acting upon. It is a powerful feature of OOP that
 allows code reusability and flexibility.
 
-\begin{lstlisting}
+\begin{lstlisting}[language=Java, caption={Bird Class (Polymorphism)}]
   // Bird.java
 
   public class Bird extends Animal {
@@ -1976,7 +1977,7 @@ the concept of polymorphism by overriding the ``makeSound()'' method of the
 
 % Overriding Methods
 
-\begin{lstlisting}
+\begin{lstlisting}[language=Java, caption={Bird Class (Overriding Methods)}]
   @Override
   void makeSound() {
       System.out.println(this.name + " chirps.");
@@ -1989,7 +1990,7 @@ The ``makeSound()'' method makes the bird chirp. This method is specific to the
 
 % makeSound() Method in Animal Class
 
-\begin{lstlisting}
+\begin{lstlisting}[language=Java, caption={Animal Class (makeSound() Method)}]
   // Animal.java (makeSound() method)
   void makeSound() {
       System.out.println(this.name + " makes a sound.");
@@ -2013,7 +2014,7 @@ a common interface for all the classes that inherit from it. Abstract classes ca
 have abstract methods that are declared but not implemented. These methods must
 be implemented by the child classes that inherit from the abstract class.
 
-\begin{lstlisting}
+\begin{lstlisting}[language=Java, caption={Reptile Class (Abstraction)}]
   // Reptile.java
 
   public abstract class Reptile extends Animal {
@@ -2097,7 +2098,7 @@ inherits the properties and methods of the ``Animal'' class and adds additional
 properties and methods specific to reptiles. Since the ``Reptile'' class is an
 abstract class, it cannot be instantiated.
 
-\begin{lstlisting}
+\begin{lstlisting}[language=Java, caption={Reptile Class (Abstract Method)}]
   public abstract class Reptile extends Animal {
       // Member variables or attributes...
       
@@ -2122,7 +2123,7 @@ class and implements the abstract method ``biteHuman()''.
 
 % Implementing Abstract Method
 
-\begin{lstlisting}
+\begin{lstlisting}[language=Java, caption={Snake Class (Implementing Abstract Method)}]
   // Snake.java
 
   public class Snake extends Reptile {
@@ -2154,7 +2155,7 @@ human and poisoning the human if the snake is venomous.
 Using the classes and objects defined in the previous sections, we can create
 instances of the classes and interact with them.
 
-\begin{lstlisting}
+\begin{lstlisting}[language=Java, caption={Basic Usage of Classes and Objects}]
   // BasicOOP.java
 
   public class BasicOOP {
@@ -2211,7 +2212,7 @@ and accessing their properties.
 
 \subsubsection{Object Creation and Initialization}
 
-\begin{lstlisting}
+\begin{lstlisting}[language=Java, caption={Object Declaration and Initialization}]
   Animal animal = new Animal("Dog", "Canis lupus familiaris", 5, 20, "Brown", "Domestic", 0, 0);
 
   System.out.println("Name: " + animal.name);
@@ -2232,13 +2233,13 @@ methods of an object, we use the dot operator (``.''). For example, to access th
 
 The syntax for creating an object in Java is:
 
-\begin{lstlisting}
+\begin{lstlisting}[language=Java, caption={Object Creation Syntax}]
   ClassName objectName = new ClassName();
 \end{lstlisting}
 
 \subsubsection{Inheritance}
 
-\begin{lstlisting}
+\begin{lstlisting}[language=Java, caption={Basic Inheritance}]
   Mammal mammal = new Mammal("Cat", "Felis catus", 3, 10, "White", "Domestic", 0, 0, "Short", true, true, true);
   Bird bird = new Bird("Eagle", "Aquila chrysaetos", 10, 15, "Brown", "Wild", 0, 0, 2, true, true, true);
 
@@ -2259,7 +2260,7 @@ as ``name'', ``species'', and ``age''.
 
 \subsubsection{Polymorphism}
 
-\begin{lstlisting}
+\begin{lstlisting}[language=Java, caption={Basic Polymorphism}]
   mammal.makeSound();
   bird.makeSound();
 \end{lstlisting}
@@ -2274,7 +2275,7 @@ upon.
 
 \subsubsection{Encapsulation}
 
-\begin{lstlisting}
+\begin{lstlisting}[language=Java, caption={Basic Encapsulation}]
   Dog dog = new Dog("Buddy", "Golden Retriever", 2, 30, "Golden", "Domestic", 0, 0, "Golden", true, true, true, "Golden Retriever", "Woof!", true, true);
 
   System.out.println("Dog Name: " + dog.name);
@@ -2296,7 +2297,7 @@ outside the class.
 
 \subsubsection{Abstraction}
 
-\begin{lstlisting}
+\begin{lstlisting}[language=Java, caption={Basic Abstraction}]
   /**
    * Trying to create an instance of the abstract class `Reptile` will result in
    * a compilation error.

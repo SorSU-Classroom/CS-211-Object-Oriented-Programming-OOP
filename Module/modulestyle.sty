@@ -81,13 +81,16 @@
 }
 
 \makeatletter
-\renewcommand{\paragraph}{\@startsection{paragraph}{5}{0ex}%
+\renewcommand{\paragraph}{\@startsection{paragraph}{4}{0ex}%
    {-3.25ex plus -1ex minus -0.2ex}%
    {1.5ex plus 0.2ex}%
    {\normalfont\normalsize\bfseries}}
 \makeatother
 \setcounter{secnumdepth}{4}
 \setcounter{tocdepth}{4}
+
+\renewcommand{\lstlistingname}{Code}% Change Name
+\renewcommand{\lstlistlistingname}{List of \lstlistingname s}% List of Listings -> List of Algorithms
 
 \lstset{
    frame=single,

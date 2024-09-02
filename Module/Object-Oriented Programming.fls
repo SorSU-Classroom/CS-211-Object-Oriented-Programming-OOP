@@ -327,6 +327,18 @@ INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmro10.tfm
 OUTPUT Object-Oriented Programming.toc
+INPUT ./Object-Oriented Programming.lof
+INPUT ./Object-Oriented Programming.lof
+INPUT Object-Oriented Programming.lof
+OUTPUT Object-Oriented Programming.lof
+INPUT ./Object-Oriented Programming.lot
+INPUT ./Object-Oriented Programming.lot
+INPUT Object-Oriented Programming.lot
+OUTPUT Object-Oriented Programming.lot
+INPUT ./Object-Oriented Programming.lol
+INPUT ./Object-Oriented Programming.lol
+INPUT Object-Oriented Programming.lol
+OUTPUT Object-Oriented Programming.lol
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmri10.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmtt10.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmbx12.tfm
