@@ -103,6 +103,9 @@ Sorsogon State University - Bulan Campus
 \noindent \BookAuthorName \\
 \noindent \url{\BookAuthorURL}
 
+%%%%%%%%%%%%%%%%%%%%%%%
+%%%     Chapter     %%%
+%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Introduction to Java Programming Language and Object-Oriented Programming}
 
 % \begin{chapquote}{James Gosling}
@@ -2348,31 +2351,308 @@ float, char, etc.). Java is an object-oriented programming language that is simp
 easy to learn, secure, robust, high performance, multithreaded, interpreted,
 distributed, and dynamic.
 
+%%%%%%%%%%%%%%%%%%%%%%%
+%%%     Chapter     %%%
+%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Control Statements}
+
+\section{Introduction}
+
+Control statements are used to control the flow of execution in a program. They
+allow you to make decisions, repeat code, and jump to different parts of the
+program. Control statements are essential for writing programs that perform
+different actions based on different conditions.
+
+In Java, control statements can be categorized into the following types:
+
+\begin{itemize}
+  \item Conditional statements: These statements allow you to make decisions
+  based on conditions. The most common conditional statements are the ``if'',
+  ``if-else'', ``if-else-if ladder'', and ``switch'' statements.
+  \item Iteration statements: These statements allow you to repeat a block of
+  code multiple times. The most common iteration statements are the ``while'',
+  ``do-while'', ``for'', and ``for-each'' loops.
+  \item Jump statements: These statements allow you to jump to different parts
+  of the program. The most common jump statements are the ``break'',
+  ``continue'', and ``return'' statements.
+\end{itemize}
 
 \section{Conditional Statements and Decision Making}
 
+Conditional statements are used to make decisions in a program. They allow you
+to execute different blocks of code based on different conditions. Conditional
+statements are essential for writing programs that perform different actions
+based on different conditions.
+
 \subsection{If Statement}
+
+The ``if'' statement is used to execute a block of code if a specified condition
+is true. If the condition is false, the code block is not executed.
+
+\begin{lstlisting}[language=Java, caption={If Statement}]
+  int x = 10;
+
+  if (x > 0) {
+      System.out.println("The number is positive.");
+  }
+\end{lstlisting}
+
+In this code, the ``if'' statement checks if the value of the variable ``x'' is
+greater than 0. If the condition is true, the message ``The number is positive.''
+is printed to the console.
 
 \subsection{If-Else Statement}
 
+The ``if-else'' statement is used to execute a block of code if a specified
+condition is true and another block of code if the condition is false.
+
+\begin{lstlisting}[language=Java, caption={If-Else Statement}]
+  int x = -5;
+
+  if (x > 0) {
+      System.out.println("The number is positive.");
+  } else {
+      System.out.println("The number is not positive.");
+  }
+\end{lstlisting}
+
+In this code, the ``if-else'' statement checks if the value of the variable ``x''
+is greater than 0. If the condition is true, the message ``The number is positive.''
+is printed to the console. If the condition is false, the message ``The number is
+not positive.'' is printed to the console.
+
 \subsection{If-Else-If Ladder}
+
+The ``if-else-if'' ladder is used to execute one block of code out of several
+blocks based on multiple conditions. If the first condition is true, the first
+block of code is executed. If the first condition is false and the second
+condition is true, the second block of code is executed, and so on.
+
+\begin{lstlisting}[language=Java, caption={If-Else-If Ladder}]
+  int x = 0;
+
+  if (x > 0) {
+      System.out.println("The number is positive.");
+  } else if (x < 0) {
+      System.out.println("The number is negative.");
+  } else {
+      System.out.println("The number is zero.");
+  }
+\end{lstlisting}
+
+In this code, the ``if-else-if'' ladder checks if the value of the variable ``x''
+is greater than 0, less than 0, or equal to 0. Depending on the value of ``x'',
+the corresponding message is printed to the console.
 
 \subsection{Nested If-Else Statements}
 
+Nested ``if-else'' statements are used to check multiple conditions within
+another condition. The inner ``if-else'' statement is executed only if the
+outer condition is true.
+
+\begin{lstlisting}[language=Java, caption={Nested If-Else Statements}]
+  int x = 10;
+  int y = 20;
+
+  if (x > 0) {
+      if (y > 0) {
+          System.out.println("Both numbers are positive.");
+      } else {
+          System.out.println("The first number is positive, but the second number is not positive.");
+      }
+  } else {
+      System.out.println("The first number is not positive.");
+  }
+\end{lstlisting}
+
+In this code, the outer ``if'' statement checks if the value of the variable ``x''
+is greater than 0. If the condition is true, the inner ``if'' statement checks
+if the value of the variable ``y'' is greater than 0. Depending on the values of
+``x'' and ``y'', the corresponding message is printed to the console. If the
+condition of the outer ``if'' statement is false, the message ``The first number
+is not positive.'' is printed to the console.
+
 \subsection{Switch Statement}
+
+The ``switch'' statement is used to execute one block of code out of multiple
+blocks based on the value of an expression. It is an alternative to the
+``if-else-if'' ladder when you have to check multiple conditions based on the
+value of a single expression. The ``switch'' statement is more efficient than
+the ``if-else-if'' ladder when you have a large number of conditions to check.
+
+\begin{lstlisting}[language=Java, caption={Switch Statement}]
+  int day = 3;
+  String dayName;
+
+  switch (day) {
+      case 1:
+          dayName = "Monday";
+          break;
+      case 2:
+          dayName = "Tuesday";
+          break;
+      case 3:
+          dayName = "Wednesday";
+          break;
+      case 4:
+          dayName = "Thursday";
+          break;
+      case 5:
+          dayName = "Friday";
+          break;
+      case 6:
+          dayName = "Saturday";
+          break;
+      case 7:
+          dayName = "Sunday";
+          break;
+      default:
+          dayName = "Invalid day";
+          break;
+  }
+
+  System.out.println("The day is " + dayName);
+\end{lstlisting}
+
+In this code, the ``switch'' statement checks the value of the variable ``day''.
+Depending on the value of ``day'', the corresponding day name is assigned to
+the variable ``dayName''. If the value of ``day'' does not match any of the
+``case'' values, the ``default'' block of code is executed.
 
 \section{Iteration Statements}
 
+Iteration statements are used to repeat a block of code multiple times. They
+allow you to execute the same code multiple times without writing the code
+repeatedly. Iteration statements are essential for writing programs that perform
+repetitive tasks.
+
+\begin{itemize}
+  \item While Loop: The ``while'' loop is used to execute a block of code as long
+  as a specified condition is true.
+  \item Do-While Loop: The ``do-while'' loop is similar to the ``while'' loop, but
+  it always executes the block of code at least once before checking the condition.
+  \item For Loop: The ``for'' loop is used to execute a block of code a specified
+  number of times.
+  \item For Each Loop: The ``for-each'' loop is used to iterate over an array or
+  collection of elements.
+  \item Nested Loops: Nested loops are loops within loops. They are used to perform
+  repetitive tasks that require multiple levels of iteration.
+\end{itemize}
+
 \subsection{While Loop}
+
+The ``while'' loop is used to execute a block of code as long as a specified
+condition is true. It is used when the number of iterations is not known in
+advance. The condition is checked before the block of code is executed, this
+means that the block of code may not be executed at all if the condition is
+false from the beginning.
+
+\begin{lstlisting}[language=Java, caption={While Loop}]
+  int i = 1;
+
+  while (i <= 5) {
+      System.out.println(i);
+      i++;
+  }
+\end{lstlisting}
+
+In this code, the ``while'' loop prints the value of the variable ``i'' to the
+console as long as the value of ``i'' is less than or equal to 5. The value of
+``i'' is incremented by 1 in each iteration.
 
 \subsection{Do-While Loop}
 
+The ``do-while'' loop is similar to the ``while'' loop, but it always executes
+the block of code at least once before checking the condition. This means that
+the block of code is executed once even if the condition is false from the
+beginning.
+
+\begin{lstlisting}[language=Java, caption={Do-While Loop}]
+  int i = 1;
+
+  do {
+      System.out.println(i);
+      i++;
+  } while (i <= 5);
+\end{lstlisting}
+
+In this code, the ``do-while'' loop prints the value of the variable ``i'' to the
+console as long as the value of ``i'' is less than or equal to 5. The value of
+``i'' is incremented by 1 in each iteration. The block of code is executed at
+least once before checking the condition. If the condition is false from the
+beginning, the block of code is executed once. If after the first execution the
+condition is false, the block of code is not executed.
+
 \subsection{For Loop}
+
+The ``for'' loop is used to execute a block of code a specified number of times.
+It is used when the number of iterations is known in advance. The ``for'' loop
+consists of three parts: initialization, condition, and increment/decrement.
+
+\begin{lstlisting}[language=Java, caption={For Loop}]
+  for (int i = 1; i <= 5; i++) {
+      System.out.println(i);
+  }
+\end{lstlisting}
+
+In this code, the ``for'' loop prints the value of the variable ``i'' to the console
+from 1 to 5. The loop initializes the value of ``i'' to 1, checks if the value of
+``i'' is less than or equal to 5, and increments the value of ``i'' by 1 in each
+iteration.
+
+Initialization (int i = 1): The loop initializes the value of the variable ``i''
+to 1 at the beginning of the loop. This part is usually done to set the initial
+value of the loop variable.
+
+Condition (i <= 5): The loop checks if the value of the variable ``i'' is less
+than or equal to 5 before executing the block of code. If the condition is true,
+the block of code is executed. If the condition is false, the loop terminates.
+
+Increment/Decrement (i++): The loop increments the value of the variable ``i''
+by 1 after executing the block of code. This part is usually done to update the
+loop variable after each iteration.
 
 \subsection{For Each Loop}
 
+The ``for-each'' loop is used to iterate over an array or collection of elements.
+It simplifies the process of iterating over elements in an array or collection
+without using an index variable. The loop automatically iterates over each
+element in the array or collection.
+
+\begin{lstlisting}[language=Java, caption={For Each Loop}]
+  int[] numbers = {1, 2, 3, 4, 5};
+
+  for (int number : numbers) {
+      System.out.println(number);
+  }
+\end{lstlisting}
+
+In this code, the ``for-each'' loop iterates over the elements in the ``numbers''
+array and prints each element to the console. The loop automatically assigns
+each element in the array to the variable ``number'' in each iteration. This
+particular variant of the ``for'' loop is useful when you want to iterate over
+all the elements in an array or collection without using an index variable.
+
 \subsection{Nested Loops}
+
+Nested loops are loops within loops. They are used to perform repetitive tasks
+that require multiple levels of iteration. Nested loops are useful when you
+need to iterate over a two-dimensional array or perform a task that requires
+multiple levels of iteration.
+
+\begin{lstlisting}[language=Java, caption={Nested Loops}]
+  for (int i = 1; i <= 3; i++) {
+      for (int j = 1; j <= 3; j++) {
+          System.out.println("i: " + i + ", j: " + j);
+      }
+  }
+\end{lstlisting}
+
+In this code, the outer ``for'' loop iterates over the values of the variable 
+``i'' from 1 to 3. For each value of ``i'', the inner ``for'' loop iterates
+over the values of the variable ``j'' from 1 to 3. The loop prints the values
+of ``i'' and ``j'' to the console in each iteration. This results in a total of
+9 iterations (3 iterations of the outer loop * 3 iterations of the inner loop).
 
 \section{Jump Statements}
 
@@ -2384,6 +2664,9 @@ distributed, and dynamic.
 
 \section{Summary}
 
+%%%%%%%%%%%%%%%%%%%%%%%
+%%%     Chapter     %%%
+%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Methods}
 
 \section{Introduction to Methods}
@@ -2404,6 +2687,9 @@ distributed, and dynamic.
 
 \section{Summary}
 
+%%%%%%%%%%%%%%%%%%%%%%%
+%%%     Chapter     %%%
+%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Classes and Objects}
 
 \section{Introduction to Classes and Objects}
@@ -2420,6 +2706,9 @@ distributed, and dynamic.
 
 \section{Summary}
 
+%%%%%%%%%%%%%%%%%%%%%%%
+%%%     Chapter     %%%
+%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Four Pillars of Object-Oriented Programming}
 
 \section{Inheritance}
@@ -2438,6 +2727,9 @@ distributed, and dynamic.
 
 \section{Summary}
 
+%%%%%%%%%%%%%%%%%%%%%%%
+%%%     Chapter     %%%
+%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Composition and Enumeration}
 
 \section{Relationships Between Classes}
@@ -2448,6 +2740,9 @@ distributed, and dynamic.
 
 \section{Summary}
 
+%%%%%%%%%%%%%%%%%%%%%%%
+%%%     Chapter     %%%
+%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Exception Handling and Unit Testing}
 
 \section{Types of Exceptions}
@@ -2460,6 +2755,9 @@ distributed, and dynamic.
 
 \section{Summary}
 
+%%%%%%%%%%%%%%%%%%%%%%%
+%%%     Chapter     %%%
+%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Coding Guidelines and Best Practices}
 
 \section{Naming Conventions}
