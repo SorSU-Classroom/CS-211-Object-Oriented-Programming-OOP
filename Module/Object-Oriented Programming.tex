@@ -1001,6 +1001,345 @@ are used to terminate statements. Commas are used to separate variables. Periods
 are used to access members of classes and objects. Ellipses are used to indicate
 variable arguments in methods or by spreading an array into individual elements.
 
+\subsection{Operators}
+
+Operators are used to perform operations on operands in a Java program. There
+are several types of operators in Java:
+
+\begin{itemize}
+  \item Arithmetic Operators: Arithmetic operators are used to perform
+  mathematical operations, such as addition, subtraction, multiplication,
+  and division.
+  \item Relational Operators: Relational operators are used to compare values
+  and determine the relationship between them, such as equality, inequality, and
+  greater than or less than.
+  \item Logical Operators: Logical operators are used to combine multiple
+  conditions and determine the truth value of a compound expression.
+  \item Assignment Operators: Assignment operators are used to assign values to
+  variables.
+  \item Bitwise Operators: Bitwise operators are used to perform bitwise operations
+  on integer operands.
+  \item Conditional Operator: The conditional operator is used to evaluate a
+  boolean expression and return one of two values based on the result.
+  \item instanceof Operator: The instanceof operator is used to test if an object
+  is an instance of a particular class.
+  \item Unary Operators: Unary operators are used to perform operations on a single
+  operand.
+  \item Shift Operators: Shift operators are used to shift the bits of an integer
+  value to the left or right.
+  \item Ternary Operator: The ternary operator is a shorthand form of the if-else
+  statement.
+\end{itemize}
+
+\subsubsection{Arithmetic Operators}
+
+Arithmetic operators are used to perform mathematical operations on operands.
+The following are the arithmetic operators in Java:
+\begin{itemize}
+  \item Addition (+): Adds two operands.
+  \item Subtraction (-): Subtracts the second operand from the first.
+  \item Multiplication (*): Multiplies two operands.
+  \item Division (/): Divides the first operand by the second.
+  \item Modulus (\%): Returns the remainder of the division of the first
+  operand by the second.
+\end{itemize}
+
+\begin{lstlisting}[language=Java, caption={Arithmetic Operators}]
+  int operand1 = 10;
+  int operand2 = 5;
+  int sum1 = operand1 + operand2;
+  int difference = operand1 - operand2;
+  int product = operand1 * operand2;
+  int quotient = operand1 / operand2;
+  int remainder = operand1 % operand2;
+
+  System.out.println("Sum: " + sum1);
+  System.out.println("Difference: " + difference);
+  System.out.println("Product: " + product);
+  System.out.println("Quotient: " + quotient);
+  System.out.println("Remainder: " + remainder);
+
+  // Output
+  // Sum: 15
+  // Difference: 5
+  // Product: 50
+  // Quotient: 2
+  // Remainder: 0
+\end{lstlisting}
+
+\subsubsection{Relational Operators}
+
+Relational operators are used to compare values and determine the
+relationship between them. The following are the relational operators
+in Java:
+
+\begin{itemize}
+  \item  Equal to (==): Checks if two operands are equal.
+  \item  Not equal to (!=): Checks if two operands are not equal.
+  \item  Greater than (>): Checks if the first operand is greater than
+  the second.
+  \item  Less than (<): Checks if the first operand is less than the
+  second.
+  \item  Greater than or equal to (>=): Checks if the first operand is
+  greater than or equal to the second.
+  \item  Less than or equal to (<=): Checks if the first operand is
+  less than or equal to the second.
+\end{itemize}
+
+\begin{lstlisting}[language=Java, caption={Relational Operators}]
+  boolean isEqual = operand1 == operand2;
+  boolean isNotEqual = operand1 != operand2;
+  boolean isGreater = operand1 > operand2;
+  boolean isLess = operand1 < operand2;
+  boolean isGreaterOrEqual = operand1 >= operand2;
+  boolean isLessOrEqual = operand1 <= operand2;
+
+  System.out.println("Is Equal: " + isEqual);
+  System.out.println("Is Not Equal: " + isNotEqual);
+  System.out.println("Is Greater: " + isGreater);
+  System.out.println("Is Less: " + isLess);
+  System.out.println("Is Greater or Equal: " + isGreaterOrEqual);
+  System.out.println("Is Less or Equal: " + isLessOrEqual);
+
+  // Output
+  // Is Equal: false
+  // Is Not Equal: true
+  // Is Greater: true
+  // Is Less: false
+  // Is Greater or Equal: true
+  // Is Less or Equal: false
+\end{lstlisting}
+
+\subsubsection{Logical Operators}
+
+Logical operators are used to combine multiple conditions and determine the
+truth value of a compound expression. The following are the logical operators
+in Java:
+
+\begin{itemize}
+  \item AND (\&\&): Returns true if both operands are true.
+  \item OR (||): Returns true if at least one of the operands is true.
+  \item NOT (!): Returns true if the operand is false.
+\end{itemize}
+
+\begin{lstlisting}[language=Java, caption={Logical Operators}]
+  boolean condition1 = true;
+  boolean condition2 = false;
+  boolean andResult = condition1 && condition2;
+  boolean orResult = condition1 || condition2;
+  boolean notResult1 = !condition1;
+  boolean notResult2 = !condition2;
+
+  System.out.println("AND Result: " + andResult);
+  System.out.println("OR Result: " + orResult);
+  System.out.println("NOT Result 1: " + notResult1);
+  System.out.println("NOT Result 2: " + notResult2);
+  // Output
+  // AND Result: false
+  // OR Result: true
+  // NOT Result 1: false
+  // NOT Result 2: true
+\end{lstlisting}
+
+\subsubsection{Assignment Operators}
+
+Assignment operators are used to assign values to variables. The following
+are the assignment operators in Java:
+
+\begin{itemize}
+  \item Assignment (=): Assigns the value of the right operand to the left
+  operand.
+  \item Addition Assignment (+=): Adds the value of the right operand to
+  the left operand and assigns the result to the left operand.
+  \item Subtraction Assignment (-=): Subtracts the value of the right
+  operand from the left operand and assigns the result to the left operand.
+  \item Multiplication Assignment (*=): Multiplies the value of the right
+  operand with the left operand and assigns the result to the left operand.
+  \item Division Assignment (/=): Divides the value of the left operand by
+  the right operand and assigns the result to the left operand.
+  \item Modulus Assignment (\%=): Computes the remainder of the division of
+  the left operand by the right operand and assigns the result to the left
+  operand.
+\end{itemize}
+
+\begin{lstlisting}[language=Java, caption={Assignment Operators}]
+  int value = 10;
+  value += 5;
+  value -= 3;
+  value *= 2;
+  value /= 4;
+  value %= 3;
+
+  // Output
+  // Value: 0
+\end{lstlisting}
+
+\subsubsection{Bitwise Operators}
+
+Bitwise operators are used to perform bitwise operations on integer operands.
+The following are the bitwise operators in Java:
+
+\begin{itemize}
+  \item AND (\&): Performs a bitwise AND operation on the operands.
+  \item OR (|): Performs a bitwise OR operation on the operands.
+  \item XOR (\string^): Performs a bitwise XOR operation on the operands.
+  \item Complement (\string~): Performs a bitwise complement operation on the operand.
+  \item Left Shift (<<): Shifts the bits of the operand to the left by a
+  specified number of positions.
+  \item Right Shift (>>): Shifts the bits of the operand to the right by a
+  specified number of positions.
+\end{itemize}
+
+\begin{lstlisting}[language=Java, caption={Bitwise Operators}]
+  int operand3 = 5;
+  int operand4 = 3;
+  int andResult1 = operand3 & operand4;
+  int orResult1 = operand3 | operand4;
+  int xorResult = operand3 ^ operand4;
+  int complementResult = ~operand3;
+  int leftShiftResult = operand3 << 1;
+  int rightShiftResult = operand3 >> 1;
+
+  System.out.println("AND Result 1: " + andResult1);
+  System.out.println("OR Result 1: " + orResult1);
+  System.out.println("XOR Result: " + xorResult);
+  System.out.println("Complement Result: " + complementResult);
+  System.out.println("Left Shift Result: " + leftShiftResult);
+  System.out.println("Right Shift Result: " + rightShiftResult);
+
+  // Output
+  // AND Result 1: 1
+  // OR Result 1: 7
+  // XOR Result: 6
+  // Complement Result: -6
+  // Left Shift Result: 10
+  // Right Shift Result: 2
+\end{lstlisting}
+
+\subsubsection{Conditional Operators}
+
+The conditional operator is used to evaluate a boolean expression and return
+one of two values based on the result. The conditional operator has the
+following syntax:
+
+\begin{itemize}
+  \item condition ? value1 : value2
+\end{itemize}
+
+If the condition is true, the value of value1 is returned. If the condition
+is false, the value of value2 is returned.
+
+\begin{lstlisting}[language=Java, caption={Conditional Operators}]
+  int number1 = 10;
+  int number2 = 20;
+  int max = (number1 > number2) ? number1 : number2;
+
+  System.out.println("Max: " + max);
+
+  // Output
+  // Max: 20
+\end{lstlisting}
+
+\subsubsection{instanceof Operators}
+
+The instanceof operator is used to test if an object is an instance of a
+particular class. The instanceof operator has the following syntax:
+
+\begin{itemize}
+  \item object instanceof class
+\end{itemize}
+
+If the object is an instance of the specified class or one of its subclasses,
+the instanceof operator returns true. Otherwise, it returns false.
+
+\begin{lstlisting}[language=Java, caption={instanceof Operators}]
+  Object object = new Object();
+  boolean isInstance = object instanceof Object;
+
+  System.out.println("Is Instance: " + isInstance);
+
+  // Output
+  // Is Instance: true
+\end{lstlisting}
+
+\subsubsection{Unary Operators}
+
+Unary operators are used to perform operations on a single operand. The
+following are the unary operators in Java:
+
+\begin{itemize}
+  \item Unary Plus (+): Returns the value of the operand.
+  \item Unary Minus (-): Negates the value of the operand.
+  \item Increment (++): Increments the value of the operand by 1.
+  \item Decrement (--): Decrements the value of the operand by 1.
+  \item Logical Complement (!): Returns the logical complement of the operand.
+\end{itemize}
+
+\begin{lstlisting}[language=Java, caption={Unary Operators}]
+  int operand5 = 10;
+  int increment = ++operand5;
+  int decrement = --operand5;
+  boolean isTrue = true;
+  boolean notResult3 = !isTrue;
+
+  System.out.println("Increment: " + increment);
+  System.out.println("Decrement: " + decrement);
+  System.out.println("NOT Result 3: " + notResult3);
+
+  // Output
+  // Increment: 11
+  // Decrement: 10
+  // NOT Result 3: false
+\end{lstlisting}
+
+\subsubsection{Shift Operators}
+
+Shift operators are used to shift the bits of an integer value to the left or
+right. The following are the shift operators in Java:
+
+\begin{itemize}
+  \item Left Shift (<<): Shifts the bits of the operand to the left by a
+  specified number of positions.
+  \item Right Shift (>>): Shifts the bits of the operand to the right by
+  a specified number of positions.
+\end{itemize}
+
+\begin{lstlisting}[language=Java, caption={Shift Operators}]
+  int operand6 = 5;
+  int leftShiftResult1 = operand6 << 1;
+  int rightShiftResult1 = operand6 >> 1;
+
+  System.out.println("Left Shift Result 1: " + leftShiftResult1);
+  System.out.println("Right Shift Result 1: " + rightShiftResult1);
+
+  // Output
+  // Left Shift Result 1: 10
+  // Right Shift Result 1: 2
+\end{lstlisting}
+
+\subsubsection{Ternary Operators}
+
+The ternary operator is a shorthand form of the if-else statement. The
+ternary operator has the following syntax:
+
+\begin{itemize}
+  \item condition ? value1 : value2
+\end{itemize}
+
+If the condition is true, the value of value1 is returned. If the condition
+is false, the value of value2 is returned.
+
+\begin{lstlisting}[language=Java, caption={Ternary Operators}]
+  int number3 = 10;
+	int number4 = 20;
+	int min = (number3 < number4) ? number3 : number4;
+	
+  System.out.println("Min: " + min);
+
+  // Output
+  // Min: 10
+\end{lstlisting}
+
 \subsection{Summary}
 
 The lexical structure of Java defines the set of valid tokens that can be used to
@@ -2715,7 +3054,7 @@ not have a goto statement but Jav does have an expanded form of the
 of code.
 
 \begin{lstlisting}[language=Java, caption={Break Statement as a Form of Goto}]
-  
+
 \end{lstlisting}
 
 \subsection{Continue Statement}
