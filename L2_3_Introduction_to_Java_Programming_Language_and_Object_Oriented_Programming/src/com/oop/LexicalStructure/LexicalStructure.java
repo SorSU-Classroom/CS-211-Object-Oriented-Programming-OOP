@@ -70,7 +70,7 @@ public class LexicalStructure {
 		 * 
 		 * @see https://docs.oracle.com/javase/specs/jls/se7/html/jls-3.html#jls-3.4
 		 */
-		System.out.println("\n\n--- Lexical Translations ---");
+		System.out.println("\n\n--- Line Terminators ---");
 
 		// Implementing Carriage Return (CR)
 		System.out.print("Carriage Return (CR): ");
