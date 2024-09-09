@@ -68,3 +68,7 @@
 \contentsline {lstlisting}{\numberline {2.8}{\ignorespaces For Loop}}{45}{lstlisting.2.8}%
 \contentsline {lstlisting}{\numberline {2.9}{\ignorespaces For Each Loop}}{46}{lstlisting.2.9}%
 \contentsline {lstlisting}{\numberline {2.10}{\ignorespaces Nested Loops}}{46}{lstlisting.2.10}%
+\contentsline {lstlisting}{\numberline {2.11}{\ignorespaces Break Statement to Exit a Loop}}{47}{lstlisting.2.11}%
+\contentsline {lstlisting}{\numberline {2.12}{\ignorespaces Break Statement as a Form of Goto}}{47}{lstlisting.2.12}%
+\contentsline {lstlisting}{\numberline {2.13}{\ignorespaces Continue Statement}}{47}{lstlisting.2.13}%
+\contentsline {lstlisting}{\numberline {2.14}{\ignorespaces Return Statement}}{48}{lstlisting.2.14}%

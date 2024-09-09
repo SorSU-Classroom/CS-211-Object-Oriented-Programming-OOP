@@ -2656,11 +2656,79 @@ of ``i'' and ``j'' to the console in each iteration. This results in a total of
 
 \section{Jump Statements}
 
+Jump statements re used to skip, move to the next iteration, or exit a code
+block. They allow you to transfer execution control from one point to another
+point in the program. These statements provide flexibility and control over
+program logic to the programmer.
+
+\begin{itemize}
+  \item Break Statement: The ``break'' statement is used to terminate the
+  execution of the nearest looping statement or switch statement.
+  \item Continue Statement: The ``continue'' statement is used to go to the
+  next iteration of the loop.
+  \item Return Statement: The ``return'' statement is used to transfer
+  control from one method to the method that called it. 
+\end{itemize}
+
 \subsection{Break Statement}
+
+The ``break'' statement has three uses. First, it terminates the sequence in
+a ``switch'' statement. Second, it can be used to exit a loop. And lastly,
+it can be used as a form of goto.
+
+\subsection{Break Statement to Exit a Loop}
+
+In loops, you can forcefully terminate a loop, bypassing the conditional
+expression and execution of the remaining code in the body of the loop. When
+a ``break'' statement is encountered inside a loop, the loop is terminated.
+
+\begin{lstlisting}[language=Java, caption={Break Statement to Exit a Loop}]
+  // BreakLoop.java
+  public class BreakLoop {
+    public static void main(String[] args) {
+      int breakIndicator = 0;
+  
+      for (int i = 1; i <= 5; i++) {
+        breakIndicator = i;
+        System.out.println("Iteration No.: " + i);
+  
+        if (i >= 3) {
+          break;
+        }
+  
+        System.out.println("Continue Iteration...");
+      }
+  
+      System.out.println("Loop Exited at Iteration: " + breakIndicator);
+    }
+  }    
+\end{lstlisting}
+
+
+
+\subsection{Break Statement as a form of Goto}
+
+Other than its usage for terminating a loop and in ``switch'' statements,
+the ``break'' statement can also be used as a form of goto. Java does
+not have a goto statement but Jav does have an expanded form of the
+``break'' statement which can be used to break out of one or more blocks
+of code.
+
+\begin{lstlisting}[language=Java, caption={Break Statement as a Form of Goto}]
+  
+\end{lstlisting}
 
 \subsection{Continue Statement}
 
+\begin{lstlisting}[language=Java, caption={Continue Statement}]
+  
+\end{lstlisting}
+
 \subsection{Return Statement}
+
+\begin{lstlisting}[language=Java, caption={Return Statement}]
+  
+\end{lstlisting}
 
 \section{Summary}
 
