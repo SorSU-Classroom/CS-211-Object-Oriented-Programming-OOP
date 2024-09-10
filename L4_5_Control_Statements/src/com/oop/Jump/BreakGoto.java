@@ -18,5 +18,27 @@ public class BreakGoto {
 
 			System.out.println("This is after second block.");
 		}
+
+		// one: {
+		// System.out.println("This is the first level!");
+
+		// two: {
+		// System.out.println("This is the second level!");
+
+		// three: {
+		// System.out.println("This is the third level!");
+
+		// if (true) {
+		// break two;
+		// }
+
+		// System.out.println("This is the end of third level!");
+		// }
+
+		// System.out.println("This is the end of second level!");
+		// }
+
+		// System.out.println("This is the end of first level!");
+		// }
 	}
 }

@@ -4,7 +4,7 @@ package com.oop.ConditionalDecisionMaking;
 public class SwitchStatement {
 	public static void main(String[] args) {
 		int day = 1;
-		String dayName;
+		String dayName = "";
 
 		switch (day) {
 			case 1:
