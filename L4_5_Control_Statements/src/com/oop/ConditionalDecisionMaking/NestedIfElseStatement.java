@@ -15,5 +15,24 @@ public class NestedIfElseStatement {
 		} else {
 			System.out.println("The first number is not positive.");
 		}
+
+		// int x = -10;
+		// int y = -20;
+
+		// if (x > 0) {
+		// if (y > 0) {
+		// System.out.println("Both numbers are positive.");
+		// } else {
+		// System.out.println("The first number is positive, but the second number is
+		// not positive.");
+		// }
+		// } else {
+		// if (y > 0) {
+		// System.out.println("The second number is positive, but the first number is
+		// not positive.");
+		// } else {
+		// System.out.println("Both numbers are negative.");
+		// }
+		// }
 	}
 }

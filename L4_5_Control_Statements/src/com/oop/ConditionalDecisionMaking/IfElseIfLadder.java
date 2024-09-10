@@ -13,5 +13,17 @@ public class IfElseIfLadder {
 		} else {
 			System.out.println("The number is zero.");
 		}
+
+		// int x = 4;
+
+		// if (x > 5) {
+		// System.out.println("The number is greater than 5.");
+		// } else if (x < -5) {
+		// System.out.println("The number is less than -5.");
+		// } else if (x == 0) {
+		// System.out.println("The number is 0");
+		// } else {
+		// System.out.println("The number is between 5 and -5 but not 0.");
+		// }
 	}
 }
