@@ -1348,6 +1348,54 @@ Unicode, lexical translations, Unicode escapes, line terminators, input elements
 and tokens, white space, comments, identifiers, keywords, literals, separators,
 and operators.
 
+\subsection{Coding Exercises}
+\begin{enumerate}
+  \item Write a program that prints "Hello, World!" to the console.
+  \item Write a program that calculates the area of a triangle given the base and height.
+  \begin{align*}
+    \begin{tikzpicture}[scale=1]
+      \coordinate [label=left:$A$] (A) at (-2cm,-1.cm);
+      \coordinate [label=right:$C$] (C) at (2.2cm,-1.0cm);
+      \coordinate [label=above:$B$] (B) at (1cm,1.0cm);
+      \draw (A) -- node[sloped,above] {c} (B) -- node[sloped,above,] {a} (C) -- node[below] {b = 8} (A);
+      \draw[dashed] (B) -- node[left] {h = 4} (A-|B);
+    \end{tikzpicture}
+  \end{align*}
+  \begin{align}
+    b &= 8 \text{, the base of the triangle} \\
+    h &= 4 \text{, the height of the triangle} \\
+    A &= \frac{b \cdot h}{2} \text{, formula for the area of a triangle}
+  \end{align}
+  \item Write a program that calculates the area of a rectangle given the length and width.
+  \begin{align*}
+    \begin{tikzpicture}[scale=1]
+      \coordinate [label=left:$A$] (A) at (-2cm,1cm);
+      \coordinate [label=right:$B$] (B) at (2cm,1cm);
+      \coordinate [label=right:$C$] (C) at (2cm,-1cm);
+      \coordinate [label=left:$D$] (D) at (-2cm,-1cm);
+      \draw (A) -- node[above] {w = 4} (B) -- node[right] {l = 2} (C) -- (D) -- (A);
+    \end{tikzpicture}
+  \end{align*}
+  \begin{align}
+    l &= 2 \text{, the length of the rectangle} \\
+    w &= 4 \text{, the width of the rectangle} \\
+    A &= l \cdot w \text{, formula for the area of a rectangle}
+  \end{align}
+  \item Write a program that calculates the area of a circle given the radius.
+  \begin{align*}
+    \begin{tikzpicture}[scale=1]
+      \draw (2,2) circle (2cm);
+      \draw[fill=black](2,2) circle (2 pt) node [above] {\tiny P};
+      \draw[](2,2) -- (4,2) node [midway,above] {$\scriptstyle r = 4.0$};
+    \end{tikzpicture}
+  \end{align*}
+  \begin{align}
+    r &= 4.0 \text{, the radius of the circle} \\
+    \pi &= 3.141592653589793 \text{, the mathematical constant pi} \\
+    A &= \pi \cdot r^2 \text{, formula for the area of a circle}
+  \end{align}
+\end{enumerate}
+
 \section{Data Types}
 
 Data types specify the different sizes and values that can be stored in a variable.
@@ -1681,6 +1729,15 @@ Non-primitive data types are not predefined by the language and are created by
 the programmer. They are used to access objects and store multiple values in a
 single variable. Non-primitive data types include reference data types and array
 data types.
+
+\subsection{Coding Exercises}
+
+\begin{enumerate}
+  \item \textnormal{Create a Java program that declares and initializes a variable
+  of the following data types: byte, short, int, long, float, double, char,
+  boolean, String, and an array of integers. Print the values of the variables to
+  the console.}
+\end{enumerate}
 
 \section{Basic Object-Oriented Programming Concepts}
 
@@ -3040,10 +3097,20 @@ a ``break'' statement is encountered inside a loop, the loop is terminated.
   
       System.out.println("Loop Exited at Iteration: " + breakIndicator);
     }
-  }    
+  }
+
+  // Output:
+  // Iteration No.: 1
+  // Continue Iteration...
+  // Iteration No.: 2
+  // Continue Iteration...
+  // Iteration No.: 3
 \end{lstlisting}
 
-
+In this code, the ``break'' statement is used to terminate the loop when
+the value of ``i'' is greater than or equal to 3. The loop is exited when
+the value of ``i'' is 3. The ``break'' statement is placed inside the loop
+and is executed when the condition ``i >= 3'' is met.
 
 \subsection{Break Statement as a form of Goto}
 
@@ -3054,22 +3121,132 @@ not have a goto statement but Jav does have an expanded form of the
 of code.
 
 \begin{lstlisting}[language=Java, caption={Break Statement as a Form of Goto}]
+  // BreakGoto.java
+  package com.oop.Jump;
+  
+  public class BreakGoto {
+    public static void main(String[] args) {
+      boolean breakIndicator = true;
+  
+      first: {
+        second: {
+          third: {
+            System.out.println("Before the break statement");
+            if (breakIndicator)
+              break second;
+            System.out.println("This won't execute.");
+          }
+          System.out.println("This won't execute.");
+        }
+  
+        System.out.println("This is after second block.");
+      }
+    }
+  }
 
+  // Output:
+  // Before the break statement
+  // This is after second block.
 \end{lstlisting}
+
+In this code, the ``break'' statement is used to break out of the ``second''
+block of code. The ``break'' statement is placed inside the ``second'' block
+of code and is executed when the condition ``breakIndicator'' is true. The 
+``break'' statement is used to break out of the ``second'' block of code and
+move to the next statement after the ``second'' block of code.
 
 \subsection{Continue Statement}
 
+The ``continue'' statement is used to skip the remaining code in the current
+iteration of a loop and move to the next iteration. It is often used to skip
+certain iterations of a loop based on a condition.
+
 \begin{lstlisting}[language=Java, caption={Continue Statement}]
-  
+  // Continue.java
+  package com.oop.Jump;
+
+  public class Continue {
+    public static void main(String[] args) {
+      for (int i = 1; i <= 10; i++) {
+        if (i % 2 != 0) {
+          continue;
+        }
+        System.out.println(i + " is even.");
+      }
+    }
+  }
+
+  // Output:
+  // 2 is even.
+  // 4 is even.
+  // 6 is even.
+  // 8 is even.
+  // 10 is even.
 \end{lstlisting}
+
+In this code, the ``continue'' statement is used to skip the remaining code
+in the current iteration of the loop when the value of ``i'' is odd. The
+``continue'' statement is placed inside the loop and is executed when the
+condition ``i \% 2 != 0'' is met.
 
 \subsection{Return Statement}
 
+The ``return'' statement is used to transfer control from one method to the
+method that called it. It is often used to return a value from a method.
+
 \begin{lstlisting}[language=Java, caption={Return Statement}]
-  
+  // Return.java
+  package com.oop.Jump;
+
+  public class Return {
+
+    public static void main(String[] args) {
+      int squareOfTwo = square(2);
+      System.out.println("Square of 2 is: " + squareOfTwo);
+
+      String s1 = "Hello";
+      String s2 = "World";
+      String s3 = concat(s1, s2);
+      System.out.println("Concatenated String: " + s3);
+    }
+
+    public static int square(int n) {
+      return n * n;
+    }
+
+    public static String concat(String s1, String s2) {
+      return s1 + s2;
+    }
+  }
 \end{lstlisting}
 
+In this code, there are two methods: ``square'' and ``concat''. The
+``square'' method takes an integer parameter ``n'' and returns the square
+of ``n''. The ``concat'' method takes two string parameters ``s1'' and ``s2''
+and returns the concatenation of ``s1'' and ``s2''.
+
 \section{Summary}
+
+In this chapter, we have covered the following topics:
+\begin{itemize}
+  \item The three types of Control Statements which are:
+  \begin{itemize}
+    \item Conditional Statements
+    \item Iteration Statements or Looping Statements
+    \item Jump Statements
+  \end{itemize}
+  \item Conditional Statements: are conditions that are used to make decisions.
+  They are used to determine which code to execute based on a condition.
+  most common conditional statements are ``if'', ``if-else'', and ``switch''.
+  \item Iteration Statements or Looping Statements: are used to repeat a
+  block of code multiple times. The most common iteration statements are
+  ``for'', ``while'', and ``do-while''.
+  \item Jump Statements: are used to transfer control from one part of the
+  program to another. The most common jump statements are ``break'' for
+  exiting loops or implementing a form of goto, ``continue'' for skipping
+  the remaining code in the current iteration of a loop, and ``return'' for
+  transferring control from one method to the method that called it.
+\end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%
 %%%     Chapter     %%%

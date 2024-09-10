@@ -20,65 +20,65 @@
 \contentsline {lstlisting}{\numberline {1.20}{\ignorespaces Unary Operators}}{19}{lstlisting.1.20}%
 \contentsline {lstlisting}{\numberline {1.21}{\ignorespaces Shift Operators}}{20}{lstlisting.1.21}%
 \contentsline {lstlisting}{\numberline {1.22}{\ignorespaces Ternary Operators}}{20}{lstlisting.1.22}%
-\contentsline {lstlisting}{\numberline {1.23}{\ignorespaces Byte Data Type}}{21}{lstlisting.1.23}%
+\contentsline {lstlisting}{\numberline {1.23}{\ignorespaces Byte Data Type}}{22}{lstlisting.1.23}%
 \contentsline {lstlisting}{\numberline {1.24}{\ignorespaces Short Data Type}}{22}{lstlisting.1.24}%
-\contentsline {lstlisting}{\numberline {1.25}{\ignorespaces Int Data Type}}{22}{lstlisting.1.25}%
-\contentsline {lstlisting}{\numberline {1.26}{\ignorespaces Long Data Type}}{22}{lstlisting.1.26}%
-\contentsline {lstlisting}{\numberline {1.27}{\ignorespaces Float Data Type}}{22}{lstlisting.1.27}%
-\contentsline {lstlisting}{\numberline {1.28}{\ignorespaces Double Data Type}}{23}{lstlisting.1.28}%
-\contentsline {lstlisting}{\numberline {1.29}{\ignorespaces Char Data Type}}{23}{lstlisting.1.29}%
-\contentsline {lstlisting}{\numberline {1.30}{\ignorespaces Char Data Type using ASCII Value}}{23}{lstlisting.1.30}%
-\contentsline {lstlisting}{\numberline {1.31}{\ignorespaces Char Data Type using Unicode Escape}}{23}{lstlisting.1.31}%
-\contentsline {lstlisting}{\numberline {1.32}{\ignorespaces Boolean Data Type}}{23}{lstlisting.1.32}%
-\contentsline {lstlisting}{\numberline {1.33}{\ignorespaces String Data Type}}{24}{lstlisting.1.33}%
-\contentsline {lstlisting}{\numberline {1.34}{\ignorespaces ArrayList Data Type}}{24}{lstlisting.1.34}%
-\contentsline {lstlisting}{\numberline {1.35}{\ignorespaces HashMap Data Type}}{24}{lstlisting.1.35}%
-\contentsline {lstlisting}{\numberline {1.36}{\ignorespaces HashSet Data Type}}{25}{lstlisting.1.36}%
-\contentsline {lstlisting}{\numberline {1.37}{\ignorespaces LinkedList Data Type}}{25}{lstlisting.1.37}%
-\contentsline {lstlisting}{\numberline {1.38}{\ignorespaces Queue Data Type}}{25}{lstlisting.1.38}%
-\contentsline {lstlisting}{\numberline {1.39}{\ignorespaces Stack Data Type}}{25}{lstlisting.1.39}%
+\contentsline {lstlisting}{\numberline {1.25}{\ignorespaces Int Data Type}}{23}{lstlisting.1.25}%
+\contentsline {lstlisting}{\numberline {1.26}{\ignorespaces Long Data Type}}{23}{lstlisting.1.26}%
+\contentsline {lstlisting}{\numberline {1.27}{\ignorespaces Float Data Type}}{23}{lstlisting.1.27}%
+\contentsline {lstlisting}{\numberline {1.28}{\ignorespaces Double Data Type}}{24}{lstlisting.1.28}%
+\contentsline {lstlisting}{\numberline {1.29}{\ignorespaces Char Data Type}}{24}{lstlisting.1.29}%
+\contentsline {lstlisting}{\numberline {1.30}{\ignorespaces Char Data Type using ASCII Value}}{24}{lstlisting.1.30}%
+\contentsline {lstlisting}{\numberline {1.31}{\ignorespaces Char Data Type using Unicode Escape}}{24}{lstlisting.1.31}%
+\contentsline {lstlisting}{\numberline {1.32}{\ignorespaces Boolean Data Type}}{24}{lstlisting.1.32}%
+\contentsline {lstlisting}{\numberline {1.33}{\ignorespaces String Data Type}}{25}{lstlisting.1.33}%
+\contentsline {lstlisting}{\numberline {1.34}{\ignorespaces ArrayList Data Type}}{25}{lstlisting.1.34}%
+\contentsline {lstlisting}{\numberline {1.35}{\ignorespaces HashMap Data Type}}{25}{lstlisting.1.35}%
+\contentsline {lstlisting}{\numberline {1.36}{\ignorespaces HashSet Data Type}}{26}{lstlisting.1.36}%
+\contentsline {lstlisting}{\numberline {1.37}{\ignorespaces LinkedList Data Type}}{26}{lstlisting.1.37}%
+\contentsline {lstlisting}{\numberline {1.38}{\ignorespaces Queue Data Type}}{26}{lstlisting.1.38}%
+\contentsline {lstlisting}{\numberline {1.39}{\ignorespaces Stack Data Type}}{26}{lstlisting.1.39}%
 \contentsline {lstlisting}{\numberline {1.40}{\ignorespaces TreeMap Data Type}}{26}{lstlisting.1.40}%
-\contentsline {lstlisting}{\numberline {1.41}{\ignorespaces TreeSet Data Type}}{26}{lstlisting.1.41}%
-\contentsline {lstlisting}{\numberline {1.42}{\ignorespaces Array Data Types}}{26}{lstlisting.1.42}%
-\contentsline {lstlisting}{\numberline {1.43}{\ignorespaces Animal Class}}{27}{lstlisting.1.43}%
-\contentsline {lstlisting}{\numberline {1.44}{\ignorespaces Class Syntax}}{28}{lstlisting.1.44}%
-\contentsline {lstlisting}{\numberline {1.45}{\ignorespaces Class Attributes}}{28}{lstlisting.1.45}%
-\contentsline {lstlisting}{\numberline {1.46}{\ignorespaces Class Constructor}}{29}{lstlisting.1.46}%
-\contentsline {lstlisting}{\numberline {1.47}{\ignorespaces Class Methods}}{29}{lstlisting.1.47}%
-\contentsline {lstlisting}{\numberline {1.48}{\ignorespaces Mammal Class (Inheritance)}}{31}{lstlisting.1.48}%
-\contentsline {lstlisting}{\numberline {1.49}{\ignorespaces Mammal Class (Member Variables)}}{31}{lstlisting.1.49}%
-\contentsline {lstlisting}{\numberline {1.50}{\ignorespaces Mammal Class (Constructors)}}{32}{lstlisting.1.50}%
-\contentsline {lstlisting}{\numberline {1.51}{\ignorespaces Mammal Class (First Constructor)}}{32}{lstlisting.1.51}%
-\contentsline {lstlisting}{\numberline {1.52}{\ignorespaces Mammal Class (Second Constructor)}}{32}{lstlisting.1.52}%
-\contentsline {lstlisting}{\numberline {1.53}{\ignorespaces Mammal Class (Methods)}}{33}{lstlisting.1.53}%
-\contentsline {lstlisting}{\numberline {1.54}{\ignorespaces Dog Class(Encapsulation)}}{33}{lstlisting.1.54}%
-\contentsline {lstlisting}{\numberline {1.55}{\ignorespaces Dog Class (Getter and Setter Methods)}}{35}{lstlisting.1.55}%
-\contentsline {lstlisting}{\numberline {1.56}{\ignorespaces Dog Class (Getter Methods)}}{36}{lstlisting.1.56}%
-\contentsline {lstlisting}{\numberline {1.57}{\ignorespaces Dog Class (Setter Methods)}}{37}{lstlisting.1.57}%
-\contentsline {lstlisting}{\numberline {1.58}{\ignorespaces Bird Class (Polymorphism)}}{37}{lstlisting.1.58}%
-\contentsline {lstlisting}{\numberline {1.59}{\ignorespaces Bird Class (Overriding Methods)}}{39}{lstlisting.1.59}%
-\contentsline {lstlisting}{\numberline {1.60}{\ignorespaces Animal Class (makeSound() Method)}}{39}{lstlisting.1.60}%
-\contentsline {lstlisting}{\numberline {1.61}{\ignorespaces Reptile Class (Abstraction)}}{40}{lstlisting.1.61}%
-\contentsline {lstlisting}{\numberline {1.62}{\ignorespaces Reptile Class (Abstract Method)}}{41}{lstlisting.1.62}%
-\contentsline {lstlisting}{\numberline {1.63}{\ignorespaces Snake Class (Implementing Abstract Method)}}{42}{lstlisting.1.63}%
-\contentsline {lstlisting}{\numberline {1.64}{\ignorespaces Basic Usage of Classes and Objects}}{42}{lstlisting.1.64}%
-\contentsline {lstlisting}{\numberline {1.65}{\ignorespaces Object Declaration and Initialization}}{44}{lstlisting.1.65}%
-\contentsline {lstlisting}{\numberline {1.66}{\ignorespaces Object Creation Syntax}}{44}{lstlisting.1.66}%
-\contentsline {lstlisting}{\numberline {1.67}{\ignorespaces Basic Inheritance}}{44}{lstlisting.1.67}%
-\contentsline {lstlisting}{\numberline {1.68}{\ignorespaces Basic Polymorphism}}{45}{lstlisting.1.68}%
-\contentsline {lstlisting}{\numberline {1.69}{\ignorespaces Basic Encapsulation}}{45}{lstlisting.1.69}%
-\contentsline {lstlisting}{\numberline {1.70}{\ignorespaces Basic Abstraction}}{45}{lstlisting.1.70}%
-\contentsline {lstlisting}{\numberline {2.1}{\ignorespaces If Statement}}{47}{lstlisting.2.1}%
-\contentsline {lstlisting}{\numberline {2.2}{\ignorespaces If-Else Statement}}{48}{lstlisting.2.2}%
-\contentsline {lstlisting}{\numberline {2.3}{\ignorespaces If-Else-If Ladder}}{48}{lstlisting.2.3}%
-\contentsline {lstlisting}{\numberline {2.4}{\ignorespaces Nested If-Else Statements}}{48}{lstlisting.2.4}%
-\contentsline {lstlisting}{\numberline {2.5}{\ignorespaces Switch Statement}}{49}{lstlisting.2.5}%
-\contentsline {lstlisting}{\numberline {2.6}{\ignorespaces While Loop}}{50}{lstlisting.2.6}%
-\contentsline {lstlisting}{\numberline {2.7}{\ignorespaces Do-While Loop}}{51}{lstlisting.2.7}%
-\contentsline {lstlisting}{\numberline {2.8}{\ignorespaces For Loop}}{51}{lstlisting.2.8}%
-\contentsline {lstlisting}{\numberline {2.9}{\ignorespaces For Each Loop}}{52}{lstlisting.2.9}%
-\contentsline {lstlisting}{\numberline {2.10}{\ignorespaces Nested Loops}}{52}{lstlisting.2.10}%
-\contentsline {lstlisting}{\numberline {2.11}{\ignorespaces Break Statement to Exit a Loop}}{53}{lstlisting.2.11}%
-\contentsline {lstlisting}{\numberline {2.12}{\ignorespaces Break Statement as a Form of Goto}}{53}{lstlisting.2.12}%
-\contentsline {lstlisting}{\numberline {2.13}{\ignorespaces Continue Statement}}{53}{lstlisting.2.13}%
-\contentsline {lstlisting}{\numberline {2.14}{\ignorespaces Return Statement}}{54}{lstlisting.2.14}%
+\contentsline {lstlisting}{\numberline {1.41}{\ignorespaces TreeSet Data Type}}{27}{lstlisting.1.41}%
+\contentsline {lstlisting}{\numberline {1.42}{\ignorespaces Array Data Types}}{27}{lstlisting.1.42}%
+\contentsline {lstlisting}{\numberline {1.43}{\ignorespaces Animal Class}}{28}{lstlisting.1.43}%
+\contentsline {lstlisting}{\numberline {1.44}{\ignorespaces Class Syntax}}{29}{lstlisting.1.44}%
+\contentsline {lstlisting}{\numberline {1.45}{\ignorespaces Class Attributes}}{29}{lstlisting.1.45}%
+\contentsline {lstlisting}{\numberline {1.46}{\ignorespaces Class Constructor}}{30}{lstlisting.1.46}%
+\contentsline {lstlisting}{\numberline {1.47}{\ignorespaces Class Methods}}{30}{lstlisting.1.47}%
+\contentsline {lstlisting}{\numberline {1.48}{\ignorespaces Mammal Class (Inheritance)}}{32}{lstlisting.1.48}%
+\contentsline {lstlisting}{\numberline {1.49}{\ignorespaces Mammal Class (Member Variables)}}{32}{lstlisting.1.49}%
+\contentsline {lstlisting}{\numberline {1.50}{\ignorespaces Mammal Class (Constructors)}}{33}{lstlisting.1.50}%
+\contentsline {lstlisting}{\numberline {1.51}{\ignorespaces Mammal Class (First Constructor)}}{33}{lstlisting.1.51}%
+\contentsline {lstlisting}{\numberline {1.52}{\ignorespaces Mammal Class (Second Constructor)}}{33}{lstlisting.1.52}%
+\contentsline {lstlisting}{\numberline {1.53}{\ignorespaces Mammal Class (Methods)}}{34}{lstlisting.1.53}%
+\contentsline {lstlisting}{\numberline {1.54}{\ignorespaces Dog Class(Encapsulation)}}{34}{lstlisting.1.54}%
+\contentsline {lstlisting}{\numberline {1.55}{\ignorespaces Dog Class (Getter and Setter Methods)}}{36}{lstlisting.1.55}%
+\contentsline {lstlisting}{\numberline {1.56}{\ignorespaces Dog Class (Getter Methods)}}{37}{lstlisting.1.56}%
+\contentsline {lstlisting}{\numberline {1.57}{\ignorespaces Dog Class (Setter Methods)}}{38}{lstlisting.1.57}%
+\contentsline {lstlisting}{\numberline {1.58}{\ignorespaces Bird Class (Polymorphism)}}{38}{lstlisting.1.58}%
+\contentsline {lstlisting}{\numberline {1.59}{\ignorespaces Bird Class (Overriding Methods)}}{40}{lstlisting.1.59}%
+\contentsline {lstlisting}{\numberline {1.60}{\ignorespaces Animal Class (makeSound() Method)}}{40}{lstlisting.1.60}%
+\contentsline {lstlisting}{\numberline {1.61}{\ignorespaces Reptile Class (Abstraction)}}{41}{lstlisting.1.61}%
+\contentsline {lstlisting}{\numberline {1.62}{\ignorespaces Reptile Class (Abstract Method)}}{42}{lstlisting.1.62}%
+\contentsline {lstlisting}{\numberline {1.63}{\ignorespaces Snake Class (Implementing Abstract Method)}}{43}{lstlisting.1.63}%
+\contentsline {lstlisting}{\numberline {1.64}{\ignorespaces Basic Usage of Classes and Objects}}{43}{lstlisting.1.64}%
+\contentsline {lstlisting}{\numberline {1.65}{\ignorespaces Object Declaration and Initialization}}{45}{lstlisting.1.65}%
+\contentsline {lstlisting}{\numberline {1.66}{\ignorespaces Object Creation Syntax}}{45}{lstlisting.1.66}%
+\contentsline {lstlisting}{\numberline {1.67}{\ignorespaces Basic Inheritance}}{45}{lstlisting.1.67}%
+\contentsline {lstlisting}{\numberline {1.68}{\ignorespaces Basic Polymorphism}}{46}{lstlisting.1.68}%
+\contentsline {lstlisting}{\numberline {1.69}{\ignorespaces Basic Encapsulation}}{46}{lstlisting.1.69}%
+\contentsline {lstlisting}{\numberline {1.70}{\ignorespaces Basic Abstraction}}{46}{lstlisting.1.70}%
+\contentsline {lstlisting}{\numberline {2.1}{\ignorespaces If Statement}}{48}{lstlisting.2.1}%
+\contentsline {lstlisting}{\numberline {2.2}{\ignorespaces If-Else Statement}}{49}{lstlisting.2.2}%
+\contentsline {lstlisting}{\numberline {2.3}{\ignorespaces If-Else-If Ladder}}{49}{lstlisting.2.3}%
+\contentsline {lstlisting}{\numberline {2.4}{\ignorespaces Nested If-Else Statements}}{49}{lstlisting.2.4}%
+\contentsline {lstlisting}{\numberline {2.5}{\ignorespaces Switch Statement}}{50}{lstlisting.2.5}%
+\contentsline {lstlisting}{\numberline {2.6}{\ignorespaces While Loop}}{51}{lstlisting.2.6}%
+\contentsline {lstlisting}{\numberline {2.7}{\ignorespaces Do-While Loop}}{52}{lstlisting.2.7}%
+\contentsline {lstlisting}{\numberline {2.8}{\ignorespaces For Loop}}{52}{lstlisting.2.8}%
+\contentsline {lstlisting}{\numberline {2.9}{\ignorespaces For Each Loop}}{53}{lstlisting.2.9}%
+\contentsline {lstlisting}{\numberline {2.10}{\ignorespaces Nested Loops}}{53}{lstlisting.2.10}%
+\contentsline {lstlisting}{\numberline {2.11}{\ignorespaces Break Statement to Exit a Loop}}{54}{lstlisting.2.11}%
+\contentsline {lstlisting}{\numberline {2.12}{\ignorespaces Break Statement as a Form of Goto}}{54}{lstlisting.2.12}%
+\contentsline {lstlisting}{\numberline {2.13}{\ignorespaces Continue Statement}}{55}{lstlisting.2.13}%
+\contentsline {lstlisting}{\numberline {2.14}{\ignorespaces Return Statement}}{56}{lstlisting.2.14}%
