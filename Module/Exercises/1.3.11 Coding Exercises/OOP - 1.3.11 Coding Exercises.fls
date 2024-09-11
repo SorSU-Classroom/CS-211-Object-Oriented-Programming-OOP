@@ -1,17 +1,17 @@
-PWD c:/Users/glori/OneDrive - thevailacademy.org/Documents/SorSU/__Repository__/CS-211-Object-Oriented-Programming-OOP/Module
+PWD c:/Users/glori/OneDrive - thevailacademy.org/Documents/SorSU/__Repository__/CS-211-Object-Oriented-Programming-OOP/Module/Exercises/1.3.11 Coding Exercises
 INPUT c:/texlive/2024/texmf.cnf
 INPUT c:/texlive/2024/texmf-dist/web2c/texmf.cnf
 INPUT c:/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT c:/Users/glori/OneDrive - thevailacademy.org/Documents/SorSU/__Repository__/CS-211-Object-Oriented-Programming-OOP/Module/Object-Oriented Programming.tex
-OUTPUT Object-Oriented Programming.log
+INPUT c:/Users/glori/OneDrive - thevailacademy.org/Documents/SorSU/__Repository__/CS-211-Object-Oriented-Programming-OOP/Module/Exercises/1.3.11 Coding Exercises/OOP - 1.3.11 Coding Exercises.tex
+OUTPUT OOP - 1.3.11 Coding Exercises.log
 INPUT c:/texlive/2024/texmf-dist/tex/latex/base/book.cls
 INPUT c:/texlive/2024/texmf-dist/tex/latex/base/book.cls
 INPUT c:/texlive/2024/texmf-dist/tex/latex/base/bk11.clo
 INPUT c:/texlive/2024/texmf-dist/tex/latex/base/bk11.clo
 INPUT c:/texlive/2024/texmf-dist/tex/latex/base/bk11.clo
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
-INPUT ./modulestyle.sty
-INPUT modulestyle.sty
+INPUT ../../modulestyle.sty
+INPUT ../../modulestyle.sty
 INPUT c:/texlive/2024/texmf-dist/tex/latex/base/fontenc.sty
 INPUT c:/texlive/2024/texmf-dist/tex/latex/base/fontenc.sty
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/ecrm1095.tfm
@@ -312,10 +312,10 @@ INPUT c:/texlive/2024/texmf-dist/tex/latex/lm/t1lmr.fd
 INPUT c:/texlive/2024/texmf-dist/tex/latex/lm/t1lmr.fd
 INPUT c:/texlive/2024/texmf-dist/tex/latex/lm/t1lmr.fd
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmr10.tfm
-INPUT ./Object-Oriented Programming.aux
-INPUT ./Object-Oriented Programming.aux
-INPUT Object-Oriented Programming.aux
-OUTPUT Object-Oriented Programming.aux
+INPUT ./OOP - 1.3.11 Coding Exercises.aux
+INPUT ./OOP - 1.3.11 Coding Exercises.aux
+INPUT OOP - 1.3.11 Coding Exercises.aux
+OUTPUT OOP - 1.3.11 Coding Exercises.aux
 INPUT c:/texlive/2024/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 INPUT c:/texlive/2024/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 INPUT c:/texlive/2024/texmf-dist/tex/latex/microtype/mt-cmr.cfg
@@ -327,14 +327,14 @@ INPUT c:/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 INPUT c:/texlive/2024/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 INPUT c:/texlive/2024/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 INPUT c:/texlive/2024/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-INPUT ./Object-Oriented Programming.out
-INPUT ./Object-Oriented Programming.out
-INPUT Object-Oriented Programming.out
-INPUT Object-Oriented Programming.out
-OUTPUT Object-Oriented Programming.pdf
-INPUT ./Object-Oriented Programming.out
-INPUT ./Object-Oriented Programming.out
-OUTPUT Object-Oriented Programming.out
+INPUT ./OOP - 1.3.11 Coding Exercises.out
+INPUT ./OOP - 1.3.11 Coding Exercises.out
+INPUT OOP - 1.3.11 Coding Exercises.out
+INPUT OOP - 1.3.11 Coding Exercises.out
+INPUT ./OOP - 1.3.11 Coding Exercises.out
+INPUT ./OOP - 1.3.11 Coding Exercises.out
+OUTPUT OOP - 1.3.11 Coding Exercises.out
+OUTPUT OOP - 1.3.11 Coding Exercises.pdf
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmr17.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmr17.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmbx12.tfm
@@ -426,46 +426,22 @@ INPUT c:/texlive/2024/texmf-dist/tex/latex/lm/t1lmtt.fd
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmtt10.tfm
 INPUT c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc
-INPUT ./Object-Oriented Programming.toc
-INPUT ./Object-Oriented Programming.toc
-INPUT Object-Oriented Programming.toc
-INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmbx10.tfm
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmbx12.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/lm/rm-lmr10.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/lm/lmmi10.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/lm/lmsy10.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
-INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmro10.tfm
-OUTPUT Object-Oriented Programming.toc
-INPUT ./Object-Oriented Programming.lof
-INPUT ./Object-Oriented Programming.lof
-INPUT Object-Oriented Programming.lof
-OUTPUT Object-Oriented Programming.lof
-INPUT ./Object-Oriented Programming.lot
-INPUT ./Object-Oriented Programming.lot
-INPUT Object-Oriented Programming.lot
-OUTPUT Object-Oriented Programming.lot
-INPUT ./Object-Oriented Programming.lol
-INPUT ./Object-Oriented Programming.lol
-INPUT Object-Oriented Programming.lol
-OUTPUT Object-Oriented Programming.lol
-INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmri10.tfm
-INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmtt10.tfm
-INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmbx12.tfm
-INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmbx12.tfm
-INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmbx12.tfm
-INPUT c:/texlive/2024/texmf-dist/tex/latex/lm/ts1lmr.fd
-INPUT c:/texlive/2024/texmf-dist/tex/latex/lm/ts1lmr.fd
-INPUT c:/texlive/2024/texmf-dist/tex/latex/lm/ts1lmr.fd
-INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/lm/ts1-lmr10.tfm
-INPUT c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmr6.tfm
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmro10.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc
 INPUT c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc
 INPUT c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc
-INPUT Object-Oriented Programming.aux
-INPUT ./Object-Oriented Programming.out
-INPUT ./Object-Oriented Programming.out
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmtt10.tfm
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmbx10.tfm
+INPUT OOP - 1.3.11 Coding Exercises.aux
+INPUT ./OOP - 1.3.11 Coding Exercises.out
+INPUT ./OOP - 1.3.11 Coding Exercises.out
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx10.pfb
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb
@@ -474,11 +450,7 @@ INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi8.pfb
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr17.pfb
-INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr6.pfb
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr7.pfb
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr8.pfb
-INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri10.pfb
-INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmro10.pfb
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy10.pfb
-INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy8.pfb
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt10.pfb

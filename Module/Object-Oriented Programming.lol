@@ -82,3 +82,4 @@
 \contentsline {lstlisting}{\numberline {2.12}{\ignorespaces Break Statement as a Form of Goto}}{54}{lstlisting.2.12}%
 \contentsline {lstlisting}{\numberline {2.13}{\ignorespaces Continue Statement}}{55}{lstlisting.2.13}%
 \contentsline {lstlisting}{\numberline {2.14}{\ignorespaces Return Statement}}{56}{lstlisting.2.14}%
+\contentsline {lstlisting}{\numberline {2.15}{\ignorespaces Simple Implementation of the Scanner Class}}{57}{lstlisting.2.15}%

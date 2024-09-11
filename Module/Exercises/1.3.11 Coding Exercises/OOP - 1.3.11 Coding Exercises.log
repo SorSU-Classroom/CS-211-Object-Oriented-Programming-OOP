@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.26)  11 SEP 2024 20:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.26)  11 SEP 2024 21:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/glori/OneDrive - thevailacademy.org/Documents/SorSU/__Repository__/CS-211-Object-Oriented-Programming-OOP/Module/Object-Oriented Programming.tex"
-(c:/Users/glori/OneDrive - thevailacademy.org/Documents/SorSU/__Repository__/CS-211-Object-Oriented-Programming-OOP/Module/Object-Oriented Programming.tex
+**"c:/Users/glori/OneDrive - thevailacademy.org/Documents/SorSU/__Repository__/CS-211-Object-Oriented-Programming-OOP/Module/Exercises/1.3.11 Coding Exercises/OOP - 1.3.11 Coding Exercises.tex"
+(c:/Users/glori/OneDrive - thevailacademy.org/Documents/SorSU/__Repository__/CS-211-Object-Oriented-Programming-OOP/Module/Exercises/1.3.11 Coding Exercises/OOP - 1.3.11 Coding Exercises.tex
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-07-20>
 (c:/texlive/2024/texmf-dist/tex/latex/base/book.cls
@@ -24,7 +24,7 @@ File: bk11.clo 2024/02/08 v1.4n Standard LaTeX file (size option)
 \abovecaptionskip=\skip49
 \belowcaptionskip=\skip50
 \bibindent=\dimen141
-) (./modulestyle.sty (c:/texlive/2024/texmf-dist/tex/latex/base/fontenc.sty
+) (../../modulestyle.sty (c:/texlive/2024/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 ) (c:/texlive/2024/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2024/02/08 v1.3d Input encoding file
@@ -787,36 +787,41 @@ File: lstmisc.sty 2024/05/25 1.10b (Carsten Heinz)
 File: listings.cfg 2024/05/25 1.10b listings configuration
 ))
 Package: listings 2024/05/25 1.10b (Carsten Heinz)
+
+
+LaTeX Warning: You have requested package `../../modulestyle',
+               but the package provides `modulestyle'.
+
 Package: modulestyle 2011/05/07 v1.2a modulestyle
- (c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
+(c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2024/05/25 1.10b listings language file
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 136.
 )
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 73.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 84.
  (c:/texlive/2024/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) (./Object-Oriented Programming.aux)
-\openout1 = `"Object-Oriented Programming.aux"'.
+) (./OOP - 1.3.11 Coding Exercises.aux)
+\openout1 = `"OOP - 1.3.11 Coding Exercises.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -852,19 +857,19 @@ LaTeX Font Info:    ... okay on input line 73.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \microtypecontext on input line 73.
-Package microtype Info: Applying patch `item' on input line 73.
-Package microtype Info: Applying patch `toc' on input line 73.
-Package microtype Info: Applying patch `eqnum' on input line 73.
-Package microtype Info: Applying patch `footnote' on input line 73.
-Package microtype Info: Applying patch `verbatim' on input line 73.
+LaTeX Info: Redefining \microtypecontext on input line 84.
+Package microtype Info: Applying patch `item' on input line 84.
+Package microtype Info: Applying patch `toc' on input line 84.
+Package microtype Info: Applying patch `eqnum' on input line 84.
+Package microtype Info: Applying patch `footnote' on input line 84.
+Package microtype Info: Applying patch `verbatim' on input line 84.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 73.
+LaTeX Info: Redefining \showhyphens on input line 84.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -889,68 +894,68 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (c:/texlive/2024/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring ON on input line 73.
- (./Object-Oriented Programming.out) (./Object-Oriented Programming.out)
+Package hyperref Info: Link coloring ON on input line 84.
+ (./OOP - 1.3.11 Coding Exercises.out) (./OOP - 1.3.11 Coding Exercises.out)
 \@outlinefile=\write4
-\openout4 = `"Object-Oriented Programming.out"'.
+\openout4 = `"OOP - 1.3.11 Coding Exercises.out"'.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: listings package is loaded.
 Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count378
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 77.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 88.
  (c:/texlive/2024/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 77.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 88.
  (c:/texlive/2024/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 77.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 88.
  (c:/texlive/2024/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 77.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 88.
  (c:/texlive/2024/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <24.88> on input line 77.
+(Font)              <24.88> on input line 88.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <20.74> on input line 77.
+(Font)              <20.74> on input line 88.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <17.28> on input line 77.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 77.
+(Font)              <17.28> on input line 88.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 88.
  (c:/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (c:/texlive/2024/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 77.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 88.
  (c:/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (c:/texlive/2024/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 77.
+(Font)              <14.4> on input line 88.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 77.
+(Font)              <12> on input line 88.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 77.
+(Font)              <8> on input line 88.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 77.
+(Font)              <6> on input line 88.
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/lmr/m/sc/12'.
 (microtype)             Ignoring protrusion settings for this character.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 77.
+(Font)              <10> on input line 88.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 77.
+(Font)              <7> on input line 88.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 77.
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 77.
+(Font)              <5> on input line 88.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 88.
  (c:/texlive/2024/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -970,286 +975,50 @@ Package microtype Info: Loading generic protrusion settings for font family
 pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.83 \end{dedication}
+l.94 \end{dedication}
                       [1
 
-] (./Object-Oriented Programming.toc
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 7.
-
-
-[2
-
-
 ]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 122.
 
-[3]
-
-[4])
-\tf@toc=\write5
-\openout5 = `"Object-Oriented Programming.toc"'.
-
-
-
-[5] (./Object-Oriented Programming.lof)
-\tf@lof=\write6
-\openout6 = `"Object-Oriented Programming.lof"'.
-
-
-
-[6
-
-] (./Object-Oriented Programming.lot)
-\tf@lot=\write7
-\openout7 = `"Object-Oriented Programming.lot"'.
-
-
-
-[7
-
-] (./Object-Oriented Programming.lol
-
-[8
-
-])
-\tf@lol=\write8
-\openout8 = `"Object-Oriented Programming.lol"'.
-
-
-
-[9]
 
 [1
 
 
-]
- 1.
+{c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}]
+Overfull \hbox (18.55965pt too wide) in paragraph at lines 170--172
+[][]$\T1/lmtt/m/n/10.95 https : / / drive . google . com / drive / folders / 1jANc3o6atOYbHyoJZ6b-[]j-[]nDlTknEiu-[] ? usp =
+ []
 
 
-[2
-
-]
-
-[3]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 219.
- (c:/texlive/2024/texmf-dist/tex/latex/lm/ts1lmr.fd
-File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [4{c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}] [5]
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 350.
-
-
-[6]
-
-[7]
-
-[8]
-
-[9]
-
-[10]
-
-[11]
-
-[12]
-
-[13]
-
-[14]
-
-[15]
-
-[16]
-
-[17]
-
-[18]
-
-[19]
-
-[20]
-
-[21{c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}]
-Underfull \hbox (badness 10000) in paragraph at lines 1428--1429
-[]\T1/lmr/m/n/10.95 (+20) Stores whole num-bers from -9,223,372,036,854,775,808 to
+Overfull \hbox (18.10008pt too wide) in paragraph at lines 184--187
+[][]$\T1/lmtt/m/n/10.95 https : / / docs . google . com / document / d / 1sctvVLgpPSVnXN82k6LsOPSPApKp2rV0 /
  []
 
 
 
-[22]
-Overfull \hbox (20.74243pt too wide) in paragraph at lines 1476--1480
-[]\T1/lmr/m/n/10.95 (-20) The ``long'' data type is a 64-bit signed in-te-ger. It has a min-i-mum value of -9,223,372,036,854,775,808
- []
-
-
-
-[23]
-
-[24]
-
-[25]
-
-[26]
-
-[27]
-
-[28]
-
-[29]
-
-[30]
-
-[31]
-
-[32]
-
-[33]
-
-[34]
-
-[35]
-
-[36]
-
-[37]
-
-[38]
-
-[39]
-
-[40]
-
-[41]
-
-[42]
-
-[43]
-
-[44]
-
-[45]
-
-[46]
-
-[47]
- 2.
-
-
-[48
-
-]
-
-[49]
-
-[50]
-
-[51]
-
-[52]
-
-[53]
-
-[54]
-
-[55]
-
-[56]
-Overfull \hbox (15.9812pt too wide) in paragraph at lines 3276--3283
-[]\T1/lmr/m/n/10.95 (-20) In the above code, we im-port the ``Scan-ner'' class by us-ing the state-ment ``im-port java.util.Scanner;''.
- []
-
-
-
-[57]
-
-[58]
-Underfull \hbox (badness 10000) in paragraph at lines 3402--3404
-
- []
-
-
-
-[59]
-Underfull \hbox (badness 10000) in paragraph at lines 3456--3458
-
- []
-
-
-
-[60]
-
-[61]
- 3.
-
-
-[62
-
-]
- 4.
-
-
-[63
-
-]
- 5.
-
-
-[64
-
-]
- 6.
-
-
-[65
-
-]
- 7.
-
-
-[66
-
-]
- 8.
-
-
-[67
-
-]
- 9.
-
-Overfull \hbox (13.98967pt too wide) in paragraph at lines 3618--3619
-[]\T1/lmr/m/n/10.95 (-20) JavaTpoint (2022). \T1/lmr/m/it/10.95 (-20) Java OOPs Con-cepts\T1/lmr/m/n/10.95 (-20) . Ja-vaT-point. https://www.javatpoint.com/java-
- []
-
-
-Overfull \hbox (74.52774pt too wide) in paragraph at lines 3619--3620
-[]\T1/lmr/m/n/10.95 (-20) Tutorialspoint (2019). \T1/lmr/m/it/10.95 (-20) Java Tu-to-rial\T1/lmr/m/n/10.95 (-20) . Tu-to-ri-al-s-point. https://www.tutorialspoint.com/java/index.htm 
- []
-
-
-
-[68
-
-] (./Object-Oriented Programming.aux)
+[2] (./OOP - 1.3.11 Coding Exercises.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-07-20>
  ***********
-Package rerunfilecheck Info: File `"Object-Oriented Programming".out' has not changed.
-(rerunfilecheck)             Checksum: F5BFF5257739422EA39DE579553CBF4B;22323.
+Package rerunfilecheck Info: File `"OOP - 1.3.11 Coding Exercises".out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 32748 strings out of 475496
- 583318 string characters out of 5776763
- 2075960 words of memory out of 5000000
- 53162 multiletter control sequences out of 15000+600000
- 669305 words of font info for 223 fonts, out of 8000000 for 9000
+ 30405 strings out of 475496
+ 549129 string characters out of 5776763
+ 1943960 words of memory out of 5000000
+ 52389 multiletter control sequences out of 15000+600000
+ 653969 words of font info for 166 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 117i,14n,121p,1340b,2078s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmro10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on "Object-Oriented Programming.pdf" (78 pages, 567919 bytes).
+ 117i,14n,121p,1376b,835s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
+Output written on "OOP - 1.3.11 Coding Exercises.pdf" (4 pages, 256371 bytes).
 PDF statistics:
- 2832 PDF objects out of 2984 (max. 8388607)
- 2690 compressed objects within 27 object streams
- 1470 named destinations out of 1728 (max. 500000)
- 63661 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 125 PDF objects out of 1000 (max. 8388607)
+ 92 compressed objects within 1 object stream
+ 23 named destinations out of 1000 (max. 500000)
+ 54285 words of extra memory for PDF output out of 61914 (max. 10000000)
 

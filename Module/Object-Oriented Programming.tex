@@ -1385,7 +1385,7 @@ and operators.
   \begin{align*}
     \begin{tikzpicture}[scale=1]
       \draw (2,2) circle (2cm);
-      \draw[fill=black](2,2) circle (2 pt) node [above] {\tiny P};
+      \draw[fill=black](2,2) circle (2 pt) node [above] {O};
       \draw[](2,2) -- (4,2) node [midway,above] {$\scriptstyle r = 4.0$};
     \end{tikzpicture}
   \end{align*}
@@ -3247,6 +3247,250 @@ In this chapter, we have covered the following topics:
   the remaining code in the current iteration of a loop, and ``return'' for
   transferring control from one method to the method that called it.
 \end{itemize}
+
+\section{Coding Exercises}
+
+The ``Scanner'' class can be used to read input from the user. The following
+exercises are designed to help you practice using control statements in Java.
+You can use the ``Scanner'' class to read input from the user and test your
+solutions.
+
+% Simple Implementation of the Scanner class
+\begin{lstlisting}[language=Java, caption={Simple Implementation of the Scanner Class}]
+  // ScannerExample.java
+  import java.util.Scanner;
+
+  public class ScannerExample {
+    public static void main(String[] args) {
+      Scanner scanner = new Scanner(System.in);
+
+      System.out.print("Enter a number: ");
+      int number = scanner.nextInt();
+      System.out.println("You entered: " + number);
+
+      scanner.close();
+    }
+  }
+\end{lstlisting}
+
+In the above code, we import the ``Scanner'' class by using the statement
+``import java.util.Scanner;''. We create an instance of the ``Scanner''
+class by using the statement ``Scanner scanner = new Scanner(System.in);''.
+We read an integer input from the user by using the statement
+``int number = scanner.nextInt();''. We print the input number by using
+the statement ``System.out.println("You entered: " + number);''. Finally,
+we close the scanner by using the statement ``scanner.close();''.
+
+The following are used to read different types of input from the user:
+\begin{itemize}
+  \item ``scanner.nextBoolean()'' to read a boolean value.
+  \item ``scanner.nextByte()'' to read a byte value.
+  \item ``scanner.nextShort()'' to read a short value.
+  \item ``scanner.nextInt()'' to read an integer value.
+  \item ``scanner.nextLong()'' to read a long value.
+  \item ``scanner.nextFloat()'' to read a float value.
+  \item ``scanner.nextDouble()'' to read a double value.
+  \item ``scanner.nextLine()'' to read a string value.
+  \item ``scanner.next()'' to read a single word.
+\end{itemize}
+
+\textcolor{red}{\textit{Note} In the following exercises, you will use the
+``Scanner'' class to read input from the user.}
+
+\subsection{Exercise 1: Find the Largest Number (Conditional Statements)}
+
+In this exercise, you will write a Java program to find the largest of three
+numbers entered by the user. You should use the ``Scanner'' class to read
+input from the user and conditional statements to compare the three numbers
+and determine the largest number. Finally, you should print the largest
+number to the console. If the numbers are equal, you should print a message
+saying "There is no largest number".
+
+\begin{enumerate}
+  \item With the use of the ``Scanner'' class, read three numbers from the user.
+  and store them in variables ``num1'', ``num2'', and ``num3''.
+  \item Use conditional statements to compare the three numbers and determine
+  the largest number.
+  \begin{enumerate}
+    \item If ``num1'' is greater than ``num2'' and ``num1'' is greater than ``num3'',
+    then ``num1'' is the largest number and print "The largest number is: {num1}".
+    \begin{quote}
+      Example:
+      If ``num1'' is 5, ``num2'' is 3, and ``num3'' is 4, then the output should
+      be "The largest number is: 5".
+    \end{quote}
+    \item If none of the above conditions are true, then the numbers are equal. Thus,
+    print a message saying "There is no largest number".
+    \begin{quote}
+      Example:
+      If ``num1'' is 5, ``num2'' is 5, and ``num3'' is 5, then the output should
+      be "There is no largest number".
+    \end{quote}
+  \end{enumerate}
+\end{enumerate}
+
+\subsection{Exercise 2: Print Multiplication Table (Iteration Statements)}
+
+In this exercise, you will write a Java program to print the multiplication
+table of a number entered by the user. You should use the ``Scanner'' class
+to read input from the user and iteration statements to print the multiplication
+table of the entered number. Finally, you should print the multiplication table
+to the console.
+
+\begin{enumerate}
+  \item With the use of the ``Scanner'' class, read a number from the user and
+  store it in a variable ``number''.
+  \item Use a ``for'' loop to iterate from 1 to 10.
+  \begin{enumerate}
+    \item Inside the loop, calculate the product of ``number'' and the loop
+    variable and store it in a variable ``result''.
+    \item Print the multiplication table in the format "{number} * {loop variable}
+    = {result}".
+    \begin{quote}
+      Example: \\
+      If the user enters 5, then the output should be: \\
+      5 * 1 = 5 \\
+      5 * 2 = 10 \\
+      5 * 3 = 15 \\
+      5 * 4 = 20 \\
+      5 * 5 = 25 \\
+      5 * 6 = 30 \\
+      5 * 7 = 35 \\
+      5 * 8 = 40 \\
+      5 * 9 = 45 \\
+      5 * 10 = 50
+    \end{quote}
+  \end{enumerate}
+\end{enumerate}
+
+\subsection{Exercise 3: Factorial of a Number (Iteration Statements)}
+
+In this exercise, you will write a Java program to calculate the factorial of
+a number entered by the user. You should use the ``Scanner'' class to read input
+from the user and iteration statements to calculate the factorial of the entered
+number. Finally, you should print the factorial to the console.
+
+A factorial of a non-negative integer ``n'' is the product of all positive
+integers less than or equal to ``n''. It is denoted by ``n!''.
+
+\begin{align}
+  n! = n \times (n - 1) \times (n - 2) \times \ldots \times 3 \times 2 \times 1
+\end{align}
+
+The formula above shows how to calculate the factorial of a number.
+
+Example:
+The factorial of 5 is calculated as follows:
+
+\begin{align}
+  5! = 5 \times 4 \times 3 \times 2 \times 1 = 120
+\end{align}
+
+In this exercise, you will calculate the factorial of a number entered by the
+user.
+
+\begin{enumerate}
+  \item With the use of the ``Scanner'' class, read a number from the user and
+  store it in a variable ``number''.
+  \item Initialize a variable ``factorial'' to 1.
+  \item Use a ``for'' loop to iterate from 1 to ``number''.
+  \begin{enumerate}
+    \item Inside the loop, multiply the loop variable by ``factorial'' and store
+    the result in ``factorial''.
+    \item Print the factorial of the entered number.
+    \begin{quote}
+      Example: \\
+      If the user enters 5, then the output should be: \\
+
+      \begin{align}
+        5! = 5 \times 4 \times 3 \times 2 \times 1 = 120
+      \end{align}
+
+      Thus, the factorial of 5 is 120.
+    \end{quote}
+  \end{enumerate}
+\end{enumerate}
+
+\subsection{Exercise 4: Fibonacci Series (Iteration Statements)}
+
+In this exercise, you will write a Java program to print the Fibonacci series
+up to a specified number of terms entered by the user. You should use the
+``Scanner'' class to read input from the user and iteration statements to
+calculate and print the Fibonacci series. Finally, you should print the
+Fibonacci series to the console.
+
+The Fibonacci series is a series of numbers in which each number is the sum
+of the two preceding ones, usually starting with 0 and 1. The sequence goes
+0, 1, 1, 2, 3, 5, 8, 13, 21, and so on.
+
+\begin{align}
+  F_0 = 0, F_1 = 1, F_n = F_{n-1} + F_{n-2} \text{ for } n > 1
+\end{align}
+
+The formula above shows how to calculate the Fibonacci series.
+
+Example:
+The Fibonacci series up to 10 terms is calculated as follows:
+
+\begin{align}
+  0, 1, 1, 2, 3, 5, 8, 13, 21, 34
+\end{align}
+
+In this exercise, you will calculate and print the Fibonacci series up to a
+specified number of terms entered by the user.
+
+\begin{enumerate}
+  \item With the use of the ``Scanner'' class, read the number of terms from
+  the user and store it in a variable ``terms''.
+  \item Initialize two variables ``firstTerm'' and ``secondTerm'' to 0 and 1
+  respectively.
+  \item Print the first two terms of the Fibonacci series.
+  \item Use a ``for'' loop to iterate from 1 to ``terms''.
+  \begin{enumerate}
+    \item Inside the loop, calculate the next term of the Fibonacci series by
+    adding ``firstTerm'' and ``secondTerm'' and store it in a variable ``nextTerm''.
+    \item Print the next term of the Fibonacci series.
+    \item Update the values of ``firstTerm'' and ``secondTerm'' to the previous
+    two terms of the Fibonacci series.
+    \begin{quote}
+      Example: \\
+      If the user enters 10, then the output should be: \\
+
+      \begin{align}
+        0, 1, 1, 2, 3, 5, 8, 13, 21, 34
+      \end{align}
+
+      Thus, the Fibonacci series up to 10 terms is 0, 1, 1, 2, 3, 5, 8, 13, 21, 34.
+    \end{quote}
+  \end{enumerate}
+\end{enumerate}
+
+% Jump Statement Exercises
+\subsection{Exercise 5: Sum of Numbers (Jump Statements)}
+
+In this exercise, you will write a Java program to calculate the sum of numbers
+entered by the user. You should use the ``Scanner'' class to read input from the
+user and jump statements to control the flow of the program. Finally, you should
+print the sum of the numbers to the console.
+
+\begin{enumerate}
+  \item With the use of the ``Scanner'' class, read numbers from the user until
+  the user enters a negative number. Store the numbers in a variable ``number''
+  and the sum of the numbers in a variable ``sum''.
+  \item Use a ``while'' loop to read numbers from the user until the user enters
+  a negative number.
+  \begin{enumerate}
+    \item Inside the loop, check if the value of ``number'' is negative. If it is,
+    break out of the loop.
+    \item Add the value of ``number'' to the sum of the numbers.
+    \item Continue reading numbers from the user.
+    \begin{quote}
+      Example: \\
+      If the user enters 5, 10, 15, -1, then the output should be: \\
+      The sum of the numbers is: 30
+    \end{quote}
+  \end{enumerate}
+\end{enumerate}
 
 %%%%%%%%%%%%%%%%%%%%%%%
 %%%     Chapter     %%%
