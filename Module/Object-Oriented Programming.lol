@@ -83,3 +83,11 @@
 \contentsline {lstlisting}{\numberline {2.13}{\ignorespaces Continue Statement}}{55}{lstlisting.2.13}%
 \contentsline {lstlisting}{\numberline {2.14}{\ignorespaces Return Statement}}{56}{lstlisting.2.14}%
 \contentsline {lstlisting}{\numberline {2.15}{\ignorespaces Simple Implementation of the Scanner Class}}{57}{lstlisting.2.15}%
+\contentsline {lstlisting}{\numberline {3.1}{\ignorespaces Method Declaration}}{62}{lstlisting.3.1}%
+\contentsline {lstlisting}{\numberline {3.2}{\ignorespaces Calling a Method}}{63}{lstlisting.3.2}%
+\contentsline {lstlisting}{\numberline {3.3}{\ignorespaces Sample Method for Calculating the Hypotenuse}}{63}{lstlisting.3.3}%
+\contentsline {lstlisting}{\numberline {3.4}{\ignorespaces Examples of Predefined Methods}}{64}{lstlisting.3.4}%
+\contentsline {lstlisting}{\numberline {3.5}{\ignorespaces Sample User-Defined Methods}}{64}{lstlisting.3.5}%
+\contentsline {lstlisting}{\numberline {3.6}{\ignorespaces Sample Static Method}}{65}{lstlisting.3.6}%
+\contentsline {lstlisting}{\numberline {3.7}{\ignorespaces Sample Method Overloading}}{66}{lstlisting.3.7}%
+\contentsline {lstlisting}{\numberline {3.8}{\ignorespaces Sample Recursive Method}}{67}{lstlisting.3.8}%

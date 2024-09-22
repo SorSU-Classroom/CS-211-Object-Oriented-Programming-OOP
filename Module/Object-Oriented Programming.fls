@@ -463,12 +463,14 @@ INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmr6.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc
 INPUT c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc
 INPUT c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc
+INPUT c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc
 INPUT Object-Oriented Programming.aux
 INPUT ./Object-Oriented Programming.out
 INPUT ./Object-Oriented Programming.out
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx10.pfb
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb
+INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmex10.pfb
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi10.pfb
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi8.pfb
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb

@@ -3499,21 +3499,381 @@ print the sum of the numbers to the console.
 
 \section{Introduction to Methods}
 
+A method is a block of code that performs a specific task. It is a set of
+statements that are grouped together to perform an operation. Methods are
+used to organize code, make it reusable, and reduce redundancy. In Java,
+methods are defined within a class and can be called from other parts of
+the program.
+
+\section{Declaring Methods}
+
+A method in Java is declared using the following syntax:
+
+\begin{lstlisting}[language=Java, caption={Method Declaration}, label={lst:method-declaration}]
+  accessModifier returnType methodName(parameterList) {
+      // method body
+  }
+\end{lstlisting}
+
+Code \ref{lst:method-declaration} shows the components of a method declaration:
+\begin{itemize}
+  \item \textbf{Access Modifier}: The access modifier specifies the visibility
+  of the method. It can be ``public'', ``private'', ``protected'', or ``default''.
+  \item \textbf{Return Type}: The return type specifies the type of value that
+  the method returns. It can be a primitive type, an object type, or ``void'' if
+  the method does not return a value.
+  \item \textbf{Method Name}: The method name is a unique identifier for the method.
+  It is used to call the method from other parts of the program.
+  \item \textbf{Parameter List}: The parameter list specifies the parameters that
+  the method accepts. Parameters are variables that are used to pass values to the
+  method. They are optional and can be of any data type.
+  \item \textbf{Method Body}: The method body contains the statements that define
+  the behavior of the method. It is enclosed in curly braces.
+\end{itemize}
+
+\section{Calling Methods}
+
+A method is called by using its name followed by parentheses. If the method
+accepts parameters, the values of the parameters are passed inside the
+parentheses.
+
+\begin{lstlisting}[language=Java, caption={Calling a Method}, label={lst:calling-method}]
+  // Calling a method without parameters
+  methodName();
+
+  // Calling a method with parameters
+  methodName(parameter1, parameter2);
+\end{lstlisting}
+
+Code \ref{lst:calling-method} shows how to call a method with and without
+parameters. To call a method, you use the method name followed by parentheses.
+If the method accepts parameters, you pass the values of the parameters inside
+the parentheses.
+
 \section{Parameters and Arguments}
+
+Parameters are variables that are used to pass values to a method. They are
+specified in the method declaration and act as placeholders for the values
+that are passed to the method. Arguments are the actual values that are passed
+to the method when it is called.
+
+% Use TikZ to draw a triangle showing the pythagorean theorem
+\begin{figure}[h]
+  \centering
+  \begin{tikzpicture}[scale=1]
+    \coordinate [label=left:$A$] (A) at (0, 0);
+    \coordinate [label=above:$B$] (B) at (0, 3);
+    \coordinate [label=right:$C$] (C) at (4, 0);
+    \draw (A) -- node[left] {side1(a)}
+          (B) -- node[sloped,above] {hypotenuse(c)}
+          (C) -- node[below] {side2(b)} cycle;
+  \end{tikzpicture}
+  \begin{align*}
+    c^2 = a^2 + b^2 \\
+    or \\
+    c = \sqrt{a^2 + b^2}
+  \end{align*}
+  \caption{Pythagorean Theorem}
+  \label{fig:pythagorean-theorem}
+\end{figure}
+
+% Sample method for calculating the hypotenuse in the pythagorean theorem
+\begin{lstlisting}[language=Java, caption={Sample Method for Calculating the Hypotenuse}, label={lst:sample-method}]
+  // Hypotenuse.java
+  public class Hypotenuse {
+    public static void main(String[] args) {
+      double side1 = 3.0;
+      double side2 = 4.0;
+
+      double hypotenuse = calculateHypotenuse(side1, side2);
+      System.out.println("The hypotenuse is: " + hypotenuse);
+    }
+
+    public static double calculateHypotenuse(double side1, double side2) {
+      double hypotenuse = Math.sqrt(side1 * side1 + side2 * side2);
+      return hypotenuse;
+    }
+  }
+
+  // Output:
+  // The hypotenuse is: 5.0
+\end{lstlisting}
+
+Code \ref{lst:sample-method} shows a sample method for calculating the hypotenuse
+of a right-angled triangle using the Pythagorean theorem as shown in Figure
+\ref{fig:pythagorean-theorem}. The method ``calculateHypotenuse'' accepts two
+parameters ``side1'' and ``side2'' which represent the two sides of the triangle.
+The method calculates the hypotenuse using the formula $c = \sqrt{a^2 + b^2}$ and
+returns the result. As per the example, the arguments 3.0 and 4.0 are passed to
+the method to calculate the hypotenuse of the triangle.
 
 \section{Types of Methods}
 
+There are two types of methods in Java: predefined methods and user-defined
+methods.
+
 \subsection{Predefined Methods}
+
+Predefined methods are built-in methods that are provided by Java. They are
+available in the Java API and can be used directly in your programs. Predefined
+methods are used to perform common tasks such as input/output operations,
+mathematical calculations, string manipulation, and more.
+
+% Some examples of predefined methods
+\begin{lstlisting}[language=Java, caption={Examples of Predefined Methods}, label={lst:predefined-methods}]
+  // Math class methods
+  double squareRoot = Math.sqrt(16);
+  double power = Math.pow(2, 3);
+  double absoluteValue = Math.abs(-5);
+
+  // String class methods
+  String str = "Hello, World!";
+  int length = str.length();
+  String upperCase = str.toUpperCase();
+  String lowerCase = str.toLowerCase();
+\end{lstlisting}
+
+Code \ref{lst:predefined-methods} shows examples of predefined methods in Java.
+The ``Math'' class provides methods for mathematical calculations such as
+calculating the square root, power, and absolute value of a number. The ``String''
+class provides methods for string manipulation such as getting the length of a
+string, converting a string to uppercase, and converting a string to lowercase.
 
 \subsection{User-Defined Methods}
 
+User-defined methods are methods that are created by the programmer to perform
+specific tasks. They are defined within a class and can be called from other
+parts of the program. User-defined methods are used to organize code, make it
+reusable, and reduce redundancy.
+
+% Sample user-defined methods
+\begin{lstlisting}[language=Java, caption={Sample User-Defined Methods}, label={lst:user-defined-methods}]
+  // UserDefinedMethods.java
+  public class UserDefinedMethods {
+    public static void main(String[] args) {
+      int  areaEllipse = calculateAreaEllipse(3, 4);
+      System.out.println("Area of Ellipse: " + areaEllipse);
+
+      String reversedString = reverseString("Hello, World!");
+      System.out.println("Reversed String: " + reversedString);
+    }
+
+    public static float calculateAreaEllipse(float a, float b) {
+      return (float) (Math.PI * a * b);
+    }
+
+    public static String reverseString(String str) {
+      String reversed = "";
+      for (int i = str.length() - 1; i >= 0; i--) {
+        reversed += str.charAt(i);
+      }
+      return reversed;
+    }
+  }
+
+  // Output:
+  // Area of Ellipse: 37.699112
+  // Reversed String: !dlroW ,olleH
+\end{lstlisting}
+
+Code \ref{lst:user-defined-methods} shows examples of user-defined methods in Java.
+The ``calculateFactorial'' method calculates the factorial of a number using a
+``for'' loop. The ``reverseString'' method reverses a string by iterating over
+the characters of the string in reverse order.
+
 \section{Static Methods}
+
+A static method is a method that belongs to the class rather than an instance
+of the class. It can be called directly using the class name without creating
+an object of the class. Static methods are used for utility functions that do
+not require access to instance variables.
+
+% Sample static method
+\begin{lstlisting}[language=Java, caption={Sample Static Method}, label={lst:static-method}]
+  // StaticMethod.java
+  public class StaticMethod {
+    public static void main(String[] args) {
+      Person person1 = new Person("Alice", 25);
+      Person person2 = new Person("Bob", 30);
+
+      int countPersons = Person.getCountPersons();
+      System.out.println("Number of Persons: " + countPersons);
+    }
+  }
+
+  // Person.java
+  public class Person {
+    private String name;
+    private int age;
+    private static int count = 0;
+
+    public Person(String name, int age) {
+      count++;
+    }
+
+    public static int getCountPersons() {
+      return count;
+    }
+  }
+  
+  // Output:
+  // Number of Persons: 2
+\end{lstlisting}
+  
+Code \ref{lst:static-method} shows an example of a static method in Java. The
+``Person'' class has a static method ``getCountPersons'' that returns the number
+of instances of the ``Person'' class. The static method can be called using the
+class name ``Person'' without creating an object of the class.
 
 \section{Method Overloading}
 
+Method overloading is a feature that allows a class to have multiple methods
+with the same name but different parameters. It is used to provide different
+implementations of a method based on the number or type of parameters.
+
+% Sample method overloading
+\begin{lstlisting}[language=Java, caption={Sample Method Overloading}, label={lst:method-overloading}]
+  // MethodOverloading.java
+  public class MethodOverloading {
+    public static void main(String[] args) {
+      int sum1 = add(1, 2);
+      int sum2 = add(1, 2, 3);
+      double sum3 = add(1.5, 2.5);
+    }
+
+    public static int add(int a, int b) {
+      return a + b;
+    }
+
+    public static int add(int a, int b, int c) {
+      return a + b + c;
+    }
+
+    public static double add(double a, double b) {
+      return a + b;
+    }
+  }
+\end{lstlisting}
+
+Code \ref{lst:method-overloading} shows an example of method overloading in Java.
+The ``add'' method is overloaded to accept different numbers of parameters and
+different types of parameters. The method can be called with two integers, three
+integers, or two doubles.
+
 \section{Recursion}
 
+Recursion is a programming technique in which a method calls itself to solve
+a problem. It is used to break down a complex problem into smaller subproblems
+that are easier to solve. Recursion consists of two parts: the base case and
+the recursive case. The base case is the condition that stops the recursion,
+while the recursive case is the condition that calls the method recursively.
+
+% Sample recursive method
+\begin{lstlisting}[language=Java, caption={Sample Recursive Method}, label={lst:recursive-method}]
+  // RecursiveMethod.java
+  public class RecursiveMethod {
+    public static void main(String[] args) {
+      int factorial = calculateFactorial(5);
+      System.out.println("Factorial of 5: " + factorial);
+    }
+
+    public static int calculateFactorial(int n) {
+      if (n == 0) {
+        return 1;
+      } else {
+        return n * calculateFactorial(n - 1);
+      }
+    }
+  }
+
+  // Output:
+  // Factorial of 5: 120
+\end{lstlisting}
+
+Code \ref{lst:recursive-method} shows an example of a recursive method in Java.
+The ``calculateFactorial'' method calculates the factorial of a number using
+recursion. The base case is when the number is 0, in which case the method
+returns 1. The recursive case is when the number is greater than 0, in which
+case the method calls itself with the number decremented by 1.
+
+% Draw a diagram showing the recursive calls for calculating the factorial of 5
+\begin{figure}[h]
+  \centering
+  \begin{tikzpicture}[scale=1]
+    \node (nbegin) at (-1.5, 0) {n};
+    \node (n5) at (0, 0) {5};
+    \node (n4) at (1, 0) {4};
+    \node (n3) at (2, 0) {3};
+    \node (n2) at (3, 0) {2};
+    \node (n1) at (4, 0) {1};
+    \node (n0) at (5, 0) {0};
+    
+    \node (r0) at (5, -1) {1};
+    \node (r1) at (4, -1) {1};
+    \node (r2) at (3, -1) {2};
+    \node (r3) at (2, -1) {6};
+    \node (r4) at (1, -1) {24};
+    \node (r5) at (0, -1) {120};
+    \node (rend) at (-1.5, -1) {Factorial};
+
+    \draw[->] (n5) -- (n4);
+    \draw[->] (n4) -- (n3);
+    \draw[->] (n3) -- (n2);
+    \draw[->] (n2) -- (n1);
+    \draw[->] (n1) -- (n0);
+
+    \draw[dashed] (n0) -- (r0);
+    \draw[dashed] (n1) -- (r1);
+    \draw[dashed] (n2) -- (r2);
+    \draw[dashed] (n3) -- (r3);
+    \draw[dashed] (n4) -- (r4);
+    \draw[dashed] (n5) -- (r5);
+
+    \draw[->] (r0) -- (r1);
+    \draw[->] (r1) -- (r2);
+    \draw[->] (r2) -- (r3);
+    \draw[->] (r3) -- (r4);
+    \draw[->] (r4) -- (r5);
+  \end{tikzpicture}
+  \caption{Recursive Calls for Calculating the Factorial of 5}
+  \label{fig:recursive-calls}
+\end{figure}
+
+Figure \ref{fig:recursive-calls} shows the recursive calls for calculating the
+factorial of 5 using the ``calculateFactorial'' method. The method is called
+repeatedly with decreasing values of ``n'' until the base case is reached.
+
 \section{Summary}
+
+A \textbf{Method} is a block of code that performs a specific task. It is used
+to organize code, make it reusable, and reduce redundancy. Methods are declared
+using an access modifier, return type, method name, parameter list, and method
+body. Methods can be called using the method name followed by parentheses.
+
+\textbf{Parameters} are variables that are used to pass values to a method.
+They are specified in the method declaration and act as placeholders for the
+values that are passed to the method. \textbf{Arguments} are the actual values
+that are passed to the method when it is called.
+
+There are two types of methods in Java: predefined methods and user-defined
+methods. \textbf{Predefined methods} are built-in methods provided by Java
+for common tasks such as input/output operations, mathematical calculations,
+and string manipulation. \textbf{User-defined methods} are methods created by
+the programmer to perform specific tasks.
+
+A \textbf{static method} is a method that belongs to the class rather than an
+instance of the class. It can be called directly using the class name without
+creating an object of the class. Static methods are used for utility functions
+that do not require access to instance variables.
+
+\textbf{Method overloading} is a feature that allows a class to have multiple
+methods with the same name but different parameters. It is used to provide
+different implementations of a method based on the number or type of parameters.
+
+\textbf{Recursion} is a programming technique in which a method calls itself
+to solve a problem. It is used to break down a complex problem into smaller
+subproblems that are easier to solve. Recursion consists of two parts: the
+base case and the recursive case.
 
 %%%%%%%%%%%%%%%%%%%%%%%
 %%%     Chapter     %%%
@@ -3571,17 +3931,17 @@ print the sum of the numbers to the console.
 %%%%%%%%%%%%%%%%%%%%%%%
 %%%     Chapter     %%%
 %%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Exception Handling and Unit Testing}
+% \chapter{Exception Handling and Unit Testing}
 
-\section{Types of Exceptions}
+% \section{Types of Exceptions}
 
-\section{Try-Catch Block}
+% \section{Try-Catch Block}
 
-\section{Exception Throwing and Propagation}
+% \section{Exception Throwing and Propagation}
 
-\section{Unit Testing}
+% \section{Unit Testing}
 
-\section{Summary}
+% \section{Summary}
 
 %%%%%%%%%%%%%%%%%%%%%%%
 %%%     Chapter     %%%
