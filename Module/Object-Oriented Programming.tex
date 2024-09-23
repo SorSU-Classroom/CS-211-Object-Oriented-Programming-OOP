@@ -3651,7 +3651,7 @@ reusable, and reduce redundancy.
   // UserDefinedMethods.java
   public class UserDefinedMethods {
     public static void main(String[] args) {
-      int  areaEllipse = calculateAreaEllipse(3, 4);
+      float  areaEllipse = calculateAreaEllipse(3, 4);
       System.out.println("Area of Ellipse: " + areaEllipse);
 
       String reversedString = reverseString("Hello, World!");
@@ -3708,7 +3708,17 @@ not require access to instance variables.
     private static int count = 0;
 
     public Person(String name, int age) {
+      this.name = name;
+      this.age = age;
       count++;
+    }
+
+    public String getName() {
+      return name;
+    }
+
+    public int getAge() {
+      return age;
     }
 
     public static int getCountPersons() {
@@ -3739,6 +3749,10 @@ implementations of a method based on the number or type of parameters.
       int sum1 = add(1, 2);
       int sum2 = add(1, 2, 3);
       double sum3 = add(1.5, 2.5);
+
+      System.out.println("Sum of 1 and 2: " + sum1);
+      System.out.println("Sum of 1, 2, and 3: " + sum2);
+      System.out.println("Sum of 1.5 and 2.5: " + sum3);
     }
 
     public static int add(int a, int b) {
@@ -3753,6 +3767,11 @@ implementations of a method based on the number or type of parameters.
       return a + b;
     }
   }
+
+  // Output:
+  // Sum of 1 and 2: 3
+  // Sum of 1, 2, and 3: 6
+  // Sum of 1.5 and 2.5: 4.0
 \end{lstlisting}
 
 Code \ref{lst:method-overloading} shows an example of method overloading in Java.
