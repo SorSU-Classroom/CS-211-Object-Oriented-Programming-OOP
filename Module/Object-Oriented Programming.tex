@@ -3894,22 +3894,128 @@ to solve a problem. It is used to break down a complex problem into smaller
 subproblems that are easier to solve. Recursion consists of two parts: the
 base case and the recursive case.
 
+\section{Coding Exercises}
+
+The following exercises are designed to help you practice using methods in Java.
+You can create separate methods for each exercise and call them from the ``main''
+method to test your solutions.
+
+% Implement the Quadratic Formula using a method
+\subsection{Exercise 1: Quadratic Formula}
+
+In this exercise, you will write a Java program to calculate the roots of a
+quadratic equation using the quadratic formula. You should create a method
+called ``calculateRoots'' that accepts the coefficients of the quadratic equation
+as parameters and returns the roots of the equation. Finally, you should print
+the roots to the console.
+
+The quadratic formula is given by:
+
+\begin{align}
+  x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+\end{align}
+
+An equation of the form $ax^2 + bx + c = 0$ has two roots given by the quadratic
+formula. If the discriminant $b^2 - 4ac$ is positive, the roots are real and
+distinct. If the discriminant is zero, the roots are real and equal. If the
+discriminant is negative, the roots are complex.
+
+An example of a quadratic equation is $2x^2 + 5x - 3 = 0$. The coefficients of
+the equation are $a = 2$, $b = 5$, and $c = -3$. The roots of the equation are
+$x = -3$ and $x = \frac{1}{2}$. Using the quadratic formula, you should be able
+to calculate the roots of the equation like this:
+
+\begin{align}
+  x_1 &= \frac{-5 + \sqrt{5^2 - 4 \times 2 \times -3}}{2 \times 2} \\
+  x_1 &= \frac{-5 + \sqrt{25 + 24}}{4} \\
+  x_1 &= \frac{-5 + \sqrt{49}}{4} \\
+  x_1 &= \frac{-5 + 7}{4} \\
+  x_1 &= \frac{2}{4} \\
+  x_1 &= \frac{1}{2}
+\end{align}
+
+\begin{align}
+  x_2 &= \frac{-5 - \sqrt{5^2 - 4 \times 2 \times -3}}{2 \times 2} \\
+  x_2 &= \frac{-5 - \sqrt{25 + 24}}{4} \\
+  x_2 &= \frac{-5 - \sqrt{49}}{4} \\
+  x_2 &= \frac{-5 - 7}{4} \\
+  x_2 &= \frac{-12}{4} \\
+  x_2 &= -3
+\end{align}
+
+In the above example, the discriminant $b^2 - 4ac$ is positive, so the roots
+are real and distinct.
+
+% Initial Code for Exercise 1
+\begin{lstlisting}[language=Java, caption={Initial Code for Exercise 1}, label={lst:ce3-ex1}]
+  // QuadraticFormula.java
+  import java.util.Scanner;
+
+  public class QuadraticFormula {
+    public static void main(String[] args) {
+      Scanner scanner = new Scanner(System.in);
+
+      double a = scanner.nextDouble();
+      double b = scanner.nextDouble();
+      double c = scanner.nextDouble();
+
+      double[] roots = calculateRoots(a, b, c);
+      System.out.println("x = " + "-" + b + " + " + "sqrt(" + b + "^2 - 4 * " + a + " * " + c + ") / 2 * " + a);
+      System.out.println("Root 1: " + roots[0]);
+      System.out.println("Root 2: " + roots[1]);
+
+      scanner.close();
+    }
+
+    public static double[] calculateRoots(double a, double b, double c) {
+      // Declare variables for the roots
+      double root1 = 0, root2 = 0;
+    
+      // Calculate the discriminant
+
+      // Calculate the roots
+      
+      return new double[] {root1, root2};
+    }
+  }
+\end{lstlisting}
+
+Exercise \ref{lst:ce3-ex1} provides the initial code for the Quadratic Formula
+exercise. You should complete the ``calculateRoots'' method to calculate the
+roots of the quadratic equation using the quadratic formula. You can test your
+solution by running the program and verifying that the roots are calculated
+correctly.
+
 %%%%%%%%%%%%%%%%%%%%%%%
 %%%     Chapter     %%%
 %%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Classes and Objects}
+\chapter{Scope and Access Modifiers}
 
-\section{Introduction to Classes and Objects}
+\section{Introduction to Scope}
 
-\section{Declaration, Initialization, and Instantiation}
+\section{Types of Scope}
 
-\section{Constructors}
+\subsection{Local Scope}
 
-\subsection{Default Constructor}
+\subsection{Block Scope}
 
-\subsection{Parameterized Constructor}
+\subsection{Instance Scope}
 
-\subsection{Constructor Overloading}
+\subsection{Class Scope}
+
+\subsection{Method Scope}
+
+\section{Introduction to Access Modifiers}
+
+\section{Types of Access Modifiers}
+
+\subsection{Public}
+
+\subsection{Private}
+
+\subsection{Protected}
+
+\subsection{Default}
 
 \section{Summary}
 
