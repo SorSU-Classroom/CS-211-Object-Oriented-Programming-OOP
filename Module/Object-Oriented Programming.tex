@@ -3900,91 +3900,187 @@ The following exercises are designed to help you practice using methods in Java.
 You can create separate methods for each exercise and call them from the ``main''
 method to test your solutions.
 
-% Implement the Quadratic Formula using a method
-\subsection{Exercise 1: Quadratic Formula}
+% Calculate the speed of a vehicle
+\subsection{Exercise 1: Calculate Speed}
 
-In this exercise, you will write a Java program to calculate the roots of a
-quadratic equation using the quadratic formula. You should create a method
-called ``calculateRoots'' that accepts the coefficients of the quadratic equation
-as parameters and returns the roots of the equation. Finally, you should print
-the roots to the console.
-
-The quadratic formula is given by:
+In this exercise, you will write a Java program to calculate the speed of a
+vehicle. The speed of a vehicle is calculated using the formula:
 
 \begin{align}
-  x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+  \text{Speed} &= \frac{\text{Distance}}{\text{Time}} \\
+  \text{Distance} &= \text{Final Distance} - \text{Initial Distance} \\
+  \text{Time} &= \text{Final Time} - \text{Initial Time} \\
+  \text{Speed} &= \frac{\text{Final Distance} - \text{Initial Distance}}{\text{Final Time} - \text{Initial Time}}
 \end{align}
 
-An equation of the form $ax^2 + bx + c = 0$ has two roots given by the quadratic
-formula. If the discriminant $b^2 - 4ac$ is positive, the roots are real and
-distinct. If the discriminant is zero, the roots are real and equal. If the
-discriminant is negative, the roots are complex.
+\begin{enumerate}
+  \item Create a method called ``calculateSpeed'' that accepts the initial
+  distance, final distance, initial time, and final time as parameters and
+  returns the speed of the vehicle.
+  \item Calculate the speed of a vehicle that travels from an initial distance
+  of 0 meters to a final distance of 100 meters in 10 seconds.
+  \item Print the speed of the vehicle to the console.
+  \begin{quote}
+    Example: \\
+    A vehicle left from 0 meters and traveled to 100 meters in 10 seconds.
+    The speed of the vehicle is 10 meters per second.
 
-An example of a quadratic equation is $2x^2 + 5x - 3 = 0$. The coefficients of
-the equation are $a = 2$, $b = 5$, and $c = -3$. The roots of the equation are
-$x = -3$ and $x = \frac{1}{2}$. Using the quadratic formula, you should be able
-to calculate the roots of the equation like this:
+    $Initial Distance: 0$ \\
+    $Final Distance: 100$ \\
+    $Initial Time: 0$ \\
+    $Final Time: 10$ \\
 
-\begin{align}
-  x_1 &= \frac{-5 + \sqrt{5^2 - 4 \times 2 \times -3}}{2 \times 2} \\
-  x_1 &= \frac{-5 + \sqrt{25 + 24}}{4} \\
-  x_1 &= \frac{-5 + \sqrt{49}}{4} \\
-  x_1 &= \frac{-5 + 7}{4} \\
-  x_1 &= \frac{2}{4} \\
-  x_1 &= \frac{1}{2}
-\end{align}
+    $Speed = \frac{100 - 0}{10 - 0} = \frac{100}{10} = 10$ \\
+    $Speed = 10$ meters per second
 
-\begin{align}
-  x_2 &= \frac{-5 - \sqrt{5^2 - 4 \times 2 \times -3}}{2 \times 2} \\
-  x_2 &= \frac{-5 - \sqrt{25 + 24}}{4} \\
-  x_2 &= \frac{-5 - \sqrt{49}}{4} \\
-  x_2 &= \frac{-5 - 7}{4} \\
-  x_2 &= \frac{-12}{4} \\
-  x_2 &= -3
-\end{align}
-
-In the above example, the discriminant $b^2 - 4ac$ is positive, so the roots
-are real and distinct.
+    \textbf{Output:} \\
+    The vehicle traveled from 0 meters to 100 meters in 0 seconds to 10 seconds
+    at a speed of 10 meters per second.
+  \end{quote}
+\end{enumerate}
 
 % Initial Code for Exercise 1
 \begin{lstlisting}[language=Java, caption={Initial Code for Exercise 1}, label={lst:ce3-ex1}]
-  // QuadraticFormula.java
+  // CalculateSpeed.java
+  package com.oop.Exercises;
+
   import java.util.Scanner;
 
-  public class QuadraticFormula {
-    public static void main(String[] args) {
-      Scanner scanner = new Scanner(System.in);
+  public class CalculateSpeed {
+      public static void main(String[] args) {
+          Scanner scanner = new Scanner(System.in);
 
-      double a = scanner.nextDouble();
-      double b = scanner.nextDouble();
-      double c = scanner.nextDouble();
+          double finalDistance = 0, initialDistance = 0, finalTime = 0, initialTime = 0;
 
-      double[] roots = calculateRoots(a, b, c);
-      System.out.println("x = " + "-" + b + " + " + "sqrt(" + b + "^2 - 4 * " + a + " * " + c + ") / 2 * " + a);
-      System.out.println("Root 1: " + roots[0]);
-      System.out.println("Root 2: " + roots[1]);
+          do {
+              if (finalDistance <= initialDistance) {
+                  System.out.println("\nFinal distance should be greater than initial distance.");
+              }
 
-      scanner.close();
-    }
+              System.out.print("Enter the initial distance: ");
+              initialDistance = scanner.nextDouble();
+              System.out.print("Enter the final distance: ");
+              finalDistance = scanner.nextDouble();
+          } while (finalDistance <= initialDistance);
 
-    public static double[] calculateRoots(double a, double b, double c) {
-      // Declare variables for the roots
-      double root1 = 0, root2 = 0;
-    
-      // Calculate the discriminant
+          do {
+              if (finalTime <= initialTime) {
+                  System.out.println("\ndFinal time should be greater than initial time.");
+              }
 
-      // Calculate the roots
-      
-      return new double[] {root1, root2};
-    }
+              System.out.print("Enter the initial time: ");
+              initialTime = scanner.nextDouble();
+              System.out.print("Enter the final time: ");
+              finalTime = scanner.nextDouble();
+          } while (finalTime <= initialTime);
+
+          double speed = calculateSpeed(initialDistance, finalDistance, initialTime, finalTime);
+
+          String output = String.format(
+                  "The vehicle traveled from %.2f meters to %.2f meters in %.2f seconds to %.2f seconds at a speed of %.2f meters per second.",
+                  initialDistance, finalDistance, initialTime, finalTime, speed);
+
+          System.out.println("\n" + output);
+
+          scanner.close();
+      }
+
+      public static double calculateSpeed(double initialDistance, double finalDistance, double initialTime,
+              double finalTime) {
+          // Calculate the speed of the vehicle
+      }
   }
 \end{lstlisting}
 
-Exercise \ref{lst:ce3-ex1} provides the initial code for the Quadratic Formula
-exercise. You should complete the ``calculateRoots'' method to calculate the
-roots of the quadratic equation using the quadratic formula. You can test your
-solution by running the program and verifying that the roots are calculated
-correctly.
+Complete the code in Code \ref{lst:ce3-ex1} by implementing the ``calculateSpeed''
+method to calculate the speed of the vehicle. Test the program by entering the
+initial distance, final distance, initial time, and final time from the user and
+printing the speed of the vehicle to the console.
+
+% Arithmetic Sequence using Recursion
+\subsection{Exercise 2: Arithmetic Sequence}
+
+In this exercise, you will write a Java program to calculate the sum of an
+arithmetic sequence using recursion. An arithmetic sequence is a sequence of
+numbers in which the difference between consecutive terms is constant. The sum
+of an arithmetic sequence is calculated using the formula:
+
+\begin{align}
+  \text{Sum} = \frac{n}{2} \times (2a + (n - 1)d)
+\end{align}
+
+Where:
+\begin{itemize}
+  \item $n$ is the number of terms in the sequence.
+  \item $a$ is the first term in the sequence.
+  \item $d$ is the common difference between consecutive terms.
+  \item $2a + (n - 1)d$ is the sum of the first and last terms in the sequence.
+  \item $\frac{n}{2} \times (2a + (n - 1)d)$ is the sum of the arithmetic sequence.
+\end{itemize}
+
+\begin{enumerate}
+  \item Create a method called ``calculateArithmeticSequence'' that accepts the
+  first term, common difference, number of terms, and current term as parameters
+  and returns the sum of the arithmetic sequence.
+  \item Calculate the sum of an arithmetic sequence with the first term 1, common
+  difference 2, and number of terms 5.
+  \begin{quote}
+    Base Case: If the current term is equal to the number of terms, return the
+    current term. \\
+    Recursive Case: Calculate the sum of the arithmetic sequence using recursion.
+  \end{quote}
+  \item Print the sum of the arithmetic sequence to the console.
+  \begin{quote}
+    Example: \\
+    If the first term is 1, the common difference is 2, and the number of terms
+    is 5, then the sum of the arithmetic sequence is 25. \\
+
+    $Sequence: 1, 3, 5, 7, 9$ \\
+    $Sum: 1 + 3 + 5 + 7 + 9 = 25$
+  \end{quote}
+\end{enumerate}
+
+% Initial Code for Exercise 2
+\begin{lstlisting}[language=Java, caption={Initial Code for Exercise 2}, label={lst:ce3-ex2}]
+  // ArithmeticSequence.java
+  package com.oop.Exercises;
+
+  import java.util.Scanner;
+
+  public class ArithmeticSequence {
+      public static void main(String[] args) {
+          Scanner scanner = new Scanner(System.in);
+
+          System.out.print("Enter the first term of the arithmetic sequence: ");
+          double firstTerm = scanner.nextDouble();
+          System.out.print("Enter the common difference of the arithmetic sequence: ");
+          double commonDifference = scanner.nextDouble();
+          System.out.print("Enter the number of terms in the arithmetic sequence: ");
+          int numberOfTerms = scanner.nextInt();
+
+          double sum = calculateArithmeticSequence(firstTerm, commonDifference, numberOfTerms, 1);
+
+          String output = String.format(
+                  "The sum of the arithmetic sequence with the first term %.2f, common difference %.2f, and %d terms is %.2f.",
+                  firstTerm, commonDifference, numberOfTerms, sum);
+
+          System.out.println("\n" + output);
+
+          scanner.close();
+      }
+
+      public static double calculateArithmeticSequence(double firstTerm, double commonDifference, int numberOfTerms,
+              int currentTerm) {
+          // Calculate the sum of the arithmetic sequence using recursion
+      }
+  }
+\end{lstlisting}
+
+Complete the code in Code \ref{lst:ce3-ex2} by implementing the
+``calculateArithmeticSequence'' method to calculate the sum of the arithmetic
+sequence using recursion. Test the program by entering the first term, common
+difference, and number of terms from the user and printing the sum of the
+arithmetic sequence to the console.
 
 %%%%%%%%%%%%%%%%%%%%%%%
 %%%     Chapter     %%%

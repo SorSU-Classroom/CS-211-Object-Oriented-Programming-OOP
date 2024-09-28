@@ -444,9 +444,11 @@ INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc
 INPUT c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc
 INPUT c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmbx10.tfm
 INPUT OOP - 2.6 Coding Exercises.aux
 INPUT ./OOP - 2.6 Coding Exercises.out
 INPUT ./OOP - 2.6 Coding Exercises.out
+INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx10.pfb
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi10.pfb

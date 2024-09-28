@@ -1,3 +1,4 @@
 /.metadata/
 .metadata/
 samples/
+**/com/**/Exercises/

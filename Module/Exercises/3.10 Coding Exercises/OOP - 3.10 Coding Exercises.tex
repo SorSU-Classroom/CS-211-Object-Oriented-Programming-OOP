@@ -50,11 +50,11 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \newcommand{\CourseTitle}{Object-Oriented Programming}
-\newcommand{\ChapterNumber}{2}
-\newcommand{\ChapterTitle}{Control Statements}
-\newcommand{\CodingNumber}{2.6}
-\newcommand{\CodingTitle}{Control Flow: The Road Less Traveled}
-\newcommand{\SubmissionDeadline}{October 11, 2024}
+\newcommand{\ChapterNumber}{3}
+\newcommand{\ChapterTitle}{Methods}
+\newcommand{\CodingNumber}{3.10}
+\newcommand{\CodingTitle}{A little bit of Physics}
+\newcommand{\SubmissionDeadline}{October 18, 2024}
 \newcommand{\SubmissionDeadlineText}{on or before \SubmissionDeadline}
 \newcommand{\SubmissionTemplateURL}{https://docs.google.com/document/d/1sctvVLgpPSVnXN82k6LsOPSPApKp2rV0/edit?usp=drive_link&ouid=112709378145681657270&rtpof=true&sd=true}
 
@@ -63,8 +63,7 @@
 Chapter \ChapterNumber of the Study Guide on the course \CourseTitle.}
 
 \newcommand{\BookSubtitle}{Chapter \ChapterNumber: \ChapterTitle}
-\newcommand{\BookSubtitleFootnote}{This chapter introduces the basic concepts
-of control statements in Java programming language.}
+\newcommand{\BookSubtitleFootnote}{This chapter covers the basics of methods in Java.}
 
 \newcommand{\BookAuthorFirstName}{Jarrian Vince}
 \newcommand{\BookAuthorLastName}{Gojar}
@@ -111,213 +110,221 @@ Sorsogon State University - Bulan Campus
 Instructions: Write a program that solves the following problems.
 Submit your code to the Google Drive folder provided by the instructor.
 
-% Red Large Text
-\textcolor{red}{\Large{Note 1: You have to answer 3 out of the 5 exercises.}}
+The following exercises are designed to help you practice using methods in Java.
+You can create separate methods for each exercise and call them from the ``main''
+method to test your solutions.
 
-% Answer 1 and one of the remaining exercises
-\textcolor{red}{\Large{Note 2: You have to answer Exercise 1, Exercise 5, and
-one of the remaining exercises. (e.g., Exercise 2, Exercise 3, Exercise 4) for
-a total of 3 exercises.}}
+% Calculate the speed of a vehicle
+\subsection*{Exercise 1: Calculate Speed}
 
-\textcolor{red}{\Large{Note 3: In the following exercises, you will use the
-``Scanner'' class to read input from the user.}}
-
-\subsection*{Exercise 1: Find the Largest Number (Conditional Statements)}
-
-In this exercise, you will write a Java program to find the largest of three
-numbers entered by the user. You should use the ``Scanner'' class to read
-input from the user and conditional statements to compare the three numbers
-and determine the largest number. Finally, you should print the largest
-number to the console. If the numbers are equal, you should print a message
-saying "There is no largest number".
-
-\begin{enumerate}
-  \item With the use of the ``Scanner'' class, read three numbers from the user.
-  and store them in variables ``num1'', ``num2'', and ``num3''.
-  \item Use conditional statements to compare the three numbers and determine
-  the largest number.
-  \begin{enumerate}
-    \item If ``num1'' is greater than ``num2'' and ``num1'' is greater than ``num3'',
-    then ``num1'' is the largest number and print "The largest number is: {num1}".
-    \begin{quote}
-      Example:
-      If ``num1'' is 5, ``num2'' is 3, and ``num3'' is 4, then the output should
-      be "The largest number is: 5".
-    \end{quote}
-    \item If none of the above conditions are true, then the numbers are equal. Thus,
-    print a message saying "There is no largest number".
-    \begin{quote}
-      Example:
-      If ``num1'' is 5, ``num2'' is 5, and ``num3'' is 5, then the output should
-      be "There is no largest number".
-    \end{quote}
-  \end{enumerate}
-\end{enumerate}
-
-\subsection*{Exercise 2: Print Multiplication Table (Iteration Statements)}
-
-In this exercise, you will write a Java program to print the multiplication
-table of a number entered by the user. You should use the ``Scanner'' class
-to read input from the user and iteration statements to print the multiplication
-table of the entered number. Finally, you should print the multiplication table
-to the console.
-
-\begin{enumerate}
-  \item With the use of the ``Scanner'' class, read a number from the user and
-  store it in a variable ``number''.
-  \item Use a ``for'' loop to iterate from 1 to 10.
-  \begin{enumerate}
-    \item Inside the loop, calculate the product of ``number'' and the loop
-    variable and store it in a variable ``result''.
-    \item Print the multiplication table in the format "{number} * {loop variable}
-    = {result}".
-    \begin{quote}
-      Example: \\
-      If the user enters 5, then the output should be: \\
-      5 * 1 = 5 \\
-      5 * 2 = 10 \\
-      5 * 3 = 15 \\
-      5 * 4 = 20 \\
-      5 * 5 = 25 \\
-      5 * 6 = 30 \\
-      5 * 7 = 35 \\
-      5 * 8 = 40 \\
-      5 * 9 = 45 \\
-      5 * 10 = 50
-    \end{quote}
-  \end{enumerate}
-\end{enumerate}
-
-\subsection*{Exercise 3: Factorial of a Number (Iteration Statements)}
-
-In this exercise, you will write a Java program to calculate the factorial of
-a number entered by the user. You should use the ``Scanner'' class to read input
-from the user and iteration statements to calculate the factorial of the entered
-number. Finally, you should print the factorial to the console.
-
-A factorial of a non-negative integer ``n'' is the product of all positive
-integers less than or equal to ``n''. It is denoted by ``n!''.
+In this exercise, you will write a Java program to calculate the speed of a
+vehicle. The speed of a vehicle is calculated using the formula:
 
 \begin{align}
-  n! = n \times (n - 1) \times (n - 2) \times \ldots \times 3 \times 2 \times 1
+  \text{Speed} &= \frac{\text{Distance}}{\text{Time}} \\
+  \text{Distance} &= \text{Final Distance} - \text{Initial Distance} \\
+  \text{Time} &= \text{Final Time} - \text{Initial Time} \\
+  \text{Speed} &= \frac{\text{Final Distance} - \text{Initial Distance}}{\text{Final Time} - \text{Initial Time}}
 \end{align}
-
-The formula above shows how to calculate the factorial of a number.
-
-Example:
-The factorial of 5 is calculated as follows:
-
-\begin{align}
-  5! = 5 \times 4 \times 3 \times 2 \times 1 = 120
-\end{align}
-
-In this exercise, you will calculate the factorial of a number entered by the
-user.
 
 \begin{enumerate}
-  \item With the use of the ``Scanner'' class, read a number from the user and
-  store it in a variable ``number''.
-  \item Initialize a variable ``factorial'' to 1.
-  \item Use a ``for'' loop to iterate from 1 to ``number''.
-  \begin{enumerate}
-    \item Inside the loop, multiply the loop variable by ``factorial'' and store
-    the result in ``factorial''.
-    \item Print the factorial of the entered number.
-    \begin{quote}
-      Example: \\
-      If the user enters 5, then the output should be: \\
+  \item Create a method called ``calculateSpeed'' that accepts the initial
+  distance, final distance, initial time, and final time as parameters and
+  returns the speed of the vehicle.
+  \item Calculate the speed of a vehicle that travels from an initial distance
+  of 0 meters to a final distance of 100 meters in 10 seconds.
+  \item Print the speed of the vehicle to the console.
+  \begin{quote}
+    Example: \\
+    A vehicle left from 0 meters and traveled to 100 meters in 10 seconds.
+    The speed of the vehicle is 10 meters per second.
 
-      \begin{align}
-        5! = 5 \times 4 \times 3 \times 2 \times 1 = 120
-      \end{align}
+    $Initial Distance: 0$ \\
+    $Final Distance: 100$ \\
+    $Initial Time: 0$ \\
+    $Final Time: 10$ \\
 
-      Thus, the factorial of 5 is 120.
-    \end{quote}
-  \end{enumerate}
+    $Speed = \frac{100 - 0}{10 - 0} = \frac{100}{10} = 10$ \\
+    $Speed = 10$ meters per second
+
+    \textbf{Output:} \\
+    The vehicle traveled from 0 meters to 100 meters in 0 seconds to 10 seconds
+    at a speed of 10 meters per second.
+  \end{quote}
 \end{enumerate}
 
-\subsection*{Exercise 4: Fibonacci Series (Iteration Statements)}
+% Initial Code for Exercise 1
+\begin{lstlisting}[language=Java, caption={Initial Code for Exercise 1}, label={lst:ce3-ex1}]
+  // CalculateSpeed.java
+  package com.oop.Exercises;
 
-In this exercise, you will write a Java program to print the Fibonacci series
-up to a specified number of terms entered by the user. You should use the
-``Scanner'' class to read input from the user and iteration statements to
-calculate and print the Fibonacci series. Finally, you should print the
-Fibonacci series to the console.
+  import java.util.Scanner;
 
-The Fibonacci series is a series of numbers in which each number is the sum
-of the two preceding ones, usually starting with 0 and 1. The sequence goes
-0, 1, 1, 2, 3, 5, 8, 13, 21, and so on.
+  public class CalculateSpeed {
+      public static void main(String[] args) {
+          Scanner scanner = new Scanner(System.in);
+
+          double finalDistance = 0, initialDistance = 0, finalTime = 0, initialTime = 0;
+
+          do {
+              if (finalDistance <= initialDistance) {
+                  System.out.println("\nFinal distance should be greater than initial distance.");
+              }
+
+              System.out.print("Enter the initial distance: ");
+              initialDistance = scanner.nextDouble();
+              System.out.print("Enter the final distance: ");
+              finalDistance = scanner.nextDouble();
+          } while (finalDistance <= initialDistance);
+
+          do {
+              if (finalTime <= initialTime) {
+                  System.out.println("\ndFinal time should be greater than initial time.");
+              }
+
+              System.out.print("Enter the initial time: ");
+              initialTime = scanner.nextDouble();
+              System.out.print("Enter the final time: ");
+              finalTime = scanner.nextDouble();
+          } while (finalTime <= initialTime);
+
+          double speed = calculateSpeed(initialDistance, finalDistance, initialTime, finalTime);
+
+          String output = String.format(
+                  "The vehicle traveled from %.2f meters to %.2f meters in %.2f seconds to %.2f seconds at a speed of %.2f meters per second.",
+                  initialDistance, finalDistance, initialTime, finalTime, speed);
+
+          System.out.println("\n" + output);
+
+          scanner.close();
+      }
+
+      public static double calculateSpeed(double initialDistance, double finalDistance, double initialTime,
+              double finalTime) {
+          // Calculate the speed of the vehicle
+      }
+  }
+\end{lstlisting}
+
+Complete the code in Code \ref{lst:ce3-ex1} by implementing the ``calculateSpeed''
+method to calculate the speed of the vehicle. Test the program by entering the
+initial distance, final distance, initial time, and final time from the user and
+printing the speed of the vehicle to the console.
+
+% Arithmetic Sequence using Recursion
+\subsection*{Exercise 2: Arithmetic Sequence}
+
+In this exercise, you will write a Java program to calculate the sum of an
+arithmetic sequence using recursion. An arithmetic sequence is a sequence of
+numbers in which the difference between consecutive terms is constant. The sum
+of an arithmetic sequence is calculated using the formula:
 
 \begin{align}
-  F_0 = 0, F_1 = 1, F_n = F_{n-1} + F_{n-2} \text{ for } n > 1
+  \text{Sum} = \frac{n}{2} \times (2a + (n - 1)d)
 \end{align}
 
-The formula above shows how to calculate the Fibonacci series.
-
-Example:
-The Fibonacci series up to 10 terms is calculated as follows:
-
-\begin{align}
-  0, 1, 1, 2, 3, 5, 8, 13, 21, 34
-\end{align}
-
-In this exercise, you will calculate and print the Fibonacci series up to a
-specified number of terms entered by the user.
+Where:
+\begin{itemize}
+  \item $n$ is the number of terms in the sequence.
+  \item $a$ is the first term in the sequence.
+  \item $d$ is the common difference between consecutive terms.
+  \item $2a + (n - 1)d$ is the sum of the first and last terms in the sequence.
+  \item $\frac{n}{2} \times (2a + (n - 1)d)$ is the sum of the arithmetic sequence.
+\end{itemize}
 
 \begin{enumerate}
-  \item With the use of the ``Scanner'' class, read the number of terms from
-  the user and store it in a variable ``terms''.
-  \item Initialize two variables ``firstTerm'' and ``secondTerm'' to 0 and 1
-  respectively.
-  \item Print the first two terms of the Fibonacci series.
-  \item Use a ``for'' loop to iterate from 1 to ``terms''.
-  \begin{enumerate}
-    \item Inside the loop, calculate the next term of the Fibonacci series by
-    adding ``firstTerm'' and ``secondTerm'' and store it in a variable ``nextTerm''.
-    \item Print the next term of the Fibonacci series.
-    \item Update the values of ``firstTerm'' and ``secondTerm'' to the previous
-    two terms of the Fibonacci series.
-    \begin{quote}
-      Example: \\
-      If the user enters 10, then the output should be: \\
+  \item Create a method called ``calculateArithmeticSequence'' that accepts the
+  first term, common difference, number of terms, and current term as parameters
+  and returns the sum of the arithmetic sequence.
+  \item Calculate the sum of an arithmetic sequence with the first term 1, common
+  difference 2, and number of terms 5.
+  \begin{quote}
+    Base Case: If the current term is equal to the number of terms, return the
+    current term. \\
+    Recursive Case: Calculate the sum of the arithmetic sequence using recursion.
+  \end{quote}
+  \item Print the sum of the arithmetic sequence to the console.
+  \begin{quote}
+    Example: \\
+    If the first term is 1, the common difference is 2, and the number of terms
+    is 5, then the sum of the arithmetic sequence is 25. \\
 
-      \begin{align}
-        0, 1, 1, 2, 3, 5, 8, 13, 21, 34
-      \end{align}
-
-      Thus, the Fibonacci series up to 10 terms is 0, 1, 1, 2, 3, 5, 8, 13, 21, 34.
-    \end{quote}
-  \end{enumerate}
+    $Sequence: 1, 3, 5, 7, 9$ \\
+    $Sum: 1 + 3 + 5 + 7 + 9 = 25$
+  \end{quote}
 \end{enumerate}
 
-% Jump Statement Exercises
-\subsection*{Exercise 5: Sum of Numbers (Jump Statements)}
+% Initial Code for Exercise 2
+\begin{lstlisting}[language=Java, caption={Initial Code for Exercise 2}, label={lst:ce3-ex2}]
+  // ArithmeticSequence.java
+  package com.oop.Exercises;
 
-In this exercise, you will write a Java program to calculate the sum of numbers
-entered by the user. You should use the ``Scanner'' class to read input from the
-user and jump statements to control the flow of the program. Finally, you should
-print the sum of the numbers to the console.
+  import java.util.Scanner;
 
+  public class ArithmeticSequence {
+      public static void main(String[] args) {
+          Scanner scanner = new Scanner(System.in);
+
+          System.out.print("Enter the first term of the arithmetic sequence: ");
+          double firstTerm = scanner.nextDouble();
+          System.out.print("Enter the common difference of the arithmetic sequence: ");
+          double commonDifference = scanner.nextDouble();
+          System.out.print("Enter the number of terms in the arithmetic sequence: ");
+          int numberOfTerms = scanner.nextInt();
+
+          double sum = calculateArithmeticSequence(firstTerm, commonDifference, numberOfTerms, 1);
+
+          String output = String.format(
+                  "The sum of the arithmetic sequence with the first term %.2f, common difference %.2f, and %d terms is %.2f.",
+                  firstTerm, commonDifference, numberOfTerms, sum);
+
+          System.out.println("\n" + output);
+
+          scanner.close();
+      }
+
+      public static double calculateArithmeticSequence(double firstTerm, double commonDifference, int numberOfTerms,
+              int currentTerm) {
+          // Calculate the sum of the arithmetic sequence using recursion
+      }
+  }
+\end{lstlisting}
+
+Complete the code in Code \ref{lst:ce3-ex2} by implementing the
+``calculateArithmeticSequence'' method to calculate the sum of the arithmetic
+sequence using recursion. Test the program by entering the first term, common
+difference, and number of terms from the user and printing the sum of the
+arithmetic sequence to the console.
+
+\section*{Submission of Coding Exercises}
+
+Instructions:
 \begin{enumerate}
-  \item With the use of the ``Scanner'' class, read numbers from the user until
-  the user enters a negative number. Store the numbers in a variable ``number''
-  and the sum of the numbers in a variable ``sum''.
-  \item Use a ``while'' loop to read numbers from the user until the user enters
-  a negative number.
-  \begin{enumerate}
-    \item Inside the loop, check if the value of ``number'' is negative. If it is,
-    break out of the loop.
-    \item Add the value of ``number'' to the sum of the numbers.
-    \item Continue reading numbers from the user.
+  \item Go to the Google Drive folder provided by the instructor: \\
+  \begin{quote}
+    \textbf{For BSCS 2-1:} \\
+    \url{\GoogleDriveURLBSCSTwoOne} \\ \\
+    \textbf{For BSCS 2-2:} \\
+    \url{\GoogleDriveURLBSCSTwoTwo}
+  \end{quote}
+  \item Inside the folder, create another folder for your group
+  with the following format:
     \begin{quote}
-      Example: \\
-      If the user enters 5, 10, 15, -1, then the output should be: \\
-      The sum of the numbers is: 30
-
-      If the user enters 10, 20, 30, 40, 50, -1, then the output should be: \\
-      The sum of the numbers is: 150
+      \textbf{\FolderFormat} \\
+      Example: \textbf{\FolderFormatExample}
     \end{quote}
-  \end{enumerate}
+  \item Inside the sub-folder, create another folder with the name:
+    \begin{quote}
+        \textbf{Chapter \ChapterNumber - Coding Exercise \CodingNumber - \CodingTitle}
+    \end{quote}
+  \item Inside the folder, upload the file of your submission.
+    \begin{quote}
+        Fill in the template provided in the following link and upload
+        it inside the folder: \\
+        \url{\SubmissionTemplateURL}
+    \end{quote}
+  \item The activity must be submitted \textbf{\SubmissionDeadlineText}.
+  \item Late submissions will not be accepted.
 \end{enumerate}
 
 \end{document}
