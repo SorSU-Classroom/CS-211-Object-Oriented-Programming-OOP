@@ -16,7 +16,7 @@ public class MethodScope {
         // Variable y is accessible here
         System.out.println("y: " + y);
 
-        // Variable z is not accessible here
+        // Variable z is accessible here
         int z = 20;
         System.out.println("z: " + z);
     }
