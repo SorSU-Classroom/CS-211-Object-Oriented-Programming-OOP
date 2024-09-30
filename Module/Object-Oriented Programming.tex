@@ -4089,31 +4089,279 @@ arithmetic sequence to the console.
 
 \section{Introduction to Scope}
 
+In Java, the \textbf{scope} of a variable refers to the region of the program
+where the variable is accessible. Variables in Java have different scopes
+depending on where they are declared. The scope of a variable determines
+where it can be used in the program.
+
 \section{Types of Scope}
 
-\subsection{Local Scope}
+Scopes in Java can be classified into different types.
 
 \subsection{Block Scope}
 
-\subsection{Instance Scope}
+A variable with block scope is accessible only within the block of code where
+it is declared. A block is a set of statements enclosed in curly braces
+``\{ \}''. Variables declared inside a block are local to that block and cannot
+be accessed outside the block.
+
+% Sample code for block scope
+\begin{lstlisting}[language=Java, caption={Block Scope}, label={lst:block-scope}]
+  // BlockScope.java
+  public class BlockScope {
+      public static void main(String[] args) {
+          int x = 10;
+
+          if (x > 5) {
+              int y = 20;
+              System.out.println("x: " + x);
+              System.out.println("y: " + y);
+          }
+
+          // Variable y is not accessible here
+          System.out.println("x: " + x);
+      }
+  }
+\end{lstlisting}
+
+Code \ref{lst:block-scope} shows an example of block scope in Java. The variable
+``x'' is declared in the ``main'' method and is accessible throughout the method.
+The variable ``y'' is declared inside the ``if'' block and is accessible only
+within the block.
 
 \subsection{Class Scope}
 
+A variable with class scope is accessible throughout the class in which it is
+declared. Class-level variables are declared outside any method and are
+accessible by all methods in the class.
+
+% Sample code for class scope
+\begin{lstlisting}[language=Java, caption={Class Scope}, label={lst:class-scope}]
+  // ClassScope.java
+  public class ClassScope {
+      static int x = 10;
+      int y = 20;
+
+      public static void main(String[] args) {
+          System.out.println("x: " + x);
+
+          ClassScope obj = new ClassScope();
+          System.out.println("y: " + obj.y);
+          
+          obj.display();
+      }
+
+      public void display() {
+          System.out.println("x: " + x);
+          System.out.println("y: " + y);
+      }
+  }
+\end{lstlisting}
+
+Code \ref{lst:class-scope} shows an example of class scope in Java. The variable
+``x'' is declared as a static variable and is accessible throughout the class.
+The variable ``y'' is an instance variable and is accessible by all methods in
+the class.
+
 \subsection{Method Scope}
 
+A variable with method scope is accessible only within the method where it is
+declared. Method-level variables are local to the method and cannot be accessed
+outside the method.
+
+% Sample code for method scope
+\begin{lstlisting}[language=Java, caption={Method Scope}, label={lst:method-scope}]
+  // MethodScope.java
+  public class MethodScope {
+      public static void main(String[] args) {
+          int x = 10;
+          int y = 20;
+          System.out.println("x: " + x);
+
+          display(y);
+      }
+
+      public static void display(int y) {
+          // Variable x is not accessible here
+          System.out.println("x: " + x);
+          
+          // Variable y is accessible here
+          System.out.println("y: " + y);
+          
+          // Variable z is not accessible here
+          int z = 20;
+          System.out.println("z: " + z);
+      }
+  }
+\end{lstlisting}
+
+Code \ref{lst:method-scope} shows an example of method scope in Java. The variable
+``x'' is declared in the ``main'' method and is accessible only within the method.
+The variable ``y'' is passed as a parameter to the ``display'' method and is
+accessible within the method. The variable ``z'' is declared inside the ``display''
+method and is accessible only within the method.
+
 \section{Introduction to Access Modifiers}
+ 
+In Java, \textbf{access modifiers} are keywords that are used to control the
+visibility of classes, methods, and variables. Access modifiers determine
+whether a class, method, or variable can be accessed by other classes or
+methods in the program.
 
 \section{Types of Access Modifiers}
 
 \subsection{Public}
 
+The \textbf{public} access modifier allows a class, method, or variable to be
+accessed by any other class or method in the program. Public members are
+visible to all classes and methods.
+
+% Sample code for public access modifier
+\begin{lstlisting}[language=Java, caption={Public Access Modifier}, label={lst:public-access-modifier}]
+  // PublicAccessModifier.java
+  public class PublicAccessModifier {
+      public static void display() {
+          System.out.println("This is a public method.");
+      }
+  }
+
+  // PublicAccessModifierDemo.java
+  public class PublicAccessModifierDemo {
+      public static void main(String[] args) {
+          PublicAccessModifier.display();
+      }
+  }
+\end{lstlisting}
+
+Code \ref{lst:public-access-modifier} shows an example of the public access
+modifier in Java. The ``display'' method in the ``PublicAccessModifier'' class
+is declared as public and can be accessed by the ``PublicAccessModifierDemo''
+class.
+
 \subsection{Private}
+
+The \textbf{private} access modifier restricts the visibility of a class,
+method, or variable to the class in which it is declared. Private members
+are accessible only within the class in which they are declared.
+
+% Sample code for private access modifier
+\begin{lstlisting}[language=Java, caption={Private Access Modifier}, label={lst:private-access-modifier}]
+  // PrivateAccessModifier.java
+  public class PrivateAccessModifier {
+      private static void display() {
+          System.out.println("This is a private method.");
+      }
+
+      public static void main(String[] args) {
+          display();
+      }
+  }
+
+  // PrivateAccessModifierDemo.java
+  public class PrivateAccessModifierDemo {
+      public static void main(String[] args) {
+          // The display method is not accessible here
+          PrivateAccessModifier.display();
+      }
+  }
+\end{lstlisting}
+
+Code \ref{lst:private-access-modifier} shows an example of the private access
+modifier in Java. The ``display'' method in the ``PrivateAccessModifier'' class
+is declared as private and can be accessed only within the class.
 
 \subsection{Protected}
 
+The \textbf{protected} access modifier allows a class, method, or variable to
+be accessed by classes in the same package or subclasses of the class. Protected
+members are visible to classes in the same package and subclasses.
+
+% Sample code for protected access modifier
+\begin{lstlisting}[language=Java, caption={Protected Access Modifier}, label={lst:protected-access-modifier}]
+  // ProtectedAccessModifier.java
+  public class ProtectedAccessModifier {
+      protected static void display() {
+          System.out.println("This is a protected method.");
+      }
+  }
+
+  // ProtectedAccessModifierDemo.java
+  public class ProtectedAccessModifierDemo extends ProtectedAccessModifier {
+      public static void main(String[] args) {
+          display();
+      }
+  }
+\end{lstlisting}
+
+Code \ref{lst:protected-access-modifier} shows an example of the protected
+access modifier in Java. The ``display'' method in the ``ProtectedAccessModifier''
+class is can be accessed by the ``ProtectedAccessModifierDemo'' class because
+it is a subclass of the ``ProtectedAccessModifier'' class.
+
 \subsection{Default}
 
+The \textbf{default} access modifier is also known as package-private. It does
+not use any keyword and is the default access modifier in Java. Default members
+are accessible only within the same package.
+
+% Sample code for default access modifier
+\begin{lstlisting}[language=Java, caption={Default Access Modifier}, label={lst:default-access-modifier}]
+  // DefaultAccessModifier.java
+  package com.oop.AccessModifier.Default;
+
+  class DefaultAccessModifier {
+      static void display() {
+          System.out.println("This is a default method.");
+      }
+  }
+
+  // DefaultAccessModifierDemo.java
+  package com.oop.AccessModifier.Default;
+
+  public class DefaultAccessModifierDemo {
+      public static void main(String[] args) {
+          DefaultAccessModifier.display();
+      }
+  }
+\end{lstlisting}
+
+Code \ref{lst:default-access-modifier} shows an example of the default access
+modifier in Java. The ``display'' method in the ``DefaultAccessModifier'' class
+is declared without any access modifier and can be accessed only within the
+same package.
+
 \section{Summary}
+
+\textbf{Scope} in Java refers to the region of the program where a variable is
+accessible. Variables in Java have different scopes depending on where they are
+declared. The scope of a variable determines where it can be used in the program.
+
+There are different types of scope in Java:
+\begin{itemize}
+  \item \textbf{Block Scope}: Variables with block scope are accessible only
+  within the block of code where they are declared.
+  \item \textbf{Class Scope}: Variables with class scope are accessible throughout
+  the class in which they are declared.
+  \item \textbf{Method Scope}: Variables with method scope are accessible only
+  within the method where they are declared.
+\end{itemize}
+
+\textbf{Access modifiers} in Java are keywords that are used to control the
+visibility of classes, methods, and variables. Access modifiers determine whether
+a class, method, or variable can be accessed by other classes or methods in the
+program.
+
+There are different types of access modifiers in Java:
+\begin{itemize}
+  \item \textbf{Public}: Allows a class, method, or variable to be accessed by
+  any other class or method in the program.
+  \item \textbf{Private}: Restricts the visibility of a class, method, or variable
+  to the class in which it is declared.
+  \item \textbf{Protected}: Allows a class, method, or variable to be accessed by
+  classes in the same package or subclasses of the class.
+  \item \textbf{Default}: Allows a class, method, or variable to be accessed only
+  within the same package.
+\end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%
 %%%     Chapter     %%%

@@ -93,3 +93,10 @@
 \contentsline {lstlisting}{\numberline {3.8}{\ignorespaces Sample Recursive Method}}{67}{lstlisting.3.8}%
 \contentsline {lstlisting}{\numberline {3.9}{\ignorespaces Initial Code for Exercise 1}}{69}{lstlisting.3.9}%
 \contentsline {lstlisting}{\numberline {3.10}{\ignorespaces Initial Code for Exercise 2}}{71}{lstlisting.3.10}%
+\contentsline {lstlisting}{\numberline {4.1}{\ignorespaces Block Scope}}{73}{lstlisting.4.1}%
+\contentsline {lstlisting}{\numberline {4.2}{\ignorespaces Class Scope}}{74}{lstlisting.4.2}%
+\contentsline {lstlisting}{\numberline {4.3}{\ignorespaces Method Scope}}{74}{lstlisting.4.3}%
+\contentsline {lstlisting}{\numberline {4.4}{\ignorespaces Public Access Modifier}}{75}{lstlisting.4.4}%
+\contentsline {lstlisting}{\numberline {4.5}{\ignorespaces Private Access Modifier}}{76}{lstlisting.4.5}%
+\contentsline {lstlisting}{\numberline {4.6}{\ignorespaces Protected Access Modifier}}{76}{lstlisting.4.6}%
+\contentsline {lstlisting}{\numberline {4.7}{\ignorespaces Default Access Modifier}}{77}{lstlisting.4.7}%
