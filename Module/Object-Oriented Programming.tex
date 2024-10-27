@@ -4368,6 +4368,281 @@ There are different types of access modifiers in Java:
 %%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Four Pillars of Object-Oriented Programming}
 
+\section{UML Class Diagram}
+ 
+A \textbf{Unified Modeling Language (UML)} class diagram is a graphical representation
+of a class in object-oriented programming. It shows the attributes and methods
+of a class, as well as the relationships between classes.
+
+% Class Diagram for a Bank
+\begin{figure}[h]
+  \centering
+  \begin{tikzpicture}
+    \begin{class}[text width=8cm]{Bank}{0 ,0}
+      \attribute{- name: String}
+      \attribute{- code: int}
+
+      \operation{+ Bank(name: String)}
+      \operation{+ Bank(name: String, code: int)}
+      \operation{+ getName(): String}
+      \operation{+ setName(name: String): void}
+      \operation{+ getCode(): int}
+      \operation{+ setCode(code: int): void}
+    \end{class}
+  \end{tikzpicture}
+  \caption{Class Diagram for a Bank}
+  \label{fig:class-diagram-bank}
+\end{figure}
+
+Figure \ref{fig:class-diagram-bank} shows a class diagram for a ``Bank'' class
+in Java. A class diagram consists of the following elements:
+
+\begin{itemize}
+  \item \textbf{Class Name}: The name of the class is displayed at the top of
+  the class box.
+  \item \textbf{Attributes}: The attributes of the class are listed below the
+  class name. Each attribute includes the access modifier, name, and data type.
+  \item \textbf{Methods}: The methods of the class are listed below the attributes.
+  Each method includes the access modifier, name, parameters, and return type.
+  \item \textbf{Access Modifiers}: The access modifiers indicate the visibility
+  of the attributes and methods.
+\end{itemize}
+
+In the class diagram for the ``Bank'' class, the class has two attributes: ``name''
+and ``code'', two constructors, and several methods to get and set the attributes,
+as well as add and remove accounts. The attributes and methods are displayed with
+the appropriate access modifiers.
+
+The ``+'' and ``-'' symbols in front of the attributes and methods indicate the
+access modifiers. In a class diagram, there are four types of access modifiers:
+
+\begin{itemize}
+  \item ``+'' (Public): The attribute or method is accessible by all classes.
+  \item ``-'' (Private): The attribute or method is accessible only within the class.
+  \item ``\#'' (Protected): The attribute or method is accessible by subclasses.
+  \item ``\textasciitilde'' (Default): The attribute or method is accessible within the package.
+\end{itemize}
+
+% Bank class in Java
+\begin{lstlisting}[language=Java, caption={Bank Class in Java}, label={lst:bank-class}]
+  // Bank.java
+  package com.oop.BankSystem;
+
+  import java.util.ArrayList;
+
+  public class Bank {
+      private String name;
+      private int code;
+
+      public Bank(String name) {
+          this.name = name;
+      }
+
+      public Bank(String name, int code) {
+          this.name = name;
+          this.code = code;
+      }
+
+      public String getName() {
+          return name;
+      }
+
+      public void setName(String name) {
+          this.name = name;
+      }
+
+      public int getCode() {
+          return code;
+      }
+
+      public void setCode(int code) {
+          this.code = code;
+      }
+  }
+\end{lstlisting}
+
+Code \ref{lst:bank-class} shows the implementation of the ``Bank'' class in Java.
+The class has two private attributes: ``name'' and ``code''. It has two
+constructors to initialize the attributes, as well as getter and setter
+methods for the attributes.
+
+\subsection{Bank Class Diagram}
+
+A Bank class diagram is a graphical representation of the Bank class in object-oriented
+programming. It shows the attributes and methods of the Bank class, as well as the
+relationships between classes.
+
+% The Bank consists of six classes: the ``Bank'' class, the ``Account''
+% class, the ``SavingsAccount'' class, the ``CheckingAccount'' class, the
+% ``Customer'' class, and the ``Loan'' class.
+
+\begin{figure}[h!]
+  \centering
+  \begin{tikzpicture}
+    \begin{class}[text width=8cm, scale=0.85]{Bank}{0, 0}
+      \attribute{- name: String}
+      \attribute{- code: int}
+      \attribute{- accounts: ArrayList<Account>}
+
+      \operation{+ Bank(name: String)}
+      \operation{+ Bank(name: String, code: int)}
+      \operation{+ getName(): String}
+      \operation{+ setName(name: String): void}
+      \operation{+ getCode(): int}
+      \operation{+ setCode(code: int): void}
+      \operation{+ addAccount(account: Account): void}
+      \operation{+ removeAccount(account: Account): void}
+    \end{class}
+
+    \begin{class}[text width=8cm, scale=0.85]{Account}{9.2, 0}
+      \attribute{- accountNumber: int}
+      \attribute{- balance: double}
+
+      \operation{+ Account(accountNumber: int, balance: double)}
+      \operation{+ getAccountNumber(): int}
+      \operation{+ setAccountNumber(accountNumber: int): void}
+      \operation{+ getBalance(): double}
+      \operation{+ setBalance(balance: double): void}
+      \operation{+ deposit(amount: double): void}
+      \operation{+ withdraw(amount: double): void}
+    \end{class}
+
+    \begin{class}[text width=6cm, scale=0.85]{SavingsAccount}{4, -7}
+      \inherit{Account}
+      \attribute{- minimumBalance: double}
+      \attribute{- interestRate: double}
+
+      \operation{+ SavingsAccount(accountNumber: int, balance: double, interestRate: double)}
+      \operation{+ getMinimumBalance(): double}
+      \operation{+ setMinimumBalance(minimumBalance: double): void}
+      \operation{+ getInterestRate(): double}
+      \operation{+ setInterestRate(interestRate: double): void}
+      \operation{+ calculateInterest(): double}
+    \end{class}
+
+    \begin{class}[text width=6cm, scale=0.85]{CheckingAccount}{10, -7}
+      \inherit{Account}
+      \attribute{- overdraftLimit: double}
+
+      \operation{+ CheckingAccount(accountNumber: int, balance: double, overdraftLimit: double)}
+      \operation{+ getOverdraftLimit(): double}
+      \operation{+ setOverdraftLimit(overdraftLimit: double): void}
+      \operation{+ withdraw(amount: double): void}
+    \end{class}
+
+    \begin{class}[text width=8cm, scale=0.85]{Customer}{9.2, -15}
+      \attribute{- name: String}
+      \attribute{- address: String}
+      \attribute{- accounts: ArrayList<Account>}
+
+      \operation{+ Customer(name: String, address: String)}
+      \operation{+ getName(): String}
+      \operation{+ setName(name: String): void}
+      \operation{+ getAddress(): String}
+      \operation{+ setAddress(address: String): void}
+      \operation{+ addAccount(account: Account): void}
+      \operation{+ removeAccount(account: Account): void}
+    \end{class}
+
+    \begin{class}[text width=8cm, scale=0.85]{Loan}{0, -15}
+      \attribute{- loanNumber: int}
+      \attribute{- amount: double}
+      \attribute{- interestRate: double}
+
+      \operation{+ Loan(loanNumber: int, amount: double, interestRate: double)}
+      \operation{+ getLoanNumber(): int}
+      \operation{+ setLoanNumber(loanNumber: int): void}
+      \operation{+ getAmount(): double}
+      \operation{+ setAmount(amount: double): void}
+      \operation{+ getInterestRate(): double}
+      \operation{+ setInterestRate(interestRate: double): void}
+      \operation{+ calculateInterest(): double}
+    \end{class}
+
+    \composition{Bank}{accounts}{0..*}{Account}{1}{}
+
+    \association{Customer}{}{1}{SavingsAccount}{0..*}{}
+    \association{Customer}{}{1}{CheckingAccount}{0..*}{}
+    \association{Customer}{}{1}{Loan}{0..*}{}
+
+    % Aggregation
+    \draw [umlcd style, -open diamond] (Loan) -- node[near start, right]{0..*} (Bank) node[near end, left]{1};
+  \end{tikzpicture}
+  \caption{Bank Class Diagram}
+  \label{fig:bank-class-diagram}
+\end{figure}
+
+Figure \ref{fig:bank-class-diagram} shows a class diagram for a Bank system in Java.
+The Bank system consists of six classes: the ``Bank'' class, the ``Account'' class,
+the ``SavingsAccount'' class, the ``CheckingAccount'' class, the ``Customer'' class,
+and the ``Loan'' class. The classes have attributes and methods that represent the
+functionality of a bank system. The class diagram also shows the relationships between
+the classes, such as inheritance, composition, and aggregation. It also shows the
+multiplicity of the relationships between classes.
+
+\subsubsection{Relationships Between Classes}
+
+In object-oriented programming, classes can have different types of relationships
+with other classes. The main types of relationships between classes are:
+
+\begin{itemize}
+  \item \textbf{Association}: An association is a relationship between two classes
+  that indicates how the classes are related to each other. It can be one-to-one,
+  one-to-many, or many-to-many.
+  \item \textbf{Aggregation}: Aggregation is a type of association where one class
+  is composed of one or more other classes. It represents a whole-part relationship.
+  If the main class is destroyed, the composed classes can still exist.
+  \item \textbf{Composition}: Composition is a stronger form of aggregation where
+  one class is composed of one or more other classes. The composed classes cannot
+  exist without the main class. If the main class is destroyed, the composed classes
+  are also destroyed.
+  \item \textbf{Inheritance}: Inheritance is a relationship between a superclass
+  and a subclass. The subclass inherits the attributes and methods of the superclass.
+\end{itemize}
+
+In the Bank class diagram, the classes have the following relationships:
+
+\begin{itemize}
+  \item The ``Bank'' class has a composition relationship with the ``Account'' class.
+  \item The ``SavingAccount'' and ``CheckingAccount'' classes inherit from the
+  ``Account'' class.
+  \item The ``Customer'' class has association relationships with the ``SavingsAccount'',
+  ``CheckingAccount'', and ``Loan'' classes.
+  \item The ``Loan'' class has an aggregation relationship with the ``Bank'' class.
+\end{itemize}
+
+\subsubsection{Multiplicity}
+
+Multiplicity in a class diagram indicates the number of instances of one class that
+can be associated with the instances of another class. It is represented using numbers
+or symbols near the association lines between classes.
+
+There are different types of multiplicity in a class diagram:
+
+\begin{itemize}
+  \item \textbf{One-to-One (1:1)}: Indicates that one instance of a class is associated
+  with one instance of another class.
+  \item \textbf{One-to-Many (1:*)}: Indicates that one instance of a class is associated
+  with multiple instances of another class.
+  \item \textbf{Many-to-One (*:1)}: Indicates that multiple instances of a class are
+  associated with one instance of another class.
+  \item \textbf{Many-to-Many (*:*)}: Indicates that multiple instances of a class are
+  associated with multiple instances of another class.
+\end{itemize}
+
+In the Bank class diagram, the relationships between classes have the following
+multiplicities:
+
+\begin{itemize}
+  \item The ``Bank'' class has a one-to-many relationship with the ``Account'' class.
+  This means that one bank can have multiple accounts.
+  \item The ``Customer'' class has a one-to-many relationship with the ``SavingsAccount'',
+  ``CheckingAccount'', and ``Loan'' classes. This means that one customer can own
+  multiple accounts and loans.
+  \item The ``Loan'' class has a many-to-one relationship with the ``Bank'' class.
+  This means that multiple loans can be associated with one bank.
+\end{itemize}
+
 \section{Inheritance}
 
 \section{Polymorphism}
