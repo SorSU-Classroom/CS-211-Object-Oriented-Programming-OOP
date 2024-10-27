@@ -3558,7 +3558,7 @@ that are passed to the method. Arguments are the actual values that are passed
 to the method when it is called.
 
 % Use TikZ to draw a triangle showing the pythagorean theorem
-\begin{figure}[h]
+\begin{figure}[h!]
   \centering
   \begin{tikzpicture}[scale=1]
     \coordinate [label=left:$A$] (A) at (0, 0);
@@ -3816,7 +3816,7 @@ returns 1. The recursive case is when the number is greater than 0, in which
 case the method calls itself with the number decremented by 1.
 
 % Draw a diagram showing the recursive calls for calculating the factorial of 5
-\begin{figure}[h]
+\begin{figure}[h!]
   \centering
   \begin{tikzpicture}[scale=1]
     \node (nbegin) at (-1.5, 0) {n};
@@ -4375,7 +4375,7 @@ of a class in object-oriented programming. It shows the attributes and methods
 of a class, as well as the relationships between classes.
 
 % Class Diagram for a Bank
-\begin{figure}[h]
+\begin{figure}[h!]
   \centering
   \begin{tikzpicture}
     \begin{class}[text width=8cm]{Bank}{0 ,0}
@@ -4645,7 +4645,393 @@ multiplicities:
 
 \section{Inheritance}
 
+\textbf{Inheritance} is a fundamental concept in object-oriented programming that
+allows a class to inherit attributes and methods from another class. Inheritance
+enables code reuse and promotes the creation of a hierarchy of classes.
+
+\subsection{Superclass and Subclass}
+
+Inheritance involves two types of classes: a \textbf{superclass} and a \textbf{subclass}.
+The superclass is the class that provides the attributes and methods to be inherited,
+it is also known as the parent class. The subclass is the class that inherits the
+attributes and methods from the superclass, it is also known as the child class.
+
+% Class Diagram of Animal, Dog, and Cat
+\begin{figure}[h!]
+  \centering
+  \begin{tikzpicture}
+    \begin{class}[text width=6cm]{Animal}{0, 0}
+      \attribute{- name: String}
+      \attribute{- age: int}
+
+      \operation{+ Animal(name: String, age: int)}
+      \operation{+ getName(): String}
+      \operation{+ setName(name: String): void}
+      \operation{+ getAge(): int}
+      \operation{+ setAge(age: int): void}
+      \operation{+ makeSound(): void}
+    \end{class}
+
+    \begin{class}[text width=6cm]{Dog}{-4, -6}
+      \inherit{Animal}
+      \attribute{- breed: String}
+
+      \operation{+ Dog(name: String, age: int, breed: String)}
+      \operation{+ getBreed(): String}
+      \operation{+ setBreed(breed: String): void}
+      \operation{+ makeSound(): void}
+    \end{class}
+
+    \begin{class}[text width=6cm]{Cat}{4, -6}
+      \inherit{Animal}
+      \attribute{- color: String}
+
+      \operation{+ Cat(name: String, age: int, color: String)}
+      \operation{+ getColor(): String}
+      \operation{+ setColor(color: String): void}
+      \operation{+ makeSound(): void}
+      \operation{+ makeSound(repeat: int): void}
+    \end{class}
+  \end{tikzpicture}
+  \caption{Inheritance in Animal, Dog, and Cat Classes}
+  \label{fig:animal-class-diagram}
+\end{figure}
+
+Figure \ref{fig:animal-class-diagram} shows a class diagram of the ``Animal'',
+``Dog'', and ``Cat'' classes in Java. The ``Animal'' class is the superclass that
+provides the attributes and methods common to all animals. The ``Dog'' and ``Cat''
+classes are subclasses that inherit the attributes and methods from the ``Animal''
+class. The subclasses can also have additional attributes and methods specific to
+dogs and cats.
+
+% Java code for Animal, Dog, and Cat classes
+\begin{lstlisting}[language=Java, caption={Animal Class in Java}, label={lst:animal-class}]
+  // Animal.java
+  package com.oop.AnimalKingdom;
+
+  public class Animal {
+      private String name;
+      private int age;
+
+      public Animal(String name, int age) {
+          this.name = name;
+          this.age = age;
+      }
+
+      public String getName() {
+          return name;
+      }
+
+      public void setName(String name) {
+          this.name = name;
+      }
+
+      public int getAge() {
+          return age;
+      }
+
+      public void setAge(int age) {
+          this.age = age;
+      }
+
+      public void makeSound() {
+          System.out.println("Animal makes a sound");
+      }
+  }
+\end{lstlisting}
+
+\begin{lstlisting}[language=Java, caption={Dog Class in Java}, label={lst:dog-class}]
+  // Dog.java
+  package com.oop.AnimalKingdom;
+
+  public class Dog extends Animal {
+      private String breed;
+
+      public Dog(String name, int age, String breed) {
+          super(name, age);
+          this.breed = breed;
+      }
+
+      public String getBreed() {
+          return breed;
+      }
+
+      public void setBreed(String breed) {
+          this.breed = breed;
+      }
+
+      @Override
+      public void makeSound() {
+          System.out.println("Dog barks");
+      }
+  }
+\end{lstlisting}
+
+\begin{lstlisting}[language=Java, caption={Cat Class in Java}, label={lst:cat-class}]
+  // Cat.java
+  package com.oop.AnimalKingdom;
+
+  public class Cat extends Animal {
+      private String color;
+
+      public Cat(String name, int age, String color) {
+          super(name, age);
+          this.color = color;
+      }
+
+      public String getColor() {
+          return color;
+      }
+
+      public void setColor(String color) {
+          this.color = color;
+      }
+
+      @Override
+      public void makeSound() {
+          System.out.println("Cat meows");
+      }
+
+      public void makeSound(int repeat) {
+          for (int i = 0; i < repeat; i++) {
+              System.out.print("Meow ");
+          }
+      }
+  }
+\end{lstlisting}
+
+Code \ref{lst:animal-class} shows the implementation of the ``Animal''
+class in Java. The class has two private attributes: ``name'' and
+``age''. It has a constructor to initialize the attributes, as well as
+getter and setter methods for the attributes. The class also has a
+method to make a sound.
+
+Code \ref{lst:dog-class} and Code \ref{lst:cat-class} show the
+implementation of inheritance in the ``Dog'' and ``Cat'' classes in
+Java. The subclasses inherit the attributes and methods from the
+``Animal'' class using the ``extends'' keyword. The subclasses can
+override the methods of the superclass to provide specific
+implementations. The subclasses can also have additional attributes
+and methods specific to dogs and cats. They also show the use of the
+``super'' keyword to call the superclass constructor which initializes
+the attributes of the superclass.
+
+\subsection{Multiple Levels of Inheritance}
+
+Inheritance can have multiple levels, where a subclass can further
+inherit from another subclass. This creates a hierarchy of classes
+with increasing levels of specialization.
+
+% Class Diagram of Vehicle, Car, and ElectricCar
+\begin{figure}[h!]
+  \centering
+  \begin{tikzpicture}
+    \begin{class}[text width=6cm]{Vehicle}{0, 0}
+      \attribute{- make: String}
+      \attribute{- model: String}
+
+      \operation{+ Vehicle(make: String, model: String)}
+      \operation{+ getMake(): String}
+      \operation{+ setMake(make: String): void}
+      \operation{+ getModel(): String}
+      \operation{+ setModel(model: String): void}
+      \operation{+ drive(): void}
+    \end{class}
+
+    \begin{class}[text width=6cm]{Car}{0, -7}
+      \inherit{Vehicle}
+      \attribute{- color: String}
+
+      \operation{+ Car(make: String, model: String, color: String)}
+      \operation{+ getColor(): String}
+      \operation{+ setColor(color: String): void}
+      \operation{+ drive(): void}
+    \end{class}
+
+    \begin{class}[text width=6cm]{ElectricCar}{0, -13}
+      \inherit{Car}
+      \attribute{- batteryCapacity: int}
+
+      \operation{+ ElectricCar(make: String, model: String, color: String, batteryCapacity: int)}
+      \operation{+ getBatteryCapacity(): int}
+      \operation{+ setBatteryCapacity(batteryCapacity: int): void}
+      \operation{+ drive(): void}
+    \end{class}
+  \end{tikzpicture}
+  \caption{Multiple Levels of Inheritance in Vehicle, Car, and ElectricCar Classes}
+  \label{fig:vehicle-class-diagram}
+\end{figure}
+
+Figure \ref{fig:vehicle-class-diagram} shows a class diagram of the
+``Vehicle'', ``Car'', and ``ElectricCar'' classes in Java. The
+``Vehicle'' class is the superclass that provides the attributes and
+methods common to all vehicles. The ``Car'' class is a subclass that
+inherits the attributes and methods from the ``Vehicle'' class and
+adds additional attributes and methods specific to cars. The
+``ElectricCar'' class is a subclass of the ``Car'' class and inherits
+the attributes and methods from the ``Car'' class and the ``Vehicle''
+class. The subclasses can override the methods of the superclass to
+provide specific implementations.
+
 \section{Polymorphism}
+
+\textbf{Polymorphism} is a fundamental concept in object-oriented
+programming that allows objects of different classes to be treated as
+objects of a common superclass. Polymorphism enables flexibility and
+extensibility in the design of software systems.
+
+\begin{figure}[h!]
+  \centering
+  \begin{tikzpicture}
+    \begin{class}[text width=6cm]{Animal}{0, 0}
+      \attribute{\text{\{\{ ATTRIBUTES \}\}}}
+
+      \operation{\text{\{\{ METHODS \}\}}}
+      \operation{}
+      
+      \operation{+ makeSound(): void}
+    \end{class}
+    
+    \begin{class}[text width=6cm]{Dog}{-4, -4}
+      \inherit{Animal}
+      \attribute{\text{\{\{ ATTRIBUTES \}\}}}
+      
+      \operation{\text{\{\{ METHODS \}\}}}
+      \operation{}
+      
+      \operation{+ makeSound(): void}
+    \end{class}
+    
+    \begin{class}[text width=6cm]{Cat}{4, -4}
+      \inherit{Animal}
+      \attribute{\text{\{\{ ATTRIBUTES \}\}}}
+      
+      \operation{\text{\{\{ METHODS \}\}}}
+      \operation{}
+
+      \operation{+ makeSound(): void}
+      \operation{+ makeSound(repeat: int): void}
+    \end{class}
+  \end{tikzpicture}
+  \caption{Polymorphism in Animal, Dog, and Cat Classes from Figure \ref{fig:animal-class-diagram}}
+  \label{fig:polymorphism-class-diagram}
+\end{figure}
+
+\subsection{Method Overriding}
+
+\textbf{Method overriding} is a form of polymorphism that allows a
+subclass to provide a specific implementation of a method that is
+already defined in its superclass. The subclass can override the
+method to provide its own implementation. In figure \ref{fig:polymorphism-class-diagram},
+the ``Dog'' and ``Cat'' classes override the ``makeSound'' method of
+the ``Animal'' class to provide specific implementations for dogs and
+cats.
+
+% Java code for Animal, Dog, and Cat classes
+\begin{lstlisting}[language=Java, caption={Animal Class in Java}, label={lst:animal-class}]
+  // Animal.java
+  package com.oop.AnimalKingdom;
+
+  public class Animal {
+      /**
+        * Rest of the code
+        */
+
+      public void makeSound() {
+          System.out.println("Animal makes a sound");
+      }
+  }
+\end{lstlisting}
+
+\begin{lstlisting}[language=Java, caption={Dog Class in Java}, label={lst:dog-class}]
+  // Dog.java
+  package com.oop.AnimalKingdom;
+
+  public class Dog extends Animal {
+      /**
+        * Rest of the code
+        */
+
+      @Override
+      public void makeSound() {
+          System.out.println("Dog barks");
+      }
+  }
+\end{lstlisting}
+
+\begin{lstlisting}[language=Java, caption={Cat Class in Java}, label={lst:cat-class}]
+  // Cat.java
+  package com.oop.AnimalKingdom;
+
+  public class Cat extends Animal {
+      /**
+        * Rest of the code
+        */
+
+      @Override
+      public void makeSound() {
+          System.out.println("Cat meows");
+      }
+
+      public void makeSound(int repeat) {
+          for (int i = 0; i < repeat; i++) {
+              System.out.print("Meow ");
+          }
+      }
+  }
+\end{lstlisting}
+
+Code \ref{lst:animal-class} shows the implementation of the ``Animal''
+class in Java. The class has a ``makeSound'' method that prints a
+generic message. Code \ref{lst:dog-class} and Code \ref{lst:cat-class}
+show the implementation of the ``Dog'' and ``Cat'' classes in Java. The
+subclasses override the ``makeSound'' method of the superclass to
+provide specific implementations for dogs and cats. If an object of the
+``Animal'' class is created and the ``makeSound'' method is called, it
+will print ``Animal makes a sound''. If an object of the ``Dog'' class
+is created and the ``makeSound'' method is called, it will print ``Dog
+barks''. If an object of the ``Cat'' class is created and the
+``makeSound'' method is called, it will print ``Cat meows''.
+
+\subsection{Method Overloading}
+
+\textbf{Method overloading} is a form of polymorphism that allows a
+class to have multiple methods with the same name but different
+parameters. The methods can have different numbers or types of
+parameters. Method overloading enables flexibility in the design of
+software systems by providing multiple ways to call a method.
+
+% Java code for Cat class
+\begin{lstlisting}[language=Java, caption={Cat Class in Java}, label={lst:cat-class}]
+  // Cat.java
+  package com.oop.AnimalKingdom;
+
+  public class Cat extends Animal {
+      /**
+        * Rest of the code
+        */
+
+      @Override
+      public void makeSound() {
+          System.out.println("Cat meows");
+      }
+
+      public void makeSound(int repeat) {
+          for (int i = 0; i < repeat; i++) {
+              System.out.print("Meow ");
+          }
+      }
+  }
+\end{lstlisting}
+
+Code \ref{lst:cat-class} shows the implementation of the ``Cat'' class
+in Java. The class has two ``makeSound'' methods: one with no
+parameters and one with an integer parameter. The method with no
+parameters prints ``Cat meows'', and the method with an integer
+parameter prints ``Meow'' multiple times based on the value of the
+parameter. If an object of the ``Cat'' class is created and the
+``makeSound'' method is called with an integer parameter, it will print
+``Meow'' multiple times based on the value of the parameter.
 
 \section{Encapsulation}
 

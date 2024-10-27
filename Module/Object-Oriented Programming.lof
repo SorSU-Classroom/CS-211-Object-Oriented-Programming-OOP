@@ -8,6 +8,9 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3}{\ignorespaces Class Diagram for a Bank}}{79}{figure.caption.9}%
 \contentsline {figure}{\numberline {4}{\ignorespaces Bank Class Diagram}}{81}{figure.caption.10}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Inheritance in Animal, Dog, and Cat Classes}}{83}{figure.caption.11}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Multiple Levels of Inheritance in Vehicle, Car, and ElectricCar Classes}}{86}{figure.caption.12}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Polymorphism in Animal, Dog, and Cat Classes from Figure \ref {fig:animal-class-diagram}}}{87}{figure.caption.13}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

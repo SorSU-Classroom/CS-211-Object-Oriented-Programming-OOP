@@ -136,22 +136,26 @@
 \contentsline {subsubsection}{\numberline {5.1.1.1}Relationships Between Classes}{82}{subsubsection.5.1.1.1}%
 \contentsline {subsubsection}{\numberline {5.1.1.2}Multiplicity}{82}{subsubsection.5.1.1.2}%
 \contentsline {section}{\numberline {5.2}Inheritance}{83}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Polymorphism}{83}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Encapsulation}{83}{section.5.4}%
-\contentsline {section}{\numberline {5.5}Abstraction}{83}{section.5.5}%
-\contentsline {section}{\numberline {5.6}Typecasting}{83}{section.5.6}%
-\contentsline {subsection}{\numberline {5.6.1}Downcasting}{83}{subsection.5.6.1}%
-\contentsline {subsection}{\numberline {5.6.2}Upcasting}{83}{subsection.5.6.2}%
-\contentsline {section}{\numberline {5.7}Summary}{83}{section.5.7}%
-\contentsline {chapter}{\numberline {6}Composition and Enumeration}{84}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Relationships Between Classes}{84}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Composition}{84}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Enumeration}{84}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Summary}{84}{section.6.4}%
-\contentsline {chapter}{\numberline {7}Coding Guidelines and Best Practices}{85}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Naming Conventions}{85}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Code Formatting}{85}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Documentation}{85}{section.7.3}%
-\contentsline {section}{\numberline {7.4}Code Maintainability}{85}{section.7.4}%
-\contentsline {section}{\numberline {7.5}Summary}{85}{section.7.5}%
-\contentsline {chapter}{\numberline {8}References}{86}{chapter.8}%
+\contentsline {subsection}{\numberline {5.2.1}Superclass and Subclass}{83}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Multiple Levels of Inheritance}{86}{subsection.5.2.2}%
+\contentsline {section}{\numberline {5.3}Polymorphism}{87}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Method Overriding}{87}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Method Overloading}{89}{subsection.5.3.2}%
+\contentsline {section}{\numberline {5.4}Encapsulation}{89}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Abstraction}{89}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Typecasting}{89}{section.5.6}%
+\contentsline {subsection}{\numberline {5.6.1}Downcasting}{89}{subsection.5.6.1}%
+\contentsline {subsection}{\numberline {5.6.2}Upcasting}{89}{subsection.5.6.2}%
+\contentsline {section}{\numberline {5.7}Summary}{89}{section.5.7}%
+\contentsline {chapter}{\numberline {6}Composition and Enumeration}{90}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Relationships Between Classes}{90}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Composition}{90}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Enumeration}{90}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Summary}{90}{section.6.4}%
+\contentsline {chapter}{\numberline {7}Coding Guidelines and Best Practices}{91}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Naming Conventions}{91}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Code Formatting}{91}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Documentation}{91}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Code Maintainability}{91}{section.7.4}%
+\contentsline {section}{\numberline {7.5}Summary}{91}{section.7.5}%
+\contentsline {chapter}{\numberline {8}References}{92}{chapter.8}%

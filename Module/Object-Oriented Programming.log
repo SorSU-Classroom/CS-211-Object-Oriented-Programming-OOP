@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.26)  27 OCT 2024 13:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.26)  27 OCT 2024 17:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -842,7 +842,20 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 139.
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 73.
  (c:/texlive/2024/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) (./Object-Oriented Programming.aux)
+) (./Object-Oriented Programming.aux
+
+LaTeX Warning: Label `lst:animal-class' multiply defined.
+
+
+LaTeX Warning: Label `lst:dog-class' multiply defined.
+
+
+LaTeX Warning: Label `lst:cat-class' multiply defined.
+
+
+LaTeX Warning: Label `lst:cat-class' multiply defined.
+
+)
 \openout1 = `"Object-Oriented Programming.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 73.
@@ -1551,56 +1564,207 @@ Overfull \hbox (13.25325pt too wide) in paragraph at lines 4639--4642
 
 
 [82]
+Underfull \hbox (badness 10000) in paragraph at lines 4673--4673
+[][]\T1/lmr/m/n/10.95 (+20) - name: String 
+ []
+
+
+Underfull \hbox (badness 3302) in paragraph at lines 4673--4673
+\T1/lmr/m/n/10.95 (+20) + get-Name(): String 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4673--4673
+\T1/lmr/m/n/10.95 (+20) + getAge(): int 
+ []
+
+
+Underfull \hbox (badness 1342) in paragraph at lines 4673--4673
+\T1/lmr/m/n/10.95 (+20) + se-tAge(age: int): void 
+ []
+
+
+Underfull \hbox (badness 3323) in paragraph at lines 4683--4683
+[][]\T1/lmr/m/n/10.95 (+20) + Dog(name: String, 
+ []
+
+
+Underfull \hbox (badness 1831) in paragraph at lines 4683--4683
+\T1/lmr/m/n/10.95 (+20) age: int, breed: String) 
+ []
+
+
+Underfull \hbox (badness 3271) in paragraph at lines 4683--4683
+\T1/lmr/m/n/10.95 (+20) + get-Breed(): String 
+ []
+
+
+Underfull \hbox (badness 3568) in paragraph at lines 4694--4694
+[][]\T1/lmr/m/n/10.95 (+20) + Cat(name: String, 
+ []
+
+
+Underfull \hbox (badness 2142) in paragraph at lines 4694--4694
+\T1/lmr/m/n/10.95 (+20) age: int, color: String) 
+ []
+
+
+Underfull \hbox (badness 3514) in paragraph at lines 4694--4694
+\T1/lmr/m/n/10.95 (+20) + get-Color(): String 
+ []
+
+
+Underfull \hbox (badness 2846) in paragraph at lines 4694--4694
+\T1/lmr/m/n/10.95 (+20) + make-Sound(): void 
+ []
+
+
 
 [83]
+
+[84]
+
+[85]
+Underfull \hbox (badness 10000) in paragraph at lines 4839--4839
+[][]\T1/lmr/m/n/10.95 (+20) - make: String 
+ []
+
+
+Underfull \hbox (badness 7981) in paragraph at lines 4839--4839
+[][]\T1/lmr/m/n/10.95 (+20) + Ve-hi-cle(make: 
+ []
+
+
+Underfull \hbox (badness 2401) in paragraph at lines 4839--4839
+\T1/lmr/m/n/10.95 (+20) String, model: String) 
+ []
+
+
+Underfull \hbox (badness 3568) in paragraph at lines 4839--4839
+\T1/lmr/m/n/10.95 (+20) + get-Make(): String 
+ []
+
+
+Underfull \hbox (badness 3009) in paragraph at lines 4839--4839
+\T1/lmr/m/n/10.95 (+20) + get-Model(): String 
+ []
+
+
+Underfull \hbox (badness 3128) in paragraph at lines 4849--4849
+\T1/lmr/m/n/10.95 (+20) String, color: String) 
+ []
+
+
+Underfull \hbox (badness 3514) in paragraph at lines 4849--4849
+\T1/lmr/m/n/10.95 (+20) + get-Color(): String 
+ []
+
+
+Underfull \hbox (badness 2799) in paragraph at lines 4859--4859
+\T1/lmr/m/n/10.95 (+20) bat-teryCa-pac-ity: int) 
+ []
+
+
+Underfull \hbox (badness 4353) in paragraph at lines 4859--4859
+\T1/lmr/m/n/10.95 (+20) + set-Bat-teryCa-pac- 
+ []
+
+
+
+[86]
+Underfull \hbox (badness 6775) in paragraph at lines 4893--4893
+[][][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4893--4893
+ 
+ []
+
+
+Underfull \hbox (badness 6775) in paragraph at lines 4903--4903
+[][][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4903--4903
+ 
+ []
+
+
+Underfull \hbox (badness 6775) in paragraph at lines 4914--4914
+[][][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4914--4914
+ 
+ []
+
+
+Underfull \hbox (badness 2846) in paragraph at lines 4914--4914
+\T1/lmr/m/n/10.95 (+20) + make-Sound(): void 
+ []
+
+
+
+[87]
+
+[88]
+
+[89]
  6.
 
 
-[84
+[90
 
 ]
  7.
 
 
-[85
+[91
 
 ]
  8.
 
-Overfull \hbox (13.98967pt too wide) in paragraph at lines 4722--4723
+Overfull \hbox (13.98967pt too wide) in paragraph at lines 5108--5109
 []\T1/lmr/m/n/10.95 (-20) JavaTpoint (2022). \T1/lmr/m/it/10.95 (-20) Java OOPs Con-cepts\T1/lmr/m/n/10.95 (-20) . Ja-vaT-point. https://www.javatpoint.com/java-
  []
 
 
-Overfull \hbox (74.52774pt too wide) in paragraph at lines 4723--4724
+Overfull \hbox (74.52774pt too wide) in paragraph at lines 5109--5110
 []\T1/lmr/m/n/10.95 (-20) Tutorialspoint (2019). \T1/lmr/m/it/10.95 (-20) Java Tu-to-rial\T1/lmr/m/n/10.95 (-20) . Tu-to-ri-al-s-point. https://www.tutorialspoint.com/java/index.htm 
  []
 
 
 
-[86
+[92
 
 ] (./Object-Oriented Programming.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-07-20>
  ***********
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `"Object-Oriented Programming".out' has not changed.
-(rerunfilecheck)             Checksum: A6C43C97A0CE56F94EE13202E699AD3D;23204.
+(rerunfilecheck)             Checksum: 9C464452B466ED4EDC3E0181E63C628E;23917.
  ) 
 Here is how much of TeX's memory you used:
- 34844 strings out of 475496
- 635784 string characters out of 5776763
+ 35082 strings out of 475496
+ 639515 string characters out of 5776763
  2075960 words of memory out of 5000000
- 54768 multiletter control sequences out of 15000+600000
- 670430 words of font info for 235 fonts, out of 8000000 for 9000
+ 54835 multiletter control sequences out of 15000+600000
+ 670524 words of font info for 236 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  117i,14n,121p,1340b,2080s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmex10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmro10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on "Object-Oriented Programming.pdf" (97 pages, 640147 bytes).
+Output written on "Object-Oriented Programming.pdf" (103 pages, 662180 bytes).
 PDF statistics:
- 3510 PDF objects out of 3580 (max. 8388607)
- 3340 compressed objects within 34 object streams
- 1909 named destinations out of 2073 (max. 500000)
- 63725 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 3772 PDF objects out of 4296 (max. 8388607)
+ 3593 compressed objects within 36 object streams
+ 2078 named destinations out of 2487 (max. 500000)
+ 63757 words of extra memory for PDF output out of 74296 (max. 10000000)
 
