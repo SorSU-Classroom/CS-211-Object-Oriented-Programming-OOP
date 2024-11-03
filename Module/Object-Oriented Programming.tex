@@ -4366,7 +4366,7 @@ There are different types of access modifiers in Java:
 %%%%%%%%%%%%%%%%%%%%%%%
 %%%     Chapter     %%%
 %%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Four Pillars of Object-Oriented Programming}
+\chapter{Object-Oriented Programming}
 
 \section{UML Class Diagram}
  
@@ -4382,7 +4382,6 @@ of a class, as well as the relationships between classes.
       \attribute{- name: String}
       \attribute{- code: int}
 
-      \operation{+ Bank(name: String)}
       \operation{+ Bank(name: String, code: int)}
       \operation{+ getName(): String}
       \operation{+ setName(name: String): void}
@@ -4428,15 +4427,9 @@ access modifiers. In a class diagram, there are four types of access modifiers:
   // Bank.java
   package com.oop.BankSystem;
 
-  import java.util.ArrayList;
-
   public class Bank {
       private String name;
       private int code;
-
-      public Bank(String name) {
-          this.name = name;
-      }
 
       public Bank(String name, int code) {
           this.name = name;
@@ -4479,40 +4472,49 @@ relationships between classes.
 \begin{figure}[h!]
   \centering
   \begin{tikzpicture}
-    \begin{class}[text width=8cm, scale=0.85]{Bank}{0, 0}
+    \begin{class}[text width=8cm, scale=0.8 ]{Bank}{0, 0}
       \attribute{- name: String}
       \attribute{- code: int}
       \attribute{- accounts: ArrayList<Account>}
+      \attribute{- loans: ArrayList<Loan>}
 
-      \operation{+ Bank(name: String)}
       \operation{+ Bank(name: String, code: int)}
       \operation{+ getName(): String}
       \operation{+ setName(name: String): void}
       \operation{+ getCode(): int}
       \operation{+ setCode(code: int): void}
+      \operation{+ getAccounts(): ArrayList<Account>}
+      \operation{+ setAccounts(accounts: ArrayList<Account>): void}
+      \operation{+ getLoans(): ArrayList<Loan>}
+      \operation{+ setLoans(loans: ArrayList<Loan>): void}
       \operation{+ addAccount(account: Account): void}
       \operation{+ removeAccount(account: Account): void}
+      \operation{+ addLoan(loan: Loan): void}
+      \operation{+ removeLoan(loan: Loan): void}
     \end{class}
 
-    \begin{class}[text width=8cm, scale=0.85]{Account}{9.2, 0}
+    \begin{class}[text width=8cm, scale=0.8 ]{Account}{9.2, 0}
       \attribute{- accountNumber: int}
       \attribute{- balance: double}
-
-      \operation{+ Account(accountNumber: int, balance: double)}
+      \attribute{- customer: Customer}
+      
+      \operation{+ Account(customer: Customer, accountNumber: int, balance: double)}
       \operation{+ getAccountNumber(): int}
       \operation{+ setAccountNumber(accountNumber: int): void}
       \operation{+ getBalance(): double}
       \operation{+ setBalance(balance: double): void}
+      \operation{+ getCustomer(): Customer}
+      \operation{+ setCustomer(customer: Customer): void}
       \operation{+ deposit(amount: double): void}
       \operation{+ withdraw(amount: double): void}
     \end{class}
 
-    \begin{class}[text width=6cm, scale=0.85]{SavingsAccount}{4, -7}
+    \begin{class}[text width=6cm, scale=0.8 ]{SavingsAccount}{4, -8}
       \inherit{Account}
       \attribute{- minimumBalance: double}
       \attribute{- interestRate: double}
 
-      \operation{+ SavingsAccount(accountNumber: int, balance: double, interestRate: double)}
+      \operation{+ SavingsAccount(bank: Bank, accountNumber: int, balance: double, minimumBalance: double, interestRate: double)}
       \operation{+ getMinimumBalance(): double}
       \operation{+ setMinimumBalance(minimumBalance: double): void}
       \operation{+ getInterestRate(): double}
@@ -4520,49 +4522,64 @@ relationships between classes.
       \operation{+ calculateInterest(): double}
     \end{class}
 
-    \begin{class}[text width=6cm, scale=0.85]{CheckingAccount}{10, -7}
+    \begin{class}[text width=6cm, scale=0.8 ]{CheckingAccount}{10, -8}
       \inherit{Account}
       \attribute{- overdraftLimit: double}
 
-      \operation{+ CheckingAccount(accountNumber: int, balance: double, overdraftLimit: double)}
+      \operation{+ CheckingAccount(bank: Bank, customer: Customer, accountNumber: int, balance: double, overdraftLimit: double)}
       \operation{+ getOverdraftLimit(): double}
       \operation{+ setOverdraftLimit(overdraftLimit: double): void}
       \operation{+ withdraw(amount: double): void}
     \end{class}
 
-    \begin{class}[text width=8cm, scale=0.85]{Customer}{9.2, -15}
+    \begin{class}[text width=8cm, scale=0.8 ]{Customer}{9.2, -15.5}
       \attribute{- name: String}
       \attribute{- address: String}
       \attribute{- accounts: ArrayList<Account>}
+      \attribute{- loans: ArrayList<Loan>}
 
       \operation{+ Customer(name: String, address: String)}
       \operation{+ getName(): String}
       \operation{+ setName(name: String): void}
       \operation{+ getAddress(): String}
       \operation{+ setAddress(address: String): void}
+      \operation{+ getAccounts(): ArrayList<Account>}
+      \operation{+ setAccounts(accounts: ArrayList<Account>): void}
+      \operation{+ getLoans(): ArrayList<Loan>}
+      \operation{+ setLoans(loans: ArrayList<Loan>): void}
       \operation{+ addAccount(account: Account): void}
       \operation{+ removeAccount(account: Account): void}
+      \operation{+ addLoan(loan: Loan): void}
+      \operation{+ removeLoan(loan: Loan): void}
     \end{class}
 
-    \begin{class}[text width=8cm, scale=0.85]{Loan}{0, -15}
+    \begin{class}[text width=10cm, scale=0.8  ]{Loan}{0, -15.5}
       \attribute{- loanNumber: int}
-      \attribute{- amount: double}
+      \attribute{- principalAmount: double}
       \attribute{- interestRate: double}
+      \attribute{- bank: Bank}
+      \attribute{- customer: Customer}
 
-      \operation{+ Loan(loanNumber: int, amount: double, interestRate: double)}
+      \operation{+ Loan(bank: Bank, customer: Customer, loanNumber: int, principalAmount: double, interestRate: double)}
       \operation{+ getLoanNumber(): int}
       \operation{+ setLoanNumber(loanNumber: int): void}
-      \operation{+ getAmount(): double}
-      \operation{+ setAmount(amount: double): void}
+      \operation{+ getPrincipalAmount(): double}
+      \operation{+ setPrincipalAmount(principalAmount: double): void}
       \operation{+ getInterestRate(): double}
       \operation{+ setInterestRate(interestRate: double): void}
+      \operation{+ getBank(): Bank}
+      \operation{+ setBank(bank: Bank): void}
+      \operation{+ getCustomer(): Customer}
+      \operation{+ setCustomer(customer: Customer): void}
       \operation{+ calculateInterest(): double}
     \end{class}
 
-    \composition{Bank}{accounts}{0..*}{Account}{1}{}
-
+    \draw [umlcd style, -diamond] (Account) -- node[near start, below]{0..*} (Bank) node[near end, above]{1};
+    \draw [umlcd style, ->] (Bank) -- (Account);
+    
     \association{Customer}{}{1}{SavingsAccount}{0..*}{}
     \association{Customer}{}{1}{CheckingAccount}{0..*}{}
+    
     \association{Customer}{}{1}{Loan}{0..*}{}
 
     % Aggregation
@@ -5048,13 +5065,7 @@ parameter. If an object of the ``Cat'' class is created and the
 %%%%%%%%%%%%%%%%%%%%%%%
 %%%     Chapter     %%%
 %%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Composition and Enumeration}
-
-\section{Relationships Between Classes}
-
-\section{Composition}
-
-\section{Enumeration}
+\chapter{Enumeration}
 
 \section{Summary}
 

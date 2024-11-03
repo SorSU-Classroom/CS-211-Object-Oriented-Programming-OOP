@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.26)  27 OCT 2024 17:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.26)  3 NOV 2024 10:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1293,32 +1293,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 4034--4037
 [78]
  5.
 
-Underfull \hbox (badness 10000) in paragraph at lines 4391--4391
+Underfull \hbox (badness 10000) in paragraph at lines 4390--4390
 [][]\T1/lmr/m/n/10.95 (+20) - name: String 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4391--4391
-[][]\T1/lmr/m/n/10.95 (+20) + Bank(name: String) 
+Underfull \hbox (badness 3158) in paragraph at lines 4390--4390
+[][]\T1/lmr/m/n/10.95 (+20) + Bank(name: String, code: int) 
  []
 
 
-Underfull \hbox (badness 3158) in paragraph at lines 4391--4391
-\T1/lmr/m/n/10.95 (+20) + Bank(name: String, code: int) 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 4391--4391
+Underfull \hbox (badness 10000) in paragraph at lines 4390--4390
 \T1/lmr/m/n/10.95 (+20) + get-Name(): String 
  []
 
 
-Underfull \hbox (badness 3735) in paragraph at lines 4391--4391
+Underfull \hbox (badness 3735) in paragraph at lines 4390--4390
 \T1/lmr/m/n/10.95 (+20) + set-Name(name: String): void 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4391--4391
+Underfull \hbox (badness 10000) in paragraph at lines 4390--4390
 \T1/lmr/m/n/10.95 (+20) + get-Code(): int 
  []
 
@@ -1327,294 +1322,353 @@ Underfull \hbox (badness 10000) in paragraph at lines 4391--4391
 [79
 
 ]
-
-[80]
-Underfull \hbox (badness 10000) in paragraph at lines 4495--4495
+Underfull \hbox (badness 10000) in paragraph at lines 4494--4494
 [][]\T1/lmr/m/n/10.95 (+20) - name: String 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4495--4495
+Underfull \hbox (badness 10000) in paragraph at lines 4494--4494
 \T1/lmr/m/n/10.95 (+20) - code: int 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4495--4495
-[][]\T1/lmr/m/n/10.95 (+20) + Bank(name: String) 
+Underfull \hbox (badness 3029) in paragraph at lines 4494--4494
+\T1/lmr/m/n/10.95 (+20) - ac-counts: Ar-rayList<Account> 
  []
 
 
-Underfull \hbox (badness 3158) in paragraph at lines 4495--4495
-\T1/lmr/m/n/10.95 (+20) + Bank(name: String, code: int) 
+Underfull \hbox (badness 3158) in paragraph at lines 4494--4494
+[][]\T1/lmr/m/n/10.95 (+20) + Bank(name: String, code: int) 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4495--4495
+Underfull \hbox (badness 10000) in paragraph at lines 4494--4494
 \T1/lmr/m/n/10.95 (+20) + get-Name(): String 
  []
 
 
-Underfull \hbox (badness 3735) in paragraph at lines 4495--4495
+Underfull \hbox (badness 3735) in paragraph at lines 4494--4494
 \T1/lmr/m/n/10.95 (+20) + set-Name(name: String): void 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4495--4495
+Underfull \hbox (badness 10000) in paragraph at lines 4494--4494
 \T1/lmr/m/n/10.95 (+20) + get-Code(): int 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4495--4495
+Underfull \hbox (badness 10000) in paragraph at lines 4494--4494
 \T1/lmr/m/n/10.95 (+20) + set-Code(code: int): void 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4508--4508
+Underfull \hbox (badness 6859) in paragraph at lines 4494--4494
+\T1/lmr/m/n/10.95 (+20) + se-tAc-counts(accounts: Ar- 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4494--4494
+\T1/lmr/m/n/10.95 (+20) rayList<Account>): void 
+ []
+
+
+Underfull \hbox (badness 3168) in paragraph at lines 4494--4494
+\T1/lmr/m/n/10.95 (+20) + get-Loans(): Ar-rayList<Loan> 
+ []
+
+
+Underfull \hbox (badness 5607) in paragraph at lines 4494--4494
+\T1/lmr/m/n/10.95 (+20) + addLoan(loan: Loan): void 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4510--4510
 [][]\T1/lmr/m/n/10.95 (+20) - ac-count-Num-ber: int 
  []
 
 
-Underfull \hbox (badness 8019) in paragraph at lines 4508--4508
-[][]\T1/lmr/m/n/10.95 (+20) + Ac-count(accountNumber: 
+Underfull \hbox (badness 10000) in paragraph at lines 4510--4510
+\T1/lmr/m/n/10.95 (+20) - bal-ance: dou-ble 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4508--4508
-\T1/lmr/m/n/10.95 (+20) int, bal-ance: dou-ble) 
+Underfull \hbox (badness 1484) in paragraph at lines 4510--4510
+[][]\T1/lmr/m/n/10.95 (+20) + Ac-count(customer: Cus-tomer, ac- 
  []
 
 
-Underfull \hbox (badness 7576) in paragraph at lines 4508--4508
+Underfull \hbox (badness 1337) in paragraph at lines 4510--4510
+\T1/lmr/m/n/10.95 (+20) count-Num-ber: int, bal-ance: dou-ble) 
+ []
+
+
+Underfull \hbox (badness 7576) in paragraph at lines 4510--4510
 \T1/lmr/m/n/10.95 (+20) + getAc-count-Num-ber(): int 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4508--4508
+Underfull \hbox (badness 10000) in paragraph at lines 4510--4510
 \T1/lmr/m/n/10.95 (+20) + se-tAc-count-Num- 
  []
 
 
-Underfull \hbox (badness 4024) in paragraph at lines 4508--4508
+Underfull \hbox (badness 4024) in paragraph at lines 4510--4510
 \T1/lmr/m/n/10.95 (+20) ber(accountNumber: int): void 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4508--4508
+Underfull \hbox (badness 10000) in paragraph at lines 4510--4510
 \T1/lmr/m/n/10.95 (+20) + get-Bal-ance(): dou-ble 
  []
 
 
-Underfull \hbox (badness 1199) in paragraph at lines 4508--4508
+Underfull \hbox (badness 1199) in paragraph at lines 4510--4510
 \T1/lmr/m/n/10.95 (+20) + set-Bal-ance(balance: dou-ble): void 
  []
 
 
-Underfull \hbox (badness 2828) in paragraph at lines 4508--4508
+Underfull \hbox (badness 7151) in paragraph at lines 4510--4510
+\T1/lmr/m/n/10.95 (+20) + get-Cus-tomer(): Cus-tomer 
+ []
+
+
+Underfull \hbox (badness 2828) in paragraph at lines 4510--4510
 \T1/lmr/m/n/10.95 (+20) + de-posit(amount: dou-ble): void 
  []
 
 
-Underfull \hbox (badness 3482) in paragraph at lines 4521--4521
-\T1/lmr/m/n/10.95 (+20) int, bal-ance: dou-ble, 
- []
-
-
-Underfull \hbox (badness 2894) in paragraph at lines 4521--4521
-\T1/lmr/m/n/10.95 (+20) in-ter-e-stRate: dou-ble) 
- []
-
-
-Underfull \hbox (badness 5077) in paragraph at lines 4521--4521
+Underfull \hbox (badness 5077) in paragraph at lines 4523--4523
 \T1/lmr/m/n/10.95 (+20) + set-Min-i-mum-Bal- 
  []
 
 
-Underfull \hbox (badness 1902) in paragraph at lines 4521--4521
+Underfull \hbox (badness 1902) in paragraph at lines 4523--4523
 \T1/lmr/m/n/10.95 (+20) ance(minimumBalance: 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4521--4521
+Underfull \hbox (badness 10000) in paragraph at lines 4523--4523
 \T1/lmr/m/n/10.95 (+20) dou-ble): void 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4521--4521
+Underfull \hbox (badness 10000) in paragraph at lines 4523--4523
 \T1/lmr/m/n/10.95 (+20) dou-ble): void 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4531--4531
-[][]\T1/lmr/m/n/10.95 (+20) + CheckingAc- 
- []
-
-
-Underfull \hbox (badness 2134) in paragraph at lines 4531--4531
-\T1/lmr/m/n/10.95 (+20) count(accountNumber: 
- []
-
-
-Underfull \hbox (badness 3482) in paragraph at lines 4531--4531
-\T1/lmr/m/n/10.95 (+20) int, bal-ance: dou-ble, 
- []
-
-
-Underfull \hbox (badness 1655) in paragraph at lines 4531--4531
-\T1/lmr/m/n/10.95 (+20) over-draftLimit: dou-ble) 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 4531--4531
+Underfull \hbox (badness 10000) in paragraph at lines 4533--4533
 \T1/lmr/m/n/10.95 (+20) + se-tOver- 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4531--4531
+Underfull \hbox (badness 10000) in paragraph at lines 4533--4533
 \T1/lmr/m/n/10.95 (+20) dou-ble): void 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4545--4545
+Underfull \hbox (badness 10000) in paragraph at lines 4554--4554
 [][]\T1/lmr/m/n/10.95 (+20) - name: String 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4545--4545
+Underfull \hbox (badness 10000) in paragraph at lines 4554--4554
 \T1/lmr/m/n/10.95 (+20) - ad-dress: String 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4545--4545
+Underfull \hbox (badness 3029) in paragraph at lines 4554--4554
+\T1/lmr/m/n/10.95 (+20) - ac-counts: Ar-rayList<Account> 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4554--4554
 \T1/lmr/m/n/10.95 (+20) + get-Name(): String 
  []
 
 
-Underfull \hbox (badness 3735) in paragraph at lines 4545--4545
+Underfull \hbox (badness 3735) in paragraph at lines 4554--4554
 \T1/lmr/m/n/10.95 (+20) + set-Name(name: String): void 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4545--4545
+Underfull \hbox (badness 10000) in paragraph at lines 4554--4554
 \T1/lmr/m/n/10.95 (+20) + getAd-dress(): String 
  []
 
 
-Underfull \hbox (badness 1394) in paragraph at lines 4545--4545
+Underfull \hbox (badness 1394) in paragraph at lines 4554--4554
 \T1/lmr/m/n/10.95 (+20) + se-tAd-dress(address: String): void 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4560--4560
+Underfull \hbox (badness 6859) in paragraph at lines 4554--4554
+\T1/lmr/m/n/10.95 (+20) + se-tAc-counts(accounts: Ar- 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4554--4554
+\T1/lmr/m/n/10.95 (+20) rayList<Account>): void 
+ []
+
+
+Underfull \hbox (badness 3168) in paragraph at lines 4554--4554
+\T1/lmr/m/n/10.95 (+20) + get-Loans(): Ar-rayList<Loan> 
+ []
+
+
+Underfull \hbox (badness 5607) in paragraph at lines 4554--4554
+\T1/lmr/m/n/10.95 (+20) + addLoan(loan: Loan): void 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4575--4575
 [][]\T1/lmr/m/n/10.95 (+20) - loan-Num-ber: int 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4560--4560
-\T1/lmr/m/n/10.95 (+20) - amount: dou-ble 
+Underfull \hbox (badness 10000) in paragraph at lines 4575--4575
+\T1/lmr/m/n/10.95 (+20) - prin-ci-palAm-ount: dou-ble 
  []
 
 
-Underfull \hbox (badness 2221) in paragraph at lines 4560--4560
-[][]\T1/lmr/m/n/10.95 (+20) + Loan(loanNumber: int, amount: 
+Underfull \hbox (badness 10000) in paragraph at lines 4575--4575
+\T1/lmr/m/n/10.95 (+20) - in-ter-e-stRate: dou-ble 
  []
 
 
-Underfull \hbox (badness 5878) in paragraph at lines 4560--4560
-\T1/lmr/m/n/10.95 (+20) dou-ble, in-ter-e-stRate: dou-ble) 
+Underfull \hbox (badness 10000) in paragraph at lines 4575--4575
+\T1/lmr/m/n/10.95 (+20) - bank: Bank 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4560--4560
+Underfull \hbox (badness 10000) in paragraph at lines 4575--4575
 \T1/lmr/m/n/10.95 (+20) + get-Loan-Num-ber(): int 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4560--4560
-\T1/lmr/m/n/10.95 (+20) + getA-mount(): dou-ble 
+Underfull \hbox (badness 4378) in paragraph at lines 4575--4575
+\T1/lmr/m/n/10.95 (+20) + set-Loan-Num-ber(loanNumber: int): void 
  []
 
 
-Underfull \hbox (badness 1082) in paragraph at lines 4560--4560
-\T1/lmr/m/n/10.95 (+20) + se-tA-mount(amount: dou-ble): void 
+Underfull \hbox (badness 10000) in paragraph at lines 4575--4575
+\T1/lmr/m/n/10.95 (+20) + get-Prin-ci-palAm-ount(): dou-ble 
  []
 
 
-Underfull \hbox (badness 7540) in paragraph at lines 4560--4560
+Underfull \hbox (badness 10000) in paragraph at lines 4575--4575
 \T1/lmr/m/n/10.95 (+20) + get-Inter-e-stRate(): dou-ble 
  []
 
-Missing character: There is no 1 in font nullfont!
 
-Overfull \hbox (8.88171pt too wide) in paragraph at lines 4570--4571
+Underfull \hbox (badness 2269) in paragraph at lines 4575--4575
+\T1/lmr/m/n/10.95 (+20) + set-Inter-e-stRate(interestRate: dou-ble): void 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4575--4575
+\T1/lmr/m/n/10.95 (+20) + get-Bank(): Bank 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4575--4575
+\T1/lmr/m/n/10.95 (+20) + set-Bank(bank: Bank): void 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4575--4575
+\T1/lmr/m/n/10.95 (+20) + get-Cus-tomer(): Cus-tomer 
+ []
+
+
+Underfull \hbox (badness 4108) in paragraph at lines 4575--4575
+\T1/lmr/m/n/10.95 (+20) + set-Cus-tomer(customer: Cus-tomer): void 
+ []
+
+
+Overfull \hbox (19.89723pt too wide) in paragraph at lines 4587--4588
  [][] 
  []
 
 
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
+[80]
+
+LaTeX Warning: Text page 81 contains only floats.
+
+
+Overfull \vbox (6.69106pt too high) has occurred while \output is active []
+
+
 
 [81]
-Overfull \hbox (2.36685pt too wide) in paragraph at lines 4609--4611
+Overfull \hbox (2.36685pt too wide) in paragraph at lines 4626--4628
 []\T1/lmr/m/n/10.95 (-20) The ``Cus-tomer'' class has as-so-ci-a-tion re-la-tion-ships with the ``Sav-ingsAc-count'', ``CheckingAc-
  []
 
 
-Overfull \hbox (13.25325pt too wide) in paragraph at lines 4639--4642
+Overfull \hbox (13.25325pt too wide) in paragraph at lines 4656--4659
 []\T1/lmr/m/n/10.95 (-20) The ``Cus-tomer'' class has a one-to-many re-la-tion-ship with the ``Sav-ingsAc-count'', ``CheckingAc-
  []
 
 
 
 [82]
-Underfull \hbox (badness 10000) in paragraph at lines 4673--4673
+Underfull \hbox (badness 10000) in paragraph at lines 4690--4690
 [][]\T1/lmr/m/n/10.95 (+20) - name: String 
  []
 
 
-Underfull \hbox (badness 3302) in paragraph at lines 4673--4673
+Underfull \hbox (badness 3302) in paragraph at lines 4690--4690
 \T1/lmr/m/n/10.95 (+20) + get-Name(): String 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4673--4673
+Underfull \hbox (badness 10000) in paragraph at lines 4690--4690
 \T1/lmr/m/n/10.95 (+20) + getAge(): int 
  []
 
 
-Underfull \hbox (badness 1342) in paragraph at lines 4673--4673
+Underfull \hbox (badness 1342) in paragraph at lines 4690--4690
 \T1/lmr/m/n/10.95 (+20) + se-tAge(age: int): void 
  []
 
 
-Underfull \hbox (badness 3323) in paragraph at lines 4683--4683
+Underfull \hbox (badness 3323) in paragraph at lines 4700--4700
 [][]\T1/lmr/m/n/10.95 (+20) + Dog(name: String, 
  []
 
 
-Underfull \hbox (badness 1831) in paragraph at lines 4683--4683
+Underfull \hbox (badness 1831) in paragraph at lines 4700--4700
 \T1/lmr/m/n/10.95 (+20) age: int, breed: String) 
  []
 
 
-Underfull \hbox (badness 3271) in paragraph at lines 4683--4683
+Underfull \hbox (badness 3271) in paragraph at lines 4700--4700
 \T1/lmr/m/n/10.95 (+20) + get-Breed(): String 
  []
 
 
-Underfull \hbox (badness 3568) in paragraph at lines 4694--4694
+Underfull \hbox (badness 3568) in paragraph at lines 4711--4711
 [][]\T1/lmr/m/n/10.95 (+20) + Cat(name: String, 
  []
 
 
-Underfull \hbox (badness 2142) in paragraph at lines 4694--4694
+Underfull \hbox (badness 2142) in paragraph at lines 4711--4711
 \T1/lmr/m/n/10.95 (+20) age: int, color: String) 
  []
 
 
-Underfull \hbox (badness 3514) in paragraph at lines 4694--4694
+Underfull \hbox (badness 3514) in paragraph at lines 4711--4711
 \T1/lmr/m/n/10.95 (+20) + get-Color(): String 
  []
 
 
-Underfull \hbox (badness 2846) in paragraph at lines 4694--4694
+Underfull \hbox (badness 2846) in paragraph at lines 4711--4711
 \T1/lmr/m/n/10.95 (+20) + make-Sound(): void 
  []
 
@@ -1623,86 +1677,86 @@ Underfull \hbox (badness 2846) in paragraph at lines 4694--4694
 [83]
 
 [84]
-
-[85]
-Underfull \hbox (badness 10000) in paragraph at lines 4839--4839
+Underfull \hbox (badness 10000) in paragraph at lines 4856--4856
 [][]\T1/lmr/m/n/10.95 (+20) - make: String 
  []
 
 
-Underfull \hbox (badness 7981) in paragraph at lines 4839--4839
+Underfull \hbox (badness 7981) in paragraph at lines 4856--4856
 [][]\T1/lmr/m/n/10.95 (+20) + Ve-hi-cle(make: 
  []
 
 
-Underfull \hbox (badness 2401) in paragraph at lines 4839--4839
+Underfull \hbox (badness 2401) in paragraph at lines 4856--4856
 \T1/lmr/m/n/10.95 (+20) String, model: String) 
  []
 
 
-Underfull \hbox (badness 3568) in paragraph at lines 4839--4839
+Underfull \hbox (badness 3568) in paragraph at lines 4856--4856
 \T1/lmr/m/n/10.95 (+20) + get-Make(): String 
  []
 
 
-Underfull \hbox (badness 3009) in paragraph at lines 4839--4839
+Underfull \hbox (badness 3009) in paragraph at lines 4856--4856
 \T1/lmr/m/n/10.95 (+20) + get-Model(): String 
  []
 
 
-Underfull \hbox (badness 3128) in paragraph at lines 4849--4849
+Underfull \hbox (badness 3128) in paragraph at lines 4866--4866
 \T1/lmr/m/n/10.95 (+20) String, color: String) 
  []
 
 
-Underfull \hbox (badness 3514) in paragraph at lines 4849--4849
+Underfull \hbox (badness 3514) in paragraph at lines 4866--4866
 \T1/lmr/m/n/10.95 (+20) + get-Color(): String 
  []
 
 
-Underfull \hbox (badness 2799) in paragraph at lines 4859--4859
+Underfull \hbox (badness 2799) in paragraph at lines 4876--4876
 \T1/lmr/m/n/10.95 (+20) bat-teryCa-pac-ity: int) 
  []
 
 
-Underfull \hbox (badness 4353) in paragraph at lines 4859--4859
+Underfull \hbox (badness 4353) in paragraph at lines 4876--4876
 \T1/lmr/m/n/10.95 (+20) + set-Bat-teryCa-pac- 
  []
 
 
 
+[85]
+
 [86]
-Underfull \hbox (badness 6775) in paragraph at lines 4893--4893
+Underfull \hbox (badness 6775) in paragraph at lines 4910--4910
 [][][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4893--4893
+Underfull \hbox (badness 10000) in paragraph at lines 4910--4910
  
  []
 
 
-Underfull \hbox (badness 6775) in paragraph at lines 4903--4903
+Underfull \hbox (badness 6775) in paragraph at lines 4920--4920
 [][][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4903--4903
+Underfull \hbox (badness 10000) in paragraph at lines 4920--4920
  
  []
 
 
-Underfull \hbox (badness 6775) in paragraph at lines 4914--4914
+Underfull \hbox (badness 6775) in paragraph at lines 4931--4931
 [][][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4914--4914
+Underfull \hbox (badness 10000) in paragraph at lines 4931--4931
  
  []
 
 
-Underfull \hbox (badness 2846) in paragraph at lines 4914--4914
+Underfull \hbox (badness 2846) in paragraph at lines 4931--4931
 \T1/lmr/m/n/10.95 (+20) + make-Sound(): void 
  []
 
@@ -1727,12 +1781,12 @@ Underfull \hbox (badness 2846) in paragraph at lines 4914--4914
 ]
  8.
 
-Overfull \hbox (13.98967pt too wide) in paragraph at lines 5108--5109
+Overfull \hbox (13.98967pt too wide) in paragraph at lines 5119--5120
 []\T1/lmr/m/n/10.95 (-20) JavaTpoint (2022). \T1/lmr/m/it/10.95 (-20) Java OOPs Con-cepts\T1/lmr/m/n/10.95 (-20) . Ja-vaT-point. https://www.javatpoint.com/java-
  []
 
 
-Overfull \hbox (74.52774pt too wide) in paragraph at lines 5109--5110
+Overfull \hbox (74.52774pt too wide) in paragraph at lines 5120--5121
 []\T1/lmr/m/n/10.95 (-20) Tutorialspoint (2019). \T1/lmr/m/it/10.95 (-20) Java Tu-to-rial\T1/lmr/m/n/10.95 (-20) . Tu-to-ri-al-s-point. https://www.tutorialspoint.com/java/index.htm 
  []
 
@@ -1750,21 +1804,21 @@ L3 programming layer <2024-07-20>
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `"Object-Oriented Programming".out' has not changed.
-(rerunfilecheck)             Checksum: 9C464452B466ED4EDC3E0181E63C628E;23917.
+(rerunfilecheck)             Checksum: 64244AA5837E8724D880E3F6FA2DFB4D;23313.
  ) 
 Here is how much of TeX's memory you used:
- 35082 strings out of 475496
- 639515 string characters out of 5776763
+ 35072 strings out of 475496
+ 639382 string characters out of 5776763
  2075960 words of memory out of 5000000
- 54835 multiletter control sequences out of 15000+600000
+ 54834 multiletter control sequences out of 15000+600000
  670524 words of font info for 236 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  117i,14n,121p,1340b,2080s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmex10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmro10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on "Object-Oriented Programming.pdf" (103 pages, 662180 bytes).
+Output written on "Object-Oriented Programming.pdf" (103 pages, 660894 bytes).
 PDF statistics:
- 3772 PDF objects out of 4296 (max. 8388607)
- 3593 compressed objects within 36 object streams
- 2078 named destinations out of 2487 (max. 500000)
- 63757 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 3749 PDF objects out of 4296 (max. 8388607)
+ 3570 compressed objects within 36 object streams
+ 2069 named destinations out of 2073 (max. 500000)
+ 63733 words of extra memory for PDF output out of 74296 (max. 10000000)
 
