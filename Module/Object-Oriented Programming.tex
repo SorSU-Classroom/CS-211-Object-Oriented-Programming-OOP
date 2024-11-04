@@ -4900,7 +4900,7 @@ extensibility in the design of software systems.
 \begin{figure}[h!]
   \centering
   \begin{tikzpicture}
-    \begin{class}[text width=6cm]{Animal}{0, 0}
+    \begin{class}[text width=6cm, scale=0.85]{Animal}{0, 0}
       \attribute{\text{\{\{ ATTRIBUTES \}\}}}
 
       \operation{\text{\{\{ METHODS \}\}}}
@@ -4909,7 +4909,7 @@ extensibility in the design of software systems.
       \operation{+ makeSound(): void}
     \end{class}
     
-    \begin{class}[text width=6cm]{Dog}{-4, -4}
+    \begin{class}[text width=6cm, scale=0.85]{Dog}{-4, -4}
       \inherit{Animal}
       \attribute{\text{\{\{ ATTRIBUTES \}\}}}
       
@@ -4919,7 +4919,7 @@ extensibility in the design of software systems.
       \operation{+ makeSound(): void}
     \end{class}
     
-    \begin{class}[text width=6cm]{Cat}{4, -4}
+    \begin{class}[text width=6cm, scale=0.85]{Cat}{4, -4}
       \inherit{Animal}
       \attribute{\text{\{\{ ATTRIBUTES \}\}}}
       
@@ -5052,15 +5052,549 @@ parameter. If an object of the ``Cat'' class is created and the
 
 \section{Encapsulation}
 
+\textbf{Encapsulation} in object-oriented programming is the process of
+hiding the internal implementation details of a class and providing a
+public interface to interact with the class. Encapsulation protects the
+data of a class from being accessed directly and ensures that the data
+is accessed and modified through methods.
+
+% Class Diagram of Person
+\begin{figure}[h!]
+  \centering
+  \begin{tikzpicture}
+    \begin{class}[text width=6cm, scale=0.8]{Person}{0, 0}
+      \attribute{- name: String}
+      \attribute{- age: int}
+      \attribute{- address: String}
+
+      \operation{+ Person(name: String, age: int, address: String)}
+      \operation{+ getName(): String}
+      \operation{+ setName(name: String): void}
+      \operation{+ getAge(): int}
+      \operation{+ setAge(age: int): void}
+      \operation{+ getAddress(): String}
+      \operation{+ setAddress(address: String): void}
+    \end{class}
+  \end{tikzpicture}
+  \caption{Encapsulation in Person Class}
+  \label{fig:encapsulation-class-diagram}
+\end{figure}
+
+Figure \ref{fig:encapsulation-class-diagram} illustrates the `Person` 
+class in Java. This class contains three private attributes: `name`, 
+`age`, and `address`. These attributes are encapsulated within the 
+class, meaning they cannot be accessed directly from outside the 
+class. Instead, the class provides getter and setter methods to 
+interact with these attributes. The getter methods allow you to 
+read the values of the attributes, while the setter methods allow 
+you to modify them.
+
+% Java code for Person class
+\begin{lstlisting}[language=Java, caption={Person Class in Java}, label={lst:person-class}]
+  // Person.java
+  package com.oop.PersonInfo;
+
+  public class Person {
+      private String name;
+      private int age;
+      private String address;
+
+      public Person(String name, int age, String address) {
+          this.name = name;
+          this.age = age;
+          this.address = address;
+      }
+
+      // Getter method for name
+      public String getName() {
+          return name;
+      }
+
+      // Setter method for name
+      public void setName(String name) {
+          this.name = name;
+      }
+
+      // Getter method for age
+      public int getAge() {
+          return age;
+      }
+
+      // Setter method for age
+      public void setAge(int age) {
+          this.age = age;
+      }
+
+      // Getter method for address
+      public String getAddress() {
+          return address;
+      }
+
+      // Setter method for address
+      public void setAddress(String address) {
+          this.address = address;
+      }
+  }
+\end{lstlisting}
+
+Code \ref{lst:person-class} demonstrates the implementation of the 
+`Person` class in Java. This class contains three private 
+attributes: `name`, `age`, and `address`. To manage access to these 
+attributes, the class includes getter and setter methods. The getter 
+methods retrieve the attribute values, while the setter methods 
+update them. As a convention, the names of getter and setter methods
+are prefixed with `get` and `set`, respectively, followed by the
+attribute name in camel case.
+
 \section{Abstraction}
 
-\section{Typecasting}
+\textbf{Abstraction} in object-oriented programming is the process of
+hiding the implementation details of a class and showing
+only the essential information to the user. Abstraction allows
+you to focus on what an object does rather than how it does it.
 
-\subsection{Downcasting}
+There are two ways to achieve abstraction in Java:
 
-\subsection{Upcasting}
+\begin{itemize}
+  \item \textbf{Abstract Classes}: An abstract class is a class that
+  cannot be instantiated and can contain abstract methods. Abstract
+  methods are methods that do not have a body and must be implemented
+  by subclasses.
+  \item \textbf{Interfaces}: An interface is a reference type in Java
+  that contains only abstract methods and constants. Classes can
+  implement interfaces to provide specific implementations for the
+  abstract methods.
+\end{itemize}
+
+\subsection{Abstract Classes}
+
+\textbf{Abstract classes} in Java are classes that cannot be
+instantiated and can contain abstract methods. Abstract methods are
+methods that do not have a body and must be implemented by subclasses.
+Abstract classes can also contain concrete methods with a body. In Java,
+you can create an abstract class using the `abstract' keyword.
+
+% Class Diagram of Shape, Circle, and Rectangle
+\begin{figure}[h!]
+  \centering
+  \begin{tikzpicture}
+    \begin{interface}[text width=6cm, scale=0.8]{Shape}{0, 0}
+      \attribute{- color: String}
+      \operation{+ getColor(): String}
+      \operation{+ setColor(color: String): void}
+      \operation{}
+      
+      \operation{+ abstract calculateArea(): double}
+    \end{interface}
+
+    \begin{class}[text width=6cm, scale=0.8]{Circle}{-4, -4}
+      \implement{Shape}
+      \attribute{+ radius: double}
+      \operation{+ Circle(color: String, radius: double)}
+      \operation{+ getRadius(): double}
+      \operation{+ setRadius(radius: double): void}
+      \operation{}
+      
+      \operation{+ calculateArea(): double}
+    \end{class}
+
+    \begin{class}[text width=6cm, scale=0.8]{Rectangle}{4, -4}
+      \implement{Shape}
+      \attribute{+ width: double}
+      \attribute{+ height: double}
+      \operation{+ Rectangle(color: String, width: double, height: double)}
+      \operation{+ getWidth(): double}
+      \operation{+ setWidth(width: double): void}
+      \operation{+ getHeight(): double}
+      \operation{+ setHeight(height: double): void}
+      \operation{}
+      
+      \operation{+ calculateArea(): double}
+    \end{class}
+  \end{tikzpicture}
+  \caption{Abstract Class Shape with Concrete Subclasses Circle and Rectangle}
+  \label{fig:abstract-class-diagram}
+\end{figure}
+
+Figure \ref{fig:abstract-class-diagram} illustrates the `Shape` abstract
+class in Java. This class contains a private attribute `color` and an
+abstract method `calculateArea()`. The `calculateArea()` method does not
+have a body and must be implemented by subclasses. The `Circle` and
+`Rectangle` classes are concrete subclasses of the `Shape` class that
+implement the `calculateArea()` method to calculate the area of a circle
+and rectangle, respectively.
+
+% Java code for Shape, Circle, and Rectangle classes
+\begin{lstlisting}[language=Java, caption={Shape Class in Java}, label={lst:shape-class}]
+  // Shape.java
+  package com.oop.Shapes;
+
+  public abstract class Shape {
+      private String color;
+
+      public String getColor() {
+          return color;
+      }
+
+      public void setColor(String color) {
+          this.color = color;
+      }
+
+      public abstract double calculateArea();
+  }
+\end{lstlisting}
+
+\begin{lstlisting}[language=Java, caption={Circle Class in Java}, label={lst:circle-class}]
+  // Circle.java
+  package com.oop.Shapes;
+
+  public class Circle extends Shape {
+      private double radius;
+
+      public Circle(String color, double radius) {
+          setColor(color);
+          this.radius = radius;
+      }
+
+      public double getRadius() {
+          return radius;
+      }
+
+      public void setRadius(double radius) {
+          this.radius = radius;
+      }
+
+      @Override
+      public double calculateArea() {
+          return Math.PI * radius * radius;
+      }
+  }
+\end{lstlisting}
+
+\begin{lstlisting}[language=Java, caption={Rectangle Class in Java}, label={lst:rectangle-class}]
+  // Rectangle.java
+  package com.oop.Shapes;
+
+  public class Rectangle extends Shape {
+      private double width;
+      private double height;
+
+      public Rectangle(String color, double width, double height) {
+          setColor(color);
+          this.width = width;
+          this.height = height;
+      }
+
+      public double getWidth() {
+          return width;
+      }
+
+      public void setWidth(double width) {
+          this.width = width;
+      }
+
+      public double getHeight() {
+          return height;
+      }
+
+      public void setHeight(double height) {
+          this.height = height;
+      }
+
+      @Override
+      public double calculateArea() {
+          return width * height;
+      }
+  }
+\end{lstlisting}
+
+Code \ref{lst:shape-class} shows the implementation of the `Shape`
+abstract class in Java. The class contains a private attribute `color`
+and an abstract method `calculateArea()`. Code \ref{lst:circle-class}
+and Code \ref{lst:rectangle-class} show the implementation of the
+`Circle` and `Rectangle` classes in Java. These classes are concrete
+subclasses of the `Shape` class and implement the `calculateArea()`
+method to calculate the area of a circle and rectangle, respectively.
+
+\subsection{Interfaces}
+
+\textbf{Interfaces} in Java are reference types that contain only
+abstract methods and constants. An interface provides a contract for
+classes to implement, specifying the methods that must be implemented
+by the classes that implement the interface. Classes can implement
+multiple interfaces, allowing them to provide specific implementations
+for the abstract methods defined in the interfaces.
+
+% Class Diagram of Bird, Penguin, Eagle, and Duck classes, and Swim and Fly interfaces
+\begin{figure}[h!]
+  \centering
+  \begin{tikzpicture}
+    \begin{class}[text width=5cm, scale=0.8]{Bird}{-6, 0}
+      \attribute{- wingSpan: double}
+      \attribute{- color: String}
+      \attribute{- swimSpeed: double}
+      \attribute{- flySpeed: double}
+      \operation{+ Bird(wingSpan: double, color: String)}
+      \operation{+ getWingSpan(): double}
+      \operation{+ setWingSpan(wingSpan: double): void}
+      \operation{+ getColor(): String}
+      \operation{+ setColor(color: String): void}
+      \operation{+ getSwimSpeed(): double}
+      \operation{+ setSwimSpeed(swimSpeed: double): void}
+      \operation{+ getFlySpeed(): double}
+      \operation{+ setFlySpeed(flySpeed: double): void}
+    \end{class}
+
+    \begin{interface}[text width=5cm, scale=0.8]{SwimInterface}{0, -4}
+      \operation{+ swim(): void}
+    \end{interface}
+
+    \begin{interface}[text width=5cm, scale=0.8]{FlyInterface}{6, -4}
+      \operation{+ fly(): void}
+    \end{interface}
+
+    \begin{class}[text width=5cm, scale=0.8]{Penguin}{-6, -10}
+      \inherit{Bird}
+      \implement{SwimInterface}
+      \operation{+ Penguin(wingSpan: double, color: String, swimSpeed: double)}
+      \operation{+ swim(): void}
+    \end{class}
+
+    \begin{class}[text width=5cm, scale=0.8]{Eagle}{0, -10}
+      \inherit{Bird}
+      \implement{FlyInterface}
+      \operation{+ Eagle(wingSpan: double, color: String, flySpeed: double)}
+      \operation{+ fly(): void}
+    \end{class}
+
+    \begin{class}[text width=5cm, scale=0.8]{Duck}{6, -10}
+      \inherit{Bird}
+      \implement{SwimInterface}
+      \implement{FlyInterface}
+      \operation{+ Duck(wingSpan: double, color: String, swimSpeed: double, flySpeed: double)}
+      \operation{+ swim(): void}
+      \operation{+ fly(): void}
+    \end{class}
+  \end{tikzpicture}
+  \caption{Interfaces Swim and Fly Implemented by Penguin, Eagle, and Duck Classes}
+  \label{fig:interface-class-diagram}
+\end{figure}
+
+Figure \ref{fig:interface-class-diagram} illustrates the `Bird` class
+and its subclasses `Penguin`, `Eagle`, and `Duck` in Java. It also
+shows the `SwimInterface` and `FlyInterface` interfaces. The `Bird`
+class contains private attributes `wingSpan` and `color`, and the
+`Penguin`, `Eagle`, and `Duck` classes inherit from the `Bird` class
+and implement the `SwimInterface` and `FlyInterface` interfaces. The
+`SwimInterface` and `FlyInterface` interfaces contain abstract methods
+`swim()` and `fly()`, respectively, that must be implemented by the
+classes that implement the interfaces. In this example, the `Penguin`
+class implements the `swim()` method, the `Eagle` class implements the
+`fly()` method, and the `Duck` class implements both the `swim()` and
+`fly()` methods.
+
+% Java code for Bird, Penguin, Eagle, and Duck classes, and Swim and Fly interfaces
+\begin{lstlisting}[language=Java, caption={Bird Class in Java}, label={lst:bird-class}]
+  // Bird.java
+  package com.oop.Birds;
+
+  public class Bird {
+      private double wingSpan;
+      private String color;
+      private double swimSpeed;
+      private double flySpeed;
+
+      public Bird(double wingSpan, String color) {
+          this.wingSpan = wingSpan;
+          this.color = color;
+      }
+
+      // Getter and setter methods
+      // Rest of the code
+  }
+\end{lstlisting}
+
+\begin{lstlisting}[language=Java, caption={SwimInterface Interface in Java}, label={lst:swim-interface}]
+  // SwimInterface.java
+  package com.oop.Birds;
+
+  public interface SwimInterface {
+      void swim();
+  }
+\end{lstlisting}
+
+\begin{lstlisting}[language=Java, caption={FlyInterface Interface in Java}, label={lst:fly-interface}]
+  // FlyInterface.java
+  package com.oop.Birds;
+
+  public interface FlyInterface {
+      void fly();
+  }
+\end{lstlisting}
+
+\begin{lstlisting}[language=Java, caption={Penguin Class in Java}, label={lst:penguin-class}]
+  // Penguin.java
+  package com.oop.Birds;
+
+  public class Penguin extends Bird implements SwimInterface {
+      public Penguin(double wingSpan, String color, double swimSpeed) {
+          super(wingSpan, color);
+          setSwimSpeed(swimSpeed);
+      }
+
+      @Override
+      public void swim() {
+          System.out.println("Penguin swims at speed: " + getSwimSpeed());
+      }
+  }
+\end{lstlisting}
+
+\begin{lstlisting}[language=Java, caption={Eagle Class in Java}, label={lst:eagle-class}]
+  // Eagle.java
+  package com.oop.Birds;
+
+  public class Eagle extends Bird implements FlyInterface {
+      public Eagle(double wingSpan, String color, double flySpeed) {
+          super(wingSpan, color);
+          setFlySpeed(flySpeed);
+      }
+
+      @Override
+      public void fly() {
+          System.out.println("Eagle flies at speed: " + getFlySpeed());
+      }
+  }
+\end{lstlisting}
+
+\begin{lstlisting}[language=Java, caption={Duck Class in Java}, label={lst:duck-class}]
+  // Duck.java
+  package com.oop.Birds;
+
+  public class Duck extends Bird implements SwimInterface, FlyInterface {
+      public Duck(double wingSpan, String color, double swimSpeed, double flySpeed) {
+          super(wingSpan, color);
+          setSwimSpeed(swimSpeed);
+          setFlySpeed(flySpeed);
+      }
+
+      @Override
+      public void swim() {
+          System.out.println("Duck swims at speed: " + getSwimSpeed());
+      }
+
+      @Override
+      public void fly() {
+          System.out.println("Duck flies at speed: " + getFlySpeed());
+      }
+  }
+\end{lstlisting}
+
+Code \ref{lst:bird-class} shows the implementation of the `Bird` class
+in Java. The class contains private attributes `wingSpan`, `color`,
+`swimSpeed`, and `flySpeed`. Code \ref{lst:swim-interface} and Code
+\ref{lst:fly-interface} show the implementation of the `SwimInterface`
+and `FlyInterface` interfaces in Java. Code \ref{lst:penguin-class},
+Code \ref{lst:eagle-class}, and Code \ref{lst:duck-class} show the
+implementation of the `Penguin`, `Eagle`, and `Duck` classes in Java.
+These classes inherit from the `Bird` class and implement the
+`SwimInterface` and `FlyInterface` interfaces. The `Penguin` class
+implements the `swim()` method, the `Eagle` class implements the
+`fly()` method, and the `Duck` class implements both the `swim()` and
+`fly()` methods.
+
+\section{Typecasting in Objects}
+
+\textbf{Typecasting} in Java is the process of converting an object of
+one type to another type. There are two types of typecasting in Java:
+\textbf{upcasting} and \textbf{downcasting}.
+
+\subsection{Upcasting (Implicit)}
+
+\textbf{Upcasting} is the process of converting an object of a subclass
+to an object of a superclass. Upcasting is implicit and does not require
+the use of the cast operator. Upcasting can be done automatically when
+an object of a subclass is assigned to a variable of the superclass.
+
+% Java code for Upcasting
+\begin{lstlisting}[language=Java, caption={Upcasting in Java}, label={lst:upcasting}]
+  // Animal.java
+  package com.oop.AnimalKingdom;
+
+  public class Animal {
+      // Rest of the code
+  }
+
+  // Dog.java
+  package com.oop.AnimalKingdom;
+
+  public class Dog extends Animal {
+      // Rest of the code
+  }
+
+  // Main.java
+  package com.oop.AnimalKingdom;
+
+  public class Main {
+      public static void main(String[] args) {
+          Animal animal = new Dog(); // Upcasting
+      }
+  }
+\end{lstlisting}
+
+Code \ref{lst:upcasting} demonstrates upcasting in Java. The `Animal`
+class is the superclass, and the `Dog` class is the subclass. In the
+`Main` class, an object of the `Dog` class is created and assigned to a
+variable of the `Animal` type. Upcasting is implicit in this case
+because the object is of the `Dog` type.
+
+\subsection{Downcasting (Explicit)}
+
+\textbf{Downcasting} is the process of converting an object of a
+superclass to an object of a subclass. Downcasting is explicit and
+requires the use of the cast operator. Downcasting can only be done if
+the object is originally created as an instance of the subclass.
+
+% Java code for Downcasting
+\begin{lstlisting}[language=Java, caption={Downcasting in Java}, label={lst:downcasting}]
+  // Animal.java
+  package com.oop.AnimalKingdom;
+
+  public class Animal {
+      // Rest of the code
+  }
+
+  // Dog.java
+  package com.oop.AnimalKingdom;
+
+  public class Dog extends Animal {
+      // Rest of the code
+  }
+
+  // Main.java
+  package com.oop.AnimalKingdom;
+
+  public class Main {
+      public static void main(String[] args) {
+          Animal animal = new Dog();
+          Dog dog = (Dog) animal; // Downcasting
+      }
+  }
+\end{lstlisting}
+
+Code \ref{lst:downcasting} demonstrates downcasting in Java. The
+`Animal` class is the superclass, and the `Dog` class is the subclass.
+In the `Main` class, an object of the `Dog` class is created and
+assigned to a variable of the `Animal` type. The object is then
+downcasted to the `Dog` type using the `(Dog)` operator. Downcasting is
+implicit in this case because the object is of the `Dog` type.
 
 \section{Summary}
+
+In this chapter, we discussed the concepts of inheritance,
+polymorphism, encapsulation, and abstraction in object-oriented
+programming. We explored how these concepts are implemented in Java
+using classes and interfaces. We also discussed typecasting in objects
+and demonstrated upcasting and downcasting in Java.
 
 %%%%%%%%%%%%%%%%%%%%%%%
 %%%     Chapter     %%%
