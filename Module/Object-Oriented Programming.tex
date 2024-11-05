@@ -4408,9 +4408,8 @@ in Java. A class diagram consists of the following elements:
 \end{itemize}
 
 In the class diagram for the ``Bank'' class, the class has two attributes: ``name''
-and ``code'', two constructors, and several methods to get and set the attributes,
-as well as add and remove accounts. The attributes and methods are displayed with
-the appropriate access modifiers.
+and ``code'', one constructor, and four methods. The attributes and methods are
+indicated with the access modifiers ``+'' (public) and ``-'' (private).
 
 The ``+'' and ``-'' symbols in front of the attributes and methods indicate the
 access modifiers. In a class diagram, there are four types of access modifiers:
@@ -4600,7 +4599,24 @@ multiplicity of the relationships between classes.
 \subsubsection{Relationships Between Classes}
 
 In object-oriented programming, classes can have different types of relationships
-with other classes. The main types of relationships between classes are:
+with other classes. Relationships between classes are represented in a class
+diagram using lines and symbols. Say for example, the Bank class diagram has
+the following relationships between classes:
+
+\begin{itemize}
+  \item The ``Bank'' class has a composition relationship with the ``Account'' class.
+  \item The ``SavingAccount'' and ``CheckingAccount'' classes inherit from the
+  ``Account'' class.
+  \item The ``Customer'' class has association relationships with the ``SavingsAccount'',
+  ``CheckingAccount'', and ``Loan'' classes.
+  \item The ``Loan'' class has an aggregation relationship with the ``Bank'' class.
+  \item The ``Account'' class has an association relationship with the ``Bank'' class.
+  \item The ``Customer'' class has association relationships with the ``SavingsAccount'',
+  ``CheckingAccount'', and ``Loan'' classes.
+\end{itemize}
+
+There are different types of relationships between classes in a class diagram.
+Below are some of the common types of relationships:
 
 \begin{itemize}
   \item \textbf{Association}: An association is a relationship between two classes
@@ -4662,9 +4678,14 @@ multiplicities:
 
 \section{Inheritance}
 
-\textbf{Inheritance} is a fundamental concept in object-oriented programming that
-allows a class to inherit attributes and methods from another class. Inheritance
-enables code reuse and promotes the creation of a hierarchy of classes.
+\textbf{Inheritance} in object-oriented programming refers to the concept
+where a class inherits attributes and methods from another class. The class
+that inherits the attributes and methods is called a \textbf{subclass} or
+\textbf{child class}, and the class that provides the attributes and methods
+is called a \textbf{superclass} or \textbf{parent class}. In the real-world,
+one example of inheritance is the relationship between animals and mammals.
+Mammals are a subclass of animals and inherit attributes and methods from
+the animal superclass.
 
 \subsection{Superclass and Subclass}
 
@@ -4677,7 +4698,7 @@ attributes and methods from the superclass, it is also known as the child class.
 \begin{figure}[h!]
   \centering
   \begin{tikzpicture}
-    \begin{class}[text width=6cm]{Animal}{0, 0}
+    \begin{class}[text width=6cm, scale=0.8]{Animal}{0, 0}
       \attribute{- name: String}
       \attribute{- age: int}
 
@@ -4689,7 +4710,7 @@ attributes and methods from the superclass, it is also known as the child class.
       \operation{+ makeSound(): void}
     \end{class}
 
-    \begin{class}[text width=6cm]{Dog}{-4, -6}
+    \begin{class}[text width=6cm, scale=0.8]{Dog}{-4, -6}
       \inherit{Animal}
       \attribute{- breed: String}
 
@@ -4699,7 +4720,7 @@ attributes and methods from the superclass, it is also known as the child class.
       \operation{+ makeSound(): void}
     \end{class}
 
-    \begin{class}[text width=6cm]{Cat}{4, -6}
+    \begin{class}[text width=6cm, scale=0.8]{Cat}{4, -6}
       \inherit{Animal}
       \attribute{- color: String}
 
@@ -4843,7 +4864,7 @@ with increasing levels of specialization.
 \begin{figure}[h!]
   \centering
   \begin{tikzpicture}
-    \begin{class}[text width=6cm]{Vehicle}{0, 0}
+    \begin{class}[text width=6cm, scale=0.9]{Vehicle}{0, 0}
       \attribute{- make: String}
       \attribute{- model: String}
 
@@ -4855,7 +4876,7 @@ with increasing levels of specialization.
       \operation{+ drive(): void}
     \end{class}
 
-    \begin{class}[text width=6cm]{Car}{0, -7}
+    \begin{class}[text width=6cm, scale=0.9]{Car}{0, -6}
       \inherit{Vehicle}
       \attribute{- color: String}
 
@@ -4865,7 +4886,7 @@ with increasing levels of specialization.
       \operation{+ drive(): void}
     \end{class}
 
-    \begin{class}[text width=6cm]{ElectricCar}{0, -13}
+    \begin{class}[text width=6cm, scale=0.9]{ElectricCar}{0, -11}
       \inherit{Car}
       \attribute{- batteryCapacity: int}
 
@@ -4892,10 +4913,13 @@ provide specific implementations.
 
 \section{Polymorphism}
 
-\textbf{Polymorphism} is a fundamental concept in object-oriented
-programming that allows objects of different classes to be treated as
-objects of a common superclass. Polymorphism enables flexibility and
-extensibility in the design of software systems.
+\textbf{Polymorphism} in object-oriented programming refers to the
+ability of a method to behave differently based on the object that
+calls it. Polymorphism allows a method to take different forms based
+on the object that invokes it. It enables flexibility in the design
+of software systems by providing multiple ways to call a method. Say
+for example, the ``makeSound'' method in the ``Animal'' class can
+behave differently based on the object that calls it.
 
 \begin{figure}[h!]
   \centering
@@ -4942,7 +4966,8 @@ already defined in its superclass. The subclass can override the
 method to provide its own implementation. In figure \ref{fig:polymorphism-class-diagram},
 the ``Dog'' and ``Cat'' classes override the ``makeSound'' method of
 the ``Animal'' class to provide specific implementations for dogs and
-cats.
+cats. In Java, method overriding is achieved by using the ``@Override''
+annotation.
 
 % Java code for Animal, Dog, and Cat classes
 \begin{lstlisting}[language=Java, caption={Animal Class in Java}, label={lst:animal-class}]
@@ -5056,7 +5081,14 @@ parameter. If an object of the ``Cat'' class is created and the
 hiding the internal implementation details of a class and providing a
 public interface to interact with the class. Encapsulation protects the
 data of a class from being accessed directly and ensures that the data
-is accessed and modified through methods.
+is accessed and modified through methods. In Java, encapsulation is
+achieved by using access modifiers to control the visibility of
+attributes and methods. The access modifiers define the level of access
+to the attributes and methods of a class. Then, getter and setter
+methods are used to read and modify the attributes of a class. For
+convention, the names of getter and setter methods are prefixed with
+``get'' and ``set'', respectively, followed by the attribute name in
+camel case.
 
 % Class Diagram of Person
 \begin{figure}[h!]
@@ -5150,8 +5182,14 @@ attribute name in camel case.
 
 \textbf{Abstraction} in object-oriented programming is the process of
 hiding the implementation details of a class and showing
-only the essential information to the user. Abstraction allows
-you to focus on what an object does rather than how it does it.
+only the essential features to the outside world. Abstraction allows
+you to focus on what an object does rather than how it does it. In
+Java, abstraction is achieved by using abstract classes and interfaces.
+Abstract classes are classes that cannot be instantiated and can contain
+abstract methods. Abstract methods are methods that do not have a body
+and must be implemented by subclasses. Interfaces are reference types
+that contain only abstract methods and constants. Classes can implement
+interfaces to provide specific implementations for the abstract methods.
 
 There are two ways to achieve abstraction in Java:
 

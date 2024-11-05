@@ -11,8 +11,8 @@
 \contentsline {figure}{\numberline {5}{\ignorespaces Inheritance in Animal, Dog, and Cat Classes}}{83}{figure.caption.11}%
 \contentsline {figure}{\numberline {6}{\ignorespaces Multiple Levels of Inheritance in Vehicle, Car, and ElectricCar Classes}}{86}{figure.caption.12}%
 \contentsline {figure}{\numberline {7}{\ignorespaces Polymorphism in Animal, Dog, and Cat Classes from Figure \ref {fig:animal-class-diagram}}}{87}{figure.caption.13}%
-\contentsline {figure}{\numberline {8}{\ignorespaces Encapsulation in Person Class}}{89}{figure.caption.14}%
-\contentsline {figure}{\numberline {9}{\ignorespaces Abstract Class Shape with Concrete Subclasses Circle and Rectangle}}{91}{figure.caption.15}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Encapsulation in Person Class}}{90}{figure.caption.14}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Abstract Class Shape with Concrete Subclasses Circle and Rectangle}}{92}{figure.caption.15}%
 \contentsline {figure}{\numberline {10}{\ignorespaces Interfaces Swim and Fly Implemented by Penguin, Eagle, and Duck Classes}}{94}{figure.caption.16}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
