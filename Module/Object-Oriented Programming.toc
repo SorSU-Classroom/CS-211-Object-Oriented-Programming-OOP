@@ -147,14 +147,15 @@
 \contentsline {subsection}{\numberline {5.5.2}Interfaces}{94}{subsection.5.5.2}%
 \contentsline {section}{\numberline {5.6}Typecasting in Objects}{97}{section.5.6}%
 \contentsline {subsection}{\numberline {5.6.1}Upcasting (Implicit)}{97}{subsection.5.6.1}%
-\contentsline {subsection}{\numberline {5.6.2}Downcasting (Explicit)}{97}{subsection.5.6.2}%
-\contentsline {section}{\numberline {5.7}Summary}{98}{section.5.7}%
-\contentsline {chapter}{\numberline {6}Enumeration}{99}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Summary}{99}{section.6.1}%
-\contentsline {chapter}{\numberline {7}Coding Guidelines and Best Practices}{100}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Naming Conventions}{100}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Code Formatting}{100}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Documentation}{100}{section.7.3}%
-\contentsline {section}{\numberline {7.4}Code Maintainability}{100}{section.7.4}%
-\contentsline {section}{\numberline {7.5}Summary}{100}{section.7.5}%
-\contentsline {chapter}{\numberline {8}References}{101}{chapter.8}%
+\contentsline {subsection}{\numberline {5.6.2}Upcasting (Explicit)}{97}{subsection.5.6.2}%
+\contentsline {subsection}{\numberline {5.6.3}Downcasting (Explicit)}{98}{subsection.5.6.3}%
+\contentsline {section}{\numberline {5.7}Summary}{99}{section.5.7}%
+\contentsline {chapter}{\numberline {6}Enumeration}{100}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Summary}{100}{section.6.1}%
+\contentsline {chapter}{\numberline {7}Coding Guidelines and Best Practices}{101}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Naming Conventions}{101}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Code Formatting}{101}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Documentation}{101}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Code Maintainability}{101}{section.7.4}%
+\contentsline {section}{\numberline {7.5}Summary}{101}{section.7.5}%
+\contentsline {chapter}{\numberline {8}References}{102}{chapter.8}%

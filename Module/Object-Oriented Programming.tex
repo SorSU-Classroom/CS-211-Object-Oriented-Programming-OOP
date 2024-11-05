@@ -5547,6 +5547,46 @@ class is the superclass, and the `Dog` class is the subclass. In the
 variable of the `Animal` type. Upcasting is implicit in this case
 because the object is of the `Dog` type.
 
+\subsection{Upcasting (Explicit)}
+
+\textbf{Upcasting} can also be done explicitly using the cast operator.
+Explicit upcasting is required when the object is originally created as
+an instance of the subclass.
+
+% Java code for Upcasting
+\begin{lstlisting}[language=Java, caption={Upcasting in Java}, label={lst:upcasting}]
+  // Animal.java
+  package com.oop.AnimalKingdom;
+
+  public class Animal {
+      // Rest of the code
+  }
+
+  // Dog.java
+  package com.oop.AnimalKingdom;
+
+  public class Dog extends Animal {
+      // Rest of the code
+  }
+
+  // Main.java
+  package com.oop.AnimalKingdom;
+
+  public class Main {
+      public static void main(String[] args) {
+          Dog dog = new Dog();
+          Animal animal = (Animal) dog; // Upcasting
+      }
+  }
+\end{lstlisting}
+
+Code \ref{lst:upcasting} demonstrates explicit upcasting in Java. The
+`Animal` class is the superclass, and the `Dog` class is the subclass.
+In the `Main` class, an object of the `Dog` class is created and
+assigned to a variable of the `Dog` type. The object is then upcasted
+to the `Animal` type using the `(Animal)` operator. Explicit upcasting
+is required in this case because the object is of the `Dog` type.
+
 \subsection{Downcasting (Explicit)}
 
 \textbf{Downcasting} is the process of converting an object of a

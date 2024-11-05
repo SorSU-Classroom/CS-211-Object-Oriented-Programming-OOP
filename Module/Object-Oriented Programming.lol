@@ -119,4 +119,5 @@
 \contentsline {lstlisting}{\numberline {5.17}{\ignorespaces Eagle Class in Java}}{96}{lstlisting.5.17}%
 \contentsline {lstlisting}{\numberline {5.18}{\ignorespaces Duck Class in Java}}{96}{lstlisting.5.18}%
 \contentsline {lstlisting}{\numberline {5.19}{\ignorespaces Upcasting in Java}}{97}{lstlisting.5.19}%
-\contentsline {lstlisting}{\numberline {5.20}{\ignorespaces Downcasting in Java}}{97}{lstlisting.5.20}%
+\contentsline {lstlisting}{\numberline {5.20}{\ignorespaces Upcasting in Java}}{97}{lstlisting.5.20}%
+\contentsline {lstlisting}{\numberline {5.21}{\ignorespaces Downcasting in Java}}{98}{lstlisting.5.21}%
