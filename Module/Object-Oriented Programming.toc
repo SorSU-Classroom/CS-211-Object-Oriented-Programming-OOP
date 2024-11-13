@@ -133,8 +133,8 @@
 \contentsline {chapter}{\numberline {5}Object-Oriented Programming}{79}{chapter.5}%
 \contentsline {section}{\numberline {5.1}UML Class Diagram}{79}{section.5.1}%
 \contentsline {subsection}{\numberline {5.1.1}Bank Class Diagram}{80}{subsection.5.1.1}%
-\contentsline {subsubsection}{\numberline {5.1.1.1}Relationships Between Classes}{82}{subsubsection.5.1.1.1}%
-\contentsline {subsubsection}{\numberline {5.1.1.2}Multiplicity}{82}{subsubsection.5.1.1.2}%
+\contentsline {subsection}{\numberline {5.1.2}Relationships Between Classes}{82}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.3}Multiplicity}{82}{subsection.5.1.3}%
 \contentsline {section}{\numberline {5.2}Inheritance}{83}{section.5.2}%
 \contentsline {subsection}{\numberline {5.2.1}Superclass and Subclass}{83}{subsection.5.2.1}%
 \contentsline {subsection}{\numberline {5.2.2}Multiple Levels of Inheritance}{86}{subsection.5.2.2}%
