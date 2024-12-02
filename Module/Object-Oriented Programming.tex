@@ -5227,7 +5227,7 @@ you can create an abstract class using the `abstract' keyword.
 
     \begin{class}[text width=6cm, scale=0.8]{Circle}{-4, -4}
       \implement{Shape}
-      \attribute{+ radius: double}
+      \attribute{- radius: double}
       \operation{+ Circle(color: String, radius: double)}
       \operation{+ getRadius(): double}
       \operation{+ setRadius(radius: double): void}
@@ -5238,8 +5238,8 @@ you can create an abstract class using the `abstract' keyword.
 
     \begin{class}[text width=6cm, scale=0.8]{Rectangle}{4, -4}
       \implement{Shape}
-      \attribute{+ width: double}
-      \attribute{+ height: double}
+      \attribute{- width: double}
+      \attribute{- height: double}
       \operation{+ Rectangle(color: String, width: double, height: double)}
       \operation{+ getWidth(): double}
       \operation{+ setWidth(width: double): void}
