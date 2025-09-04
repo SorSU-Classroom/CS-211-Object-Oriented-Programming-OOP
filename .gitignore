@@ -1,7 +1,14 @@
 /L10_13_Four_Pillars_of_Object_Oriented_Programming/
 /L10_13_Four_Pillars_of_Object_Oriented_Programming_Project/
+__Sample__/
+.vscode/
+**/venv
+app-dev/
+**/**.fls
 /.metadata/
 .metadata/
 samples/
 **/com/**/Exercises/
 **/**Exam/
+Module/
+!/Module/**/*.pdf
